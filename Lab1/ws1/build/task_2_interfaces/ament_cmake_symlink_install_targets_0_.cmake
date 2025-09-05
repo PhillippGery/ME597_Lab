@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/me597/me597/Lab1/ws1/build/task_2_interfaces/rosidl_generator_py/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "task_2_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/task_2_interfaces")

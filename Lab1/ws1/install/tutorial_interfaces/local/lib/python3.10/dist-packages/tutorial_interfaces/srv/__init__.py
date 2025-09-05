@@ -1,0 +1,1 @@
+/home/me597/me597/Lab1/ws1/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/srv/__init__.py

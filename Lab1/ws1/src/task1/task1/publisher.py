@@ -21,7 +21,7 @@ class MinimalPublisher(Node):
         msg = Float64()
         msg.data = elapsed_time
         self.publisher_.publish(msg)
-        self.get_logger().info(f'Phillipp_publisher node is running for: "{msg.data:.2f}" seconds')
+        #self.get_logger().info(f'Phillipp_publisher node is running for: "{msg.data:.2f}" seconds')
 
 
 def main(args=None):

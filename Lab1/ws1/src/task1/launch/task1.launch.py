@@ -11,14 +11,14 @@ def generate_launch_description():
         package='task1',
         executable='publisher',
         name='publisher1',
-        #remappings=[('chatter', 'chatter1')]
+
     )
 
     listener1 = Node(
         package='task1',
         executable='subscriber',
         name='subscriber1',
-        #remappings=[('chatter', 'chatter1')]
+
     )
     
     launch_description = LaunchDescription([

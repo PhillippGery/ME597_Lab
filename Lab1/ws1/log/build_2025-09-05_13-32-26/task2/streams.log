@@ -1,0 +1,23 @@
+[0.681s] Invoking command in '/home/me597/me597/Lab1/ws1/build/task2': CMAKE_PREFIX_PATH=/home/me597/me597/Lab1/ws1/install/task_2_interfaces:/home/me597/me597/Lab1/ws1/install/tutorial_interfaces LD_LIBRARY_PATH=/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib:/home/me597/me597/Lab1/ws1/install/tutorial_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/me597/me597/Lab1/ws1/build/task2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab1/ws1/install/task2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab1/ws1/build/task2/build --no-deps symlink_data
+[0.941s] running develop
+[0.941s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.941s]   warnings.warn(
+[1.105s] running egg_info
+[1.105s] writing task2.egg-info/PKG-INFO
+[1.106s] writing dependency_links to task2.egg-info/dependency_links.txt
+[1.106s] writing entry points to task2.egg-info/entry_points.txt
+[1.107s] writing requirements to task2.egg-info/requires.txt
+[1.107s] writing top-level names to task2.egg-info/top_level.txt
+[1.108s] reading manifest file 'task2.egg-info/SOURCES.txt'
+[1.109s] writing manifest file 'task2.egg-info/SOURCES.txt'
+[1.111s] running build_ext
+[1.111s] Creating /home/me597/me597/Lab1/ws1/install/task2/lib/python3.10/site-packages/task2.egg-link (link to .)
+[1.112s] Installing client script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+[1.112s] Installing listener script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+[1.112s] Installing service script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+[1.112s] Installing talker script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+[1.113s] 
+[1.113s] Installed /home/me597/me597/Lab1/ws1/build/task2
+[1.113s] running symlink_data
+[1.113s] error: can't copy '/home/me597/me597/Lab1/ws1/build/task2/launch/Service_launch.py': doesn't exist or not a regular file
+[1.139s] Invoked command in '/home/me597/me597/Lab1/ws1/build/task2' returned '1': CMAKE_PREFIX_PATH=/home/me597/me597/Lab1/ws1/install/task_2_interfaces:/home/me597/me597/Lab1/ws1/install/tutorial_interfaces LD_LIBRARY_PATH=/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib:/home/me597/me597/Lab1/ws1/install/tutorial_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/me597/me597/Lab1/ws1/build/task2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab1/ws1/install/task2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab1/ws1/build/task2/build --no-deps symlink_data

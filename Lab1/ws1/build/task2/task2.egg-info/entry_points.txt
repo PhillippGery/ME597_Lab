@@ -1,0 +1,6 @@
+[console_scripts]
+client = task2.JointClient:main
+listener = task2.JointSub:main
+service = task2.JointService:main
+talker = task2.JointPub:main
+
