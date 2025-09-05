@@ -1,0 +1,20 @@
+[0.861s] Invoking command in '/home/me597/me597/Lab1/ws1/build/task1': PYTHONPATH=/home/me597/me597/Lab1/ws1/build/task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab1/ws1/install/task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab1/ws1/build/task1/build --no-deps symlink_data
+[1.166s] running develop
+[1.171s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.171s]   warnings.warn(
+[1.359s] running egg_info
+[1.359s] writing task1.egg-info/PKG-INFO
+[1.359s] writing dependency_links to task1.egg-info/dependency_links.txt
+[1.359s] writing entry points to task1.egg-info/entry_points.txt
+[1.359s] writing requirements to task1.egg-info/requires.txt
+[1.359s] writing top-level names to task1.egg-info/top_level.txt
+[1.360s] reading manifest file 'task1.egg-info/SOURCES.txt'
+[1.361s] writing manifest file 'task1.egg-info/SOURCES.txt'
+[1.362s] running build_ext
+[1.363s] Creating /home/me597/me597/Lab1/ws1/install/task1/lib/python3.10/site-packages/task1.egg-link (link to .)
+[1.364s] Installing publisher script to /home/me597/me597/Lab1/ws1/install/task1/lib/task1
+[1.364s] Installing subscriber script to /home/me597/me597/Lab1/ws1/install/task1/lib/task1
+[1.364s] 
+[1.364s] Installed /home/me597/me597/Lab1/ws1/build/task1
+[1.364s] running symlink_data
+[1.458s] Invoked command in '/home/me597/me597/Lab1/ws1/build/task1' returned '0': PYTHONPATH=/home/me597/me597/Lab1/ws1/build/task1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab1/ws1/install/task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab1/ws1/build/task1/build --no-deps symlink_data

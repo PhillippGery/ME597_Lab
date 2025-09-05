@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000175] (-) JobUnselected: {'identifier': 'task1'}
+[0.000207] (-) JobUnselected: {'identifier': 'task2'}
+[0.000226] (-) JobUnselected: {'identifier': 'task_2_interfaces'}
+[0.000243] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.000259] (-) EventReactorShutdown: {}

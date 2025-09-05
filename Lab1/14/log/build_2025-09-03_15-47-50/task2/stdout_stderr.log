@@ -1,0 +1,20 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing task2.egg-info/PKG-INFO
+writing dependency_links to task2.egg-info/dependency_links.txt
+writing entry points to task2.egg-info/entry_points.txt
+writing requirements to task2.egg-info/requires.txt
+writing top-level names to task2.egg-info/top_level.txt
+reading manifest file 'task2.egg-info/SOURCES.txt'
+writing manifest file 'task2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/me597/me597/Lab1/ws1/install/task2/lib/python3.10/site-packages/task2.egg-link (link to .)
+Installing client script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+Installing listener script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+Installing service script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+Installing talker script to /home/me597/me597/Lab1/ws1/install/task2/lib/task2
+
+Installed /home/me597/me597/Lab1/ws1/build/task2
+running symlink_data

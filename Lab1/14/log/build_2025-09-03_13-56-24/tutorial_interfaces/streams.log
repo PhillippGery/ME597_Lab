@@ -1,0 +1,26 @@
+[0.329s] Invoking command in '/home/me597/me597/Lab1/ws1/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/home/me597/ece569-fall2025/Lab1/ws1/install/mypubsub:/opt/ros/humble /usr/bin/cmake /home/me597/me597/Lab1/ws1/src/tutorial_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/me597/me597/Lab1/ws1/install/tutorial_interfaces
+[0.350s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.515s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.520s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.589s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.614s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.617s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.632s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.644s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.661s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.714s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.731s] [33mCMake Warning at CMakeLists.txt:30 (message):
+[0.731s]   $CMAKE_CURRENT_SOURCE_DIR
+[0.731s] 
+[0.731s] [0m
+[0.732s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.732s]   rosidl_generate_interfaces() the passed file 'msg/Num.msg' doesn't exist
+[0.732s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.732s]   '/home/me597/me597/Lab1/ws1/src/tutorial_interfaces'
+[0.732s] Call Stack (most recent call first):
+[0.732s]   CMakeLists.txt:32 (rosidl_generate_interfaces)
+[0.732s] 
+[0.732s] [0m
+[0.732s] -- Configuring incomplete, errors occurred!
+[0.732s] See also "/home/me597/me597/Lab1/ws1/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[0.739s] Invoked command in '/home/me597/me597/Lab1/ws1/build/tutorial_interfaces' returned '1': CMAKE_PREFIX_PATH=/home/me597/ece569-fall2025/Lab1/ws1/install/mypubsub:/opt/ros/humble /usr/bin/cmake /home/me597/me597/Lab1/ws1/src/tutorial_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/me597/me597/Lab1/ws1/install/tutorial_interfaces
