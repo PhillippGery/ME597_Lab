@@ -5,7 +5,7 @@ from task_2_interfaces.msg import JointData
 class JointDataSubscriber(Node):
 
     def __init__(self):
-        super().__init__('joint_data_subscriber')
+        super().__init__('listener')
         self.subscription = self.create_subscription(
             JointData,
             'joint_topic',

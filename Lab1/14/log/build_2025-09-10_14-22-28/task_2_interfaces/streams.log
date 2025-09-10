@@ -1,0 +1,232 @@
+[0.041s] Invoking command in '/home/me597/me597/Lab1/ws1/build/task_2_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/me597/me597/Lab1/ws1/src/task_2_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/me597/me597/Lab1/ws1/install/task_2_interfaces
+[0.605s] -- The C compiler identification is GNU 11.4.0
+[0.605s] -- The CXX compiler identification is GNU 11.4.0
+[0.605s] -- Detecting C compiler ABI info
+[0.605s] -- Detecting C compiler ABI info - done
+[0.605s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.605s] -- Detecting C compile features
+[0.605s] -- Detecting C compile features - done
+[0.605s] -- Detecting CXX compiler ABI info
+[0.719s] -- Detecting CXX compiler ABI info - done
+[0.742s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.743s] -- Detecting CXX compile features
+[0.743s] -- Detecting CXX compile features - done
+[0.748s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.947s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.078s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.139s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.340s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.410s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.417s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.431s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.454s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.490s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.575s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.960s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.565s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.856s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.899s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.903s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.960s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.960s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.962s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.963s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.008s] -- Found PythonExtra: .so  
+[3.181s] -- Added test 'lint_cmake' to check CMake code style
+[3.184s] -- Added test 'xmllint' to check XML markup files
+[3.199s] -- Configuring done
+[3.255s] -- Generating done
+[3.262s] -- Build files have been written to: /home/me597/me597/Lab1/ws1/build/task_2_interfaces
+[3.275s] Invoked command in '/home/me597/me597/Lab1/ws1/build/task_2_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/me597/me597/Lab1/ws1/src/task_2_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/me597/me597/Lab1/ws1/install/task_2_interfaces
+[3.279s] Invoking command in '/home/me597/me597/Lab1/ws1/build/task_2_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/me597/me597/Lab1/ws1/build/task_2_interfaces -- -j4 -l4
+[3.344s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.364s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.398s] [  5%] Built target ament_cmake_python_symlink_task_2_interfaces
+[3.778s] running egg_info
+[3.780s] creating task_2_interfaces.egg-info
+[3.780s] writing task_2_interfaces.egg-info/PKG-INFO
+[3.780s] writing dependency_links to task_2_interfaces.egg-info/dependency_links.txt
+[3.780s] writing top-level names to task_2_interfaces.egg-info/top_level.txt
+[3.780s] writing manifest file 'task_2_interfaces.egg-info/SOURCES.txt'
+[3.785s] reading manifest file 'task_2_interfaces.egg-info/SOURCES.txt'
+[3.785s] writing manifest file 'task_2_interfaces.egg-info/SOURCES.txt'
+[3.857s] [  5%] Built target ament_cmake_python_build_task_2_interfaces_egg
+[3.909s] [  7%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/task_2_interfaces/srv/detail/joint_state__functions.c.o[0m
+[3.917s] [ 10%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_generator_c.dir/rosidl_generator_c/task_2_interfaces/msg/detail/joint_data__functions.c.o[0m
+[3.928s] [ 10%] Built target task_2_interfaces__cpp
+[3.973s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.973s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.061s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.066s] [ 20%] [32m[1mLinking C shared library libtask_2_interfaces__rosidl_generator_c.so[0m
+[4.219s] [ 20%] Built target task_2_interfaces__rosidl_generator_c
+[4.256s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.536s] [ 25%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/task_2_interfaces/msg/joint_data__type_support.cpp.o[0m
+[4.752s] [ 28%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/task_2_interfaces/msg/detail/dds_fastrtps/joint_data__type_support.cpp.o[0m
+[4.927s] [ 30%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/task_2_interfaces/msg/detail/joint_data__type_support.cpp.o[0m
+[5.248s] [ 33%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/task_2_interfaces/msg/detail/joint_data__type_support_c.cpp.o[0m
+[5.519s] [ 35%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/task_2_interfaces/srv/joint_state__type_support.cpp.o[0m
+[6.007s] [ 38%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/task_2_interfaces/srv/detail/dds_fastrtps/joint_state__type_support.cpp.o[0m
+[6.263s] [ 41%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/task_2_interfaces/srv/detail/joint_state__type_support_c.cpp.o[0m
+[6.445s] [ 43%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/task_2_interfaces/srv/detail/joint_state__type_support.cpp.o[0m
+[6.530s] [ 46%] [32m[1mLinking CXX shared library libtask_2_interfaces__rosidl_typesupport_cpp.so[0m
+[6.664s] [ 46%] Built target task_2_interfaces__rosidl_typesupport_cpp
+[6.699s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.060s] [ 51%] [32m[1mLinking CXX shared library libtask_2_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.361s] [ 51%] Built target task_2_interfaces__rosidl_typesupport_fastrtps_cpp
+[7.409s] [ 53%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.481s] [ 56%] [32m[1mLinking CXX shared library libtask_2_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[7.653s] [ 58%] [32m[1mLinking CXX shared library libtask_2_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[7.684s] [ 61%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/task_2_interfaces/msg/detail/joint_data__type_support.c.o[0m
+[7.809s] [ 61%] Built target task_2_interfaces__rosidl_typesupport_introspection_cpp
+[7.828s] [ 64%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/task_2_interfaces/srv/detail/joint_state__type_support.c.o[0m
+[7.923s] [ 64%] Built target task_2_interfaces__rosidl_typesupport_fastrtps_c
+[7.934s] [ 66%] [32m[1mLinking C shared library libtask_2_interfaces__rosidl_typesupport_introspection_c.so[0m
+[8.050s] [ 69%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/task_2_interfaces/msg/joint_data__type_support.cpp.o[0m
+[8.056s] [ 69%] Built target task_2_interfaces__rosidl_typesupport_introspection_c
+[8.060s] [ 71%] [32mBuilding CXX object CMakeFiles/task_2_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/task_2_interfaces/srv/joint_state__type_support.cpp.o[0m
+[8.165s] [ 74%] [32m[1mLinking CXX shared library libtask_2_interfaces__rosidl_typesupport_c.so[0m
+[8.311s] [ 74%] Built target task_2_interfaces__rosidl_typesupport_c
+[8.385s] [ 74%] Built target task_2_interfaces
+[8.465s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.401s] [ 76%] Built target task_2_interfaces__py
+[9.447s] [ 79%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/task_2_interfaces/msg/_joint_data_s.c.o[0m
+[9.453s] [ 82%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_generator_py.dir/rosidl_generator_py/task_2_interfaces/srv/_joint_state_s.c.o[0m
+[9.593s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/task_2_interfaces/libtask_2_interfaces__rosidl_generator_py.so[0m
+[9.671s] [ 84%] Built target task_2_interfaces__rosidl_generator_py
+[9.704s] [ 87%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/task_2_interfaces/_task_2_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.706s] [ 89%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/task_2_interfaces/_task_2_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[9.706s] [ 92%] [32mBuilding C object CMakeFiles/task_2_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/task_2_interfaces/_task_2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.840s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.845s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.851s] [100%] [32m[1mLinking C shared library rosidl_generator_py/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.905s] [100%] Built target task_2_interfaces__rosidl_typesupport_c__pyext
+[9.909s] [100%] Built target task_2_interfaces__rosidl_typesupport_introspection_c__pyext
+[9.913s] [100%] Built target task_2_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[9.937s] Invoked command in '/home/me597/me597/Lab1/ws1/build/task_2_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/me597/me597/Lab1/ws1/build/task_2_interfaces -- -j4 -l4
+[10.106s] Invoking command in '/home/me597/me597/Lab1/ws1/build/task_2_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/me597/me597/Lab1/ws1/build/task_2_interfaces
+[10.116s] -- Install configuration: ""
+[10.116s] -- Execute custom install script
+[10.120s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/ament_index/resource_index/rosidl_interfaces/task_2_interfaces
+[10.131s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__functions.h
+[10.147s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__struct.h
+[10.160s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__type_support.h
+[10.172s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/joint_data.h
+[10.184s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/rosidl_generator_c__visibility_control.h
+[10.196s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__functions.h
+[10.206s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__struct.h
+[10.218s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__type_support.h
+[10.239s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/joint_state.h
+[10.257s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/library_path.sh
+[10.272s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/library_path.dsv
+[10.285s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__rosidl_typesupport_fastrtps_c.h
+[10.297s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.309s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__rosidl_typesupport_fastrtps_c.h
+[10.327s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__builder.hpp
+[10.339s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__struct.hpp
+[10.357s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__traits.hpp
+[10.372s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/joint_data.hpp
+[10.384s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__builder.hpp
+[10.397s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__struct.hpp
+[10.413s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__traits.hpp
+[10.435s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/joint_state.hpp
+[10.445s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__rosidl_typesupport_fastrtps_cpp.hpp
+[10.461s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.477s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__rosidl_typesupport_fastrtps_cpp.hpp
+[10.491s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__rosidl_typesupport_introspection_c.h
+[10.509s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.525s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__rosidl_typesupport_introspection_c.h
+[10.544s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/msg/detail/joint_data__rosidl_typesupport_introspection_cpp.hpp
+[10.562s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/include/task_2_interfaces/task_2_interfaces/srv/detail/joint_state__rosidl_typesupport_introspection_cpp.hpp
+[10.581s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/pythonpath.sh
+[10.596s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/pythonpath.dsv
+[10.609s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[10.626s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[10.644s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[10.659s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[10.676s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/__init__.py
+[10.690s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/_task_2_interfaces_s.ep.rosidl_typesupport_c.c
+[10.702s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/_task_2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.714s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/_task_2_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[10.732s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/libtask_2_interfaces__rosidl_generator_py.so
+[10.745s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/msg/__init__.py
+[10.762s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/msg/_joint_data.py
+[10.775s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/msg/_joint_data_s.c
+[10.790s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/srv/__init__.py
+[10.803s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/srv/_joint_state.py
+[10.812s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/srv/_joint_state_s.c
+[10.823s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.841s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.854s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.865s] -- Up-to-date symlink: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.866s] -- Up-to-date symlink: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.866s] -- Up-to-date symlink: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/task_2_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.867s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/msg/JointData.idl
+[10.881s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/srv/JointState.idl
+[10.893s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/msg/JointData.msg
+[10.906s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/srv/JointState.srv
+[10.921s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/srv/JointState_Request.msg
+[10.938s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/srv/JointState_Response.msg
+[10.958s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/ament_index/resource_index/package_run_dependencies/task_2_interfaces
+[10.972s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/ament_index/resource_index/parent_prefix_path/task_2_interfaces
+[10.986s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/ament_prefix_path.sh
+[10.999s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/ament_prefix_path.dsv
+[11.017s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/path.sh
+[11.030s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/environment/path.dsv
+[11.046s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/local_setup.bash
+[11.059s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/local_setup.sh
+[11.073s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/local_setup.zsh
+[11.088s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/local_setup.dsv
+[11.100s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/package.dsv
+[11.112s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/ament_index/resource_index/packages/task_2_interfaces
+[11.124s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/rosidl_cmake-extras.cmake
+[11.137s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.153s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.169s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[11.182s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[11.198s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.212s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.232s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfacesConfig.cmake
+[11.253s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfacesConfig-version.cmake
+[11.274s] -- Symlinking: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/package.xml
+[11.295s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_generator_c.so
+[11.300s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_generator_c.so" to ""
+[11.300s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_fastrtps_c.so
+[11.301s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[11.301s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[11.303s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.303s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_introspection_c.so
+[11.303s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[11.303s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_c.so
+[11.304s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_c.so" to ""
+[11.304s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_introspection_cpp.so
+[11.304s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[11.305s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_cpp.so
+[11.306s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_typesupport_cpp.so" to ""
+[11.367s] Listing '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces'...
+[11.367s] Compiling '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/__init__.py'...
+[11.367s] Listing '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/msg'...
+[11.367s] Compiling '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/msg/__init__.py'...
+[11.367s] Compiling '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/msg/_joint_data.py'...
+[11.367s] Listing '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/srv'...
+[11.367s] Compiling '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/srv/__init__.py'...
+[11.367s] Compiling '/home/me597/me597/Lab1/ws1/install/task_2_interfaces/local/lib/python3.10/dist-packages/task_2_interfaces/srv/_joint_state.py'...
+[11.373s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_generator_py.so
+[11.374s] -- Set runtime path of "/home/me597/me597/Lab1/ws1/install/task_2_interfaces/lib/libtask_2_interfaces__rosidl_generator_py.so" to ""
+[11.375s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_generator_cExport.cmake
+[11.376s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_generator_cExport-noconfig.cmake
+[11.376s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[11.376s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.377s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_generator_cppExport.cmake
+[11.378s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.378s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.379s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[11.381s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.381s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_cExport.cmake
+[11.382s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[11.383s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[11.383s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.384s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_cppExport.cmake
+[11.385s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/task_2_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[11.385s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_generator_pyExport.cmake
+[11.386s] -- Installing: /home/me597/me597/Lab1/ws1/install/task_2_interfaces/share/task_2_interfaces/cmake/export_task_2_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[11.390s] Invoked command in '/home/me597/me597/Lab1/ws1/build/task_2_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/me597/me597/Lab1/ws1/build/task_2_interfaces

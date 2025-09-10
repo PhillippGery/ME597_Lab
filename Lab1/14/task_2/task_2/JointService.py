@@ -5,7 +5,7 @@ from task_2_interfaces.srv import JointState
 class JointStateService(Node):
 
     def __init__(self):
-        super().__init__('joint_state_service')
+        super().__init__('service')
         self.srv = self.create_service(JointState, 'joint_service', self.joint_state_callback)
 
     def joint_state_callback(self, request, response):

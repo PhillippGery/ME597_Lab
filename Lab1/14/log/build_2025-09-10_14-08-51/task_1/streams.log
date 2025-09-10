@@ -1,0 +1,29 @@
+[0.903s] Invoking command in '/home/me597/me597/Lab1/ws1/build/task_1': PYTHONPATH=/home/me597/me597/Lab1/ws1/build/task_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab1/ws1/install/task_1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab1/ws1/build/task_1/build --no-deps symlink_data
+[1.419s] running develop
+[1.421s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.421s]   warnings.warn(
+[1.869s] running egg_info
+[1.869s] creating task_1.egg-info
+[1.870s] writing task_1.egg-info/PKG-INFO
+[1.877s] writing dependency_links to task_1.egg-info/dependency_links.txt
+[1.878s] writing entry points to task_1.egg-info/entry_points.txt
+[1.878s] writing requirements to task_1.egg-info/requires.txt
+[1.878s] writing top-level names to task_1.egg-info/top_level.txt
+[1.878s] writing manifest file 'task_1.egg-info/SOURCES.txt'
+[1.878s] reading manifest file 'task_1.egg-info/SOURCES.txt'
+[1.878s] writing manifest file 'task_1.egg-info/SOURCES.txt'
+[1.879s] running build_ext
+[1.883s] Creating /home/me597/me597/Lab1/ws1/install/task_1/lib/python3.10/site-packages/task-1.egg-link (link to .)
+[1.883s] Installing listener script to /home/me597/me597/Lab1/ws1/install/task_1/lib/task_1
+[1.883s] Installing talker script to /home/me597/me597/Lab1/ws1/install/task_1/lib/task_1
+[1.883s] 
+[1.883s] Installed /home/me597/me597/Lab1/ws1/build/task_1
+[1.883s] running symlink_data
+[1.883s] creating /home/me597/me597/Lab1/ws1/install/task_1/share/ament_index
+[1.883s] creating /home/me597/me597/Lab1/ws1/install/task_1/share/ament_index/resource_index
+[1.883s] creating /home/me597/me597/Lab1/ws1/install/task_1/share/ament_index/resource_index/packages
+[1.885s] symbolically linking /home/me597/me597/Lab1/ws1/build/task_1/resource/task_1 -> /home/me597/me597/Lab1/ws1/install/task_1/share/ament_index/resource_index/packages
+[1.886s] symbolically linking /home/me597/me597/Lab1/ws1/build/task_1/package.xml -> /home/me597/me597/Lab1/ws1/install/task_1/share/task_1
+[1.886s] creating /home/me597/me597/Lab1/ws1/install/task_1/share/task_1/launch
+[1.886s] symbolically linking /home/me597/me597/Lab1/ws1/build/task_1/launch/pub_sub_launch.py -> /home/me597/me597/Lab1/ws1/install/task_1/share/task_1/launch
+[1.963s] Invoked command in '/home/me597/me597/Lab1/ws1/build/task_1' returned '0': PYTHONPATH=/home/me597/me597/Lab1/ws1/build/task_1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab1/ws1/install/task_1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab1/ws1/build/task_1/build --no-deps symlink_data

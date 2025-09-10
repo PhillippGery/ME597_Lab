@@ -1,4 +1,4 @@
 [console_scripts]
-publisher = task_1.publisher:main
-subscriber = task_1.subscriber:main
+listener = task_1.listener:main
+talker = task_1.talker:main
 

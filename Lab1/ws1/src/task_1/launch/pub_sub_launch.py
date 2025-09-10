@@ -8,15 +8,15 @@ def generate_launch_description():
     
     talker1 = Node(
         package='task_1',
-        executable='publisher',
-        name='publisher1',
+        executable='talker',
+        name='talker',
 
     )
 
     listener1 = Node(
         package='task_1',
-        executable='subscriber',
-        name='subscriber1',
+        executable='listener',
+        name='listener',
 
     )
     

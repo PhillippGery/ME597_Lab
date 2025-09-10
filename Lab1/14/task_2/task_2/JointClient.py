@@ -6,7 +6,7 @@ from task_2_interfaces.srv import JointState
 class JointStateClient(Node):
 
     def __init__(self):
-        super().__init__('joint_state_client')
+        super().__init__('client')
         self.client = self.create_client(JointState, 'joint_service')
         while not self.client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')

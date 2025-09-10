@@ -1,8 +1,0 @@
-[33mCMake Warning at CMakeLists.txt:30 (message):
-  $CMAKE_CURRENT_SOURCE_DIR
-
-[0m
-[33mCMake Warning at CMakeLists.txt:31 (message):
-  $PROJECT_SOURCE_DIR
-
-[0m
