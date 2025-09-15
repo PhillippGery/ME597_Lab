@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
 Name: task-3
 Version: 0.0.0
-Summary: TODO: Package description
+Summary: A PID controller package for ME597
 Home-page: UNKNOWN
 Maintainer: me597
 Maintainer-email: pgery@purdue.edu
-License: TODO: License declaration
+License: Apache License 2.0
 Platform: UNKNOWN
 
 UNKNOWN

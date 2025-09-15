@@ -18,8 +18,8 @@ setup(
     zip_safe=True,
     maintainer='me597',
     maintainer_email='pgery@purdue.edu',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='A PID controller package for ME597',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
