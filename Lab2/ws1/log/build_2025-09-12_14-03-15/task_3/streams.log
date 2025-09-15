@@ -1,0 +1,27 @@
+[1.037s] Invoking command in '/home/me597/me597/Lab2/ws1/build/task_3': PYTHONPATH=/home/me597/me597/Lab2/ws1/build/task_3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/install/task_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab2/ws1/build/task_3/build --no-deps symlink_data
+[1.338s] running develop
+[1.338s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.338s]   warnings.warn(
+[1.559s] running egg_info
+[1.561s] creating task_3.egg-info
+[1.561s] writing task_3.egg-info/PKG-INFO
+[1.562s] writing dependency_links to task_3.egg-info/dependency_links.txt
+[1.563s] writing entry points to task_3.egg-info/entry_points.txt
+[1.563s] writing requirements to task_3.egg-info/requires.txt
+[1.563s] writing top-level names to task_3.egg-info/top_level.txt
+[1.563s] writing manifest file 'task_3.egg-info/SOURCES.txt'
+[1.564s] reading manifest file 'task_3.egg-info/SOURCES.txt'
+[1.564s] writing manifest file 'task_3.egg-info/SOURCES.txt'
+[1.564s] running build_ext
+[1.564s] Creating /home/me597/me597/Lab2/ws1/install/task_3/lib/python3.10/site-packages/task-3.egg-link (link to .)
+[1.564s] Installing pid_speed_controller script to /home/me597/me597/Lab2/ws1/install/task_3/lib/task_3
+[1.564s] 
+[1.564s] Installed /home/me597/me597/Lab2/ws1/build/task_3
+[1.564s] running symlink_data
+[1.564s] creating /home/me597/me597/Lab2/ws1/install/task_3/share/ament_index
+[1.564s] creating /home/me597/me597/Lab2/ws1/install/task_3/share/ament_index/resource_index
+[1.564s] creating /home/me597/me597/Lab2/ws1/install/task_3/share/ament_index/resource_index/packages
+[1.564s] symbolically linking /home/me597/me597/Lab2/ws1/build/task_3/resource/task_3 -> /home/me597/me597/Lab2/ws1/install/task_3/share/ament_index/resource_index/packages
+[1.575s] symbolically linking /home/me597/me597/Lab2/ws1/build/task_3/package.xml -> /home/me597/me597/Lab2/ws1/install/task_3/share/task_3
+[1.575s] creating /home/me597/me597/Lab2/ws1/install/task_3/share/task_3/launch
+[1.622s] Invoked command in '/home/me597/me597/Lab2/ws1/build/task_3' returned '0': PYTHONPATH=/home/me597/me597/Lab2/ws1/build/task_3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/install/task_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab2/ws1/build/task_3/build --no-deps symlink_data
