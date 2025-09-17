@@ -17,6 +17,10 @@ class PIDControllerNode(Node):
         self.Ki = 0.01#.5*2
         self.Kd = 0.08#.12*2
 
+        self.Kp = 1#*0.6
+        self.Ki = 0.02#.5*2
+        self.Kd = 0.1#.12*2
+
         # Target
         self.target_distance = 0.35
 
@@ -116,10 +120,13 @@ class PIDControllerNode(Node):
         self.integral_error += error * dt
         i_term = self.Ki * self.integral_error
         # Anti-Windup
-        if i_term > self.MAX_LINEAR_VEL:
-            i_term = self.MAX_LINEAR_VEL
-        elif i_term < self.MIN_LINEAR_VEL:
-            i_term = self.MIN_LINEAR_VEL
+
+        max_iterm = 0.5#self.MAX_LINEAR_VEL
+        min_iterm = -0.5#self.MIN_LINEAR_VEL
+        if i_term > max_iterm:
+            i_term = max_iterm
+        elif i_term < min_iterm:
+            i_term = min_iterm
 
         if dt > 0:
             derivative_error = (error - self.previous_error) / dt
