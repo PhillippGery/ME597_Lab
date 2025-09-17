@@ -10,7 +10,7 @@ from collections import deque
 
 class PIDControllerNode(Node):
     def __init__(self):
-        super().__init__('pid_controller')
+        super().__init__('pid_speed_controller')
 
         #PID vales
         self.Kp = 0.30#*0.6
