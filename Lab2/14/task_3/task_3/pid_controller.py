@@ -13,16 +13,16 @@ class PIDControllerNode(Node):
         super().__init__('pid_speed_controller')
 
         #PID vales
-        self.Kp = 0.30#*0.6
-        self.Ki = 0.01#.5*2
-        self.Kd = 0.08#.12*2
+        self.Kp = 0.4
+        self.Ki = 0.0001
+        self.Kd = 0.6
 
-        self.Kp = 1#*0.6
-        self.Ki = 0.02#.5*2
-        self.Kd = 0.1#.12*2
+        # self.Kp = 0.26#*0.6
+        # self.Ki = 0.007#.5*2
+        # self.Kd = 0.1#.12*2
 
         # Target
-        self.target_distance = 0.35
+        self.target_distance = 2
 
         #Init vales
         self.integral_error = 0.0
@@ -121,12 +121,15 @@ class PIDControllerNode(Node):
         i_term = self.Ki * self.integral_error
         # Anti-Windup
 
-        max_iterm = 0.5#self.MAX_LINEAR_VEL
-        min_iterm = -0.5#self.MIN_LINEAR_VEL
+        max_iterm = self.MAX_LINEAR_VEL
+        min_iterm = self.MIN_LINEAR_VEL
         if i_term > max_iterm:
             i_term = max_iterm
         elif i_term < min_iterm:
             i_term = min_iterm
+
+        # if abs(error) < 0.02:
+        #     i_term = 0
 
         if dt > 0:
             derivative_error = (error - self.previous_error) / dt

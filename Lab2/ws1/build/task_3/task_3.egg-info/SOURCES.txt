@@ -4,6 +4,7 @@ setup.py
 launch/pid_control_launch.py
 resource/task_3
 task_3/__init__.py
+task_3/pid_controller copy.py
 task_3/pid_controller.py
 task_3.egg-info/PKG-INFO
 task_3.egg-info/SOURCES.txt
