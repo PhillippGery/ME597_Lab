@@ -24,7 +24,7 @@ class PIDControllerNode(Node):
         # self.Kd = 0.9
 
         # Target
-        self.target_distance = 2
+        self.target_distance = 0.35
 
         #Init vales
         self.integral_error = 0.0
@@ -38,10 +38,10 @@ class PIDControllerNode(Node):
         self.MIN_LINEAR_VEL = -0.15
    
         # Sub /scan
-        self.scan_subscriber = self.create_subscription( LaserScan, '/scan', self.scan_callback, 10) 
+        self.scan_subscriber = self.create_subscription( LaserScan, '/robot/scan', self.scan_callback, 10) 
             
         # Publ /cmd_vel top
-        self.velocity_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.velocity_publisher = self.create_publisher(Twist, '/robot/cmd_vel', 10)
     
         # Timer loop at 10Hz
         timer_period = 0.1 # seconds (1 / 10Hz)
@@ -99,17 +99,17 @@ class PIDControllerNode(Node):
             self.get_logger().info('Waiting for laser scan data...')
             return
 
-        forward_distance = self.latest_scan.ranges[0]
+        forward_distance = self.latest_scan.ranges[180]
         left_distance = self.latest_scan.ranges[90]
         back_distance = self.latest_scan.ranges[180]
         rigth_distance = self.latest_scan.ranges[270]
 
-        # # Debug if dis ==(inf or nan)
-        # if math.isinf(forward_distance) or math.isnan(forward_distance):
-        #     self.get_logger().warn('Invalid laser data, stopping the robot.')
-        #     twist_msg.linear.x = 0.0 # Command the robot to stop
-        #     self.velocity_publisher.publish(twist_msg)
-        #     return
+        # Debug if dis ==(inf or nan)
+        if math.isinf(forward_distance) or math.isnan(forward_distance):
+            self.get_logger().warn('Invalid laser data, stopping the robot.')
+            twist_msg.linear.x = 0.0 # Command the robot to stop
+            self.velocity_publisher.publish(twist_msg)
+            return
 
         # PID Calc
         current_time = time.time()
@@ -139,7 +139,13 @@ class PIDControllerNode(Node):
             derivative_error = 0.0
         d_term = self.Kd * derivative_error
 
-        pid_output = p_term + i_term + d_term
+        if abs(error) > 0.02:
+            pid_output = p_term + i_term + d_term
+        else:
+            pid_output = 0.0
+
+
+        # pid_output = 0.0
 
         #save stae
         self.previous_error = error

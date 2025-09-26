@@ -36,10 +36,10 @@ class PIDControllerNode(Node):
         self.MIN_LINEAR_VEL = -0.15
    
         # Sub /scan
-        self.scan_subscriber = self.create_subscription( LaserScan, '/scan', self.scan_callback, 10) 
+        self.scan_subscriber = self.create_subscription( LaserScan, '/robot/scan', self.scan_callback, 10) 
             
         # Publ /cmd_vel top
-        self.velocity_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.velocity_publisher = self.create_publisher(Twist, '/robot/cmd_vel', 10)
     
         # Timer loop at 10Hz
         timer_period = 0.1 # seconds (1 / 10Hz)
@@ -97,7 +97,7 @@ class PIDControllerNode(Node):
             self.get_logger().info('Waiting for laser scan data...')
             return
 
-        forward_distance = self.latest_scan.ranges[0]
+        forward_distance = self.latest_scan.ranges[90]
         left_distance = self.latest_scan.ranges[90]
         back_distance = self.latest_scan.ranges[180]
         rigth_distance = self.latest_scan.ranges[270]

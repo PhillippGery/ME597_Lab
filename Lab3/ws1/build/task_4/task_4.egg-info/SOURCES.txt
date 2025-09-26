@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+launch/gen_sync_map_launch.py
+resource/task_4
+task_4/__init__.py
+task_4.egg-info/PKG-INFO
+task_4.egg-info/SOURCES.txt
+task_4.egg-info/dependency_links.txt
+task_4.egg-info/entry_points.txt
+task_4.egg-info/requires.txt
+task_4.egg-info/top_level.txt
+task_4.egg-info/zip-safe

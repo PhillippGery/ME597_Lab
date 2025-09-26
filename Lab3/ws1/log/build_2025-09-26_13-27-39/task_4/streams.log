@@ -1,0 +1,20 @@
+[0.897s] Invoking command in '/home/me597/me597/Lab3/ws1/build/task_4': PYTHONPATH=/home/me597/me597/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[1.269s] running develop
+[1.270s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.270s]   warnings.warn(
+[1.526s] running egg_info
+[1.526s] writing task_4.egg-info/PKG-INFO
+[1.527s] writing dependency_links to task_4.egg-info/dependency_links.txt
+[1.529s] writing entry points to task_4.egg-info/entry_points.txt
+[1.529s] writing requirements to task_4.egg-info/requires.txt
+[1.529s] writing top-level names to task_4.egg-info/top_level.txt
+[1.530s] reading manifest file 'task_4.egg-info/SOURCES.txt'
+[1.531s] writing manifest file 'task_4.egg-info/SOURCES.txt'
+[1.534s] running build_ext
+[1.534s] Creating /home/me597/me597/Lab3/ws1/install/task_4/lib/python3.10/site-packages/task-4.egg-link (link to .)
+[1.535s] 
+[1.535s] Installed /home/me597/me597/Lab3/ws1/build/task_4
+[1.535s] running symlink_data
+[1.535s] creating /home/me597/me597/Lab3/ws1/install/task_4/share/task_4/launch
+[1.535s] symbolically linking /home/me597/me597/Lab3/ws1/build/task_4/launch/gen_sync_map_launch.py -> /home/me597/me597/Lab3/ws1/install/task_4/share/task_4/launch
+[1.571s] Invoked command in '/home/me597/me597/Lab3/ws1/build/task_4' returned '0': PYTHONPATH=/home/me597/me597/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab3/ws1/build/task_4/build --no-deps symlink_data
