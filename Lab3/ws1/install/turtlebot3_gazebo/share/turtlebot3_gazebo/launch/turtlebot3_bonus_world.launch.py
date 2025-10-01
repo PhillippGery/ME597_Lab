@@ -1,1 +1,0 @@
-/home/me597/me597/Lab3/ws1/src/sim_ws/src/turtlebot3_gazebo/launch/turtlebot3_bonus_world.launch.py
