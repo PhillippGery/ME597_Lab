@@ -1,0 +1,19 @@
+[1.607s] Invoking command in '/home/me597/me597/Lab3/ws1/build/sim_utils': PYTHONPATH=/home/me597/me597/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab3/ws1/build/sim_utils/build --no-deps symlink_data
+[2.129s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.131s]   warnings.warn(
+[2.132s] running develop
+[2.496s] running egg_info
+[2.496s] writing sim_utils.egg-info/PKG-INFO
+[2.506s] writing dependency_links to sim_utils.egg-info/dependency_links.txt
+[2.506s] writing entry points to sim_utils.egg-info/entry_points.txt
+[2.507s] writing requirements to sim_utils.egg-info/requires.txt
+[2.507s] writing top-level names to sim_utils.egg-info/top_level.txt
+[2.507s] reading manifest file 'sim_utils.egg-info/SOURCES.txt'
+[2.511s] writing manifest file 'sim_utils.egg-info/SOURCES.txt'
+[2.518s] running build_ext
+[2.518s] Creating /home/me597/me597/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages/sim-utils.egg-link (link to .)
+[2.519s] Installing red_ball_controller script to /home/me597/me597/Lab3/ws1/install/sim_utils/lib/sim_utils
+[2.519s] 
+[2.519s] Installed /home/me597/me597/Lab3/ws1/build/sim_utils
+[2.519s] running symlink_data
+[2.618s] Invoked command in '/home/me597/me597/Lab3/ws1/build/sim_utils' returned '0': PYTHONPATH=/home/me597/me597/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/me597/Lab3/ws1/build/sim_utils/build --no-deps symlink_data

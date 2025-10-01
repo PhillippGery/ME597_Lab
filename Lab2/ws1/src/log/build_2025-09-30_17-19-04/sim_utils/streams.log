@@ -1,0 +1,38 @@
+[0.948s] Invoking command in '/home/me597/me597/Lab2/ws1/src/build/sim_utils': PYTHONPATH=/home/me597/me597/Lab2/ws1/src/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/me597/me597/Lab2/ws1/src/build/sim_utils/build
+[1.240s] running develop
+[1.240s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.240s]   warnings.warn(
+[1.438s] Removing /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages/sim-utils.egg-link (link to .)
+[1.469s] Invoked command in '/home/me597/me597/Lab2/ws1/src/build/sim_utils' returned '0': PYTHONPATH=/home/me597/me597/Lab2/ws1/src/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/me597/me597/Lab2/ws1/src/build/sim_utils/build
+[1.470s] Invoking command in '/home/me597/me597/Lab2/ws1/src/sim_ws/src/sim_utils': PYTHONPATH=/home/me597/me597/Lab2/ws1/src/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/sim_utils build --build-base /home/me597/me597/Lab2/ws1/src/build/sim_utils/build install --record /home/me597/me597/Lab2/ws1/src/build/sim_utils/install.log --single-version-externally-managed install_data --force
+[1.740s] running egg_info
+[1.740s] writing ../../../build/sim_utils/sim_utils.egg-info/PKG-INFO
+[1.740s] writing dependency_links to ../../../build/sim_utils/sim_utils.egg-info/dependency_links.txt
+[1.741s] writing entry points to ../../../build/sim_utils/sim_utils.egg-info/entry_points.txt
+[1.741s] writing requirements to ../../../build/sim_utils/sim_utils.egg-info/requires.txt
+[1.741s] writing top-level names to ../../../build/sim_utils/sim_utils.egg-info/top_level.txt
+[1.741s] reading manifest file '../../../build/sim_utils/sim_utils.egg-info/SOURCES.txt'
+[1.743s] writing manifest file '../../../build/sim_utils/sim_utils.egg-info/SOURCES.txt'
+[1.743s] running build
+[1.743s] running build_py
+[1.744s] creating /home/me597/me597/Lab2/ws1/src/build/sim_utils/build
+[1.744s] creating /home/me597/me597/Lab2/ws1/src/build/sim_utils/build/lib
+[1.744s] creating /home/me597/me597/Lab2/ws1/src/build/sim_utils/build/lib/sim_utils
+[1.744s] copying sim_utils/red_ball_control.py -> /home/me597/me597/Lab2/ws1/src/build/sim_utils/build/lib/sim_utils
+[1.746s] copying sim_utils/__init__.py -> /home/me597/me597/Lab2/ws1/src/build/sim_utils/build/lib/sim_utils
+[1.746s] running install
+[1.748s] running install_lib
+[1.748s] creating /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages/sim_utils
+[1.748s] copying /home/me597/me597/Lab2/ws1/src/build/sim_utils/build/lib/sim_utils/red_ball_control.py -> /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages/sim_utils
+[1.748s] copying /home/me597/me597/Lab2/ws1/src/build/sim_utils/build/lib/sim_utils/__init__.py -> /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages/sim_utils
+[1.750s] byte-compiling /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages/sim_utils/red_ball_control.py to red_ball_control.cpython-310.pyc
+[1.751s] byte-compiling /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages/sim_utils/__init__.py to __init__.cpython-310.pyc
+[1.751s] running install_data
+[1.752s] copying resource/sim_utils -> /home/me597/me597/Lab2/ws1/src/install/sim_utils/share/ament_index/resource_index/packages
+[1.752s] copying package.xml -> /home/me597/me597/Lab2/ws1/src/install/sim_utils/share/sim_utils
+[1.752s] running install_egg_info
+[1.754s] Copying ../../../build/sim_utils/sim_utils.egg-info to /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages/sim_utils-0.0.0-py3.10.egg-info
+[1.755s] running install_scripts
+[1.780s] Installing red_ball_controller script to /home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/sim_utils
+[1.780s] writing list of installed files to '/home/me597/me597/Lab2/ws1/src/build/sim_utils/install.log'
+[1.807s] Invoked command in '/home/me597/me597/Lab2/ws1/src/sim_ws/src/sim_utils' returned '0': PYTHONPATH=/home/me597/me597/Lab2/ws1/src/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/src/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/sim_utils build --build-base /home/me597/me597/Lab2/ws1/src/build/sim_utils/build install --record /home/me597/me597/Lab2/ws1/src/build/sim_utils/install.log --single-version-externally-managed install_data --force
