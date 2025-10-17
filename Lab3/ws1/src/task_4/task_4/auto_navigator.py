@@ -29,20 +29,23 @@ class Navigation(RosNode):
         super().__init__(node_name)
 
         self.path = Path()
-        self.goal_pose = PoseStamped()
-        self.ttbot_pose = PoseStamped()
+        self.goal_pose = None
+        self.ttbot_pose = None
         self.start_time = 0.0
         self.get_logger().info("Graph built successfully.")
 
         pkg_share_path = get_package_share_directory('task_4')
-        map_yaml_path = os.path.join(pkg_share_path, 'maps', 'classroom_map.yaml')
+        map_yaml_path = os.path.join(pkg_share_path, 'maps', 'sync_classroom_map.yaml')
         
-        inflation_kernel_size = 5 
+        inflation_kernel_size = 8
         
-        self.kp_angular = 1.5
-        self.kp_linear = 0.3
-        self.lookahead_dist = 0.5
-        self.speed_max = 0.15
+        self.k_rho = 0.5
+        self.k_alpha = 0.6
+        self.k_beta = -0.3 # Must be negative for stability
+
+        self.lookahead_dist = 0.2
+        self.speed_max = 0.31
+        self.rotspeed_max = 1.9
         self.goal_tolerance = 0.2
         self.align_threshold = 0.4
 
@@ -68,9 +71,24 @@ class Navigation(RosNode):
         @param  data    PoseStamped object from RVIZ.
         @return None.
         """
+                  
         self.goal_pose = data
         self.get_logger().info(
-            'goal_pose: {:.4f}, {:.4f}'.format(self.goal_pose.pose.position.x, self.goal_pose.pose.position.y))
+            'New goal received: {:.4f}, {:.4f}'.format(self.goal_pose.pose.position.x, self.goal_pose.pose.position.y))
+        
+        if self.ttbot_pose is None:
+            self.get_logger().warn("Cannot plan path, robot pose is not yet available.")
+            return
+            
+        # Call the path planner to generate a new path
+        self.path = self.a_star_path_planner(self.ttbot_pose, self.goal_pose)
+        
+        # If a valid path was found, publish it and reset the path follower index
+        if self.path.poses:
+            self.path_pub.publish(self.path)
+            self.current_path_idx = 0 
+        else:
+            self.get_logger().warn("A* failed to find a path to the goal.")
 
     def __ttbot_pose_cbk(self, data):
         """! Callback to catch the position of the vehicle.
@@ -81,34 +99,36 @@ class Navigation(RosNode):
         pose_stamped.header = data.header
         pose_stamped.pose = data.pose.pose
         self.ttbot_pose = pose_stamped
-        self.get_logger().info(
-            'ttbot_pose: {:.4f}, {:.4f}'.format(self.ttbot_pose.pose.position.x, self.ttbot_pose.pose.position.y))
+       
 
     def a_star_path_planner(self, start_pose, end_pose):
-        """! A Start path planner.
-        @param  start_pose    PoseStamped object containing the start of the path to be created.
-        @param  end_pose      PoseStamped object containing the end of the path to be created.
-        @return path          Path object containing the sequence of waypoints of the created path.
-        """
+        """! A Start path planner. """
         path = Path()
         self.get_logger().info(
             'A* planner.\n> start: {},\n> end: {}'.format(start_pose.pose.position, end_pose.pose.position))
         self.start_time = self.get_clock().now().nanoseconds*1e-9 #Do not edit this line (required for autograder)
 
-
         start_world = (start_pose.pose.position.x, start_pose.pose.position.y)
         end_world = (end_pose.pose.position.x, end_pose.pose.position.y)
         
-        start_grid = self._world_to_grid(self.map_processor.map, start_world)
-        end_grid = self._world_to_grid(self.map_processor.map, end_world)
+        start_grid = self._world_to_grid(start_world)
+        end_grid = self._world_to_grid(end_world)
 
         start_name = f"{start_grid[0]},{start_grid[1]}"
         end_name = f"{end_grid[0]},{end_grid[1]}"
         
-        # Validate that start/end are valid nodes in our graph
-        if start_name not in self.map_processor.map_graph.g or end_name not in self.map_processor.map_graph.g:
+        # --- DEBUG LOGS ---
+        self.get_logger().info(f"DEBUG: Start World ({start_world[0]:.2f}, {start_world[1]:.2f}) -> Grid {start_grid} -> Name '{start_name}'")
+        self.get_logger().info(f"DEBUG: End World   ({end_world[0]:.2f}, {end_world[1]:.2f}) -> Grid {end_grid} -> Name '{end_name}'")
+        
+        is_start_valid = start_name in self.map_processor.map_graph.g
+        is_end_valid = end_name in self.map_processor.map_graph.g
+        
+        self.get_logger().info(f"DEBUG: Is start name '{start_name}' in graph? {is_start_valid}")
+        self.get_logger().info(f"DEBUG: Is end name '{end_name}' in graph? {is_end_valid}")
+
+        if not is_start_valid or not is_end_valid:
             self.get_logger().error("Start or end pose is inside an obstacle or out of bounds.")
-            # Publish empty path and return
             self.astarTime = Float32()
             self.astarTime.data = float(self.get_clock().now().nanoseconds*1e-9-self.start_time)
             self.calc_time_pub.publish(self.astarTime)
@@ -117,18 +137,21 @@ class Navigation(RosNode):
         start_node = self.map_processor.map_graph.g[start_name]
         end_node = self.map_processor.map_graph.g[end_name]
         
-        # 2. Run the A* solver
         astar_solver = AStar(self.map_processor.map_graph)
+        
+        for name in astar_solver.h.keys():
+            node_grid = tuple(map(int, name.split(',')))
+            astar_solver.h[name] = math.sqrt((end_grid[0] - node_grid[0])**2 + (end_grid[1] - node_grid[1])**2)
+        
         path_names, path_dist = astar_solver.solve(start_node, end_node)
         
-        # 3. Convert the grid path back to a world path (Path message)
         path.header.stamp = self.get_clock().now().to_msg()
         path.header.frame_id = 'map'
         if path_names:
             self.get_logger().info(f"A* found a path of length {len(path_names)}")
             for name in path_names:
                 grid_coords = tuple(map(int, name.split(',')))
-                world_coords = self._grid_to_world(self.map_processor.map, grid_coords)
+                world_coords = self._grid_to_world(grid_coords)
                 
                 pose = PoseStamped()
                 pose.header = path.header
@@ -138,13 +161,11 @@ class Navigation(RosNode):
                 path.poses.append(pose)
         else:
             self.get_logger().warn("A* failed to find a path.")
-            # The template's dummy path is removed, as we return a proper path here.
 
-
-        # Do not edit below (required for autograder)
         self.astarTime = Float32()
         self.astarTime.data = float(self.get_clock().now().nanoseconds*1e-9-self.start_time)
         self.calc_time_pub.publish(self.astarTime)
+        self.get_logger().info(f"A* planning time: {self.astarTime.data:.4f} seconds")
         
         return path
 
@@ -186,9 +207,7 @@ class Navigation(RosNode):
         @return path                   Path object containing the sequence of waypoints of the created path.
         """
         # Calculate distance and angle to the target waypoint
-        k_rho = 0.3
-        k_alpha = 0.8
-        k_beta = -0.3 # Must be negative for stability
+        
 
         # 1. Get robot's current state (x_R, y_R, theta_R)
         robot_x = vehicle_pose.pose.position.x
@@ -228,8 +247,8 @@ class Navigation(RosNode):
         # omega = k_alpha * alpha + k_beta * beta
         
         # We cap the linear speed to the max speed defined in __init__
-        speed = min(k_rho * rho, self.speed_max) 
-        heading = k_alpha * alpha + k_beta * beta
+        speed = min(self.k_rho * rho, self.speed_max) 
+        heading = min(self.k_alpha * alpha + self.k_beta * beta, self.rotspeed_max)
             
         return speed, heading
 
@@ -247,7 +266,7 @@ class Navigation(RosNode):
     def run_loop(self):
         """! Main loop of the node, called by a timer. """
         # Wait until we have a robot pose and a path to follow
-        if self.ttbot_pose is None or not self.path.poses or self.goal_pose is None:
+        if self.ttbot_pose is None or self.goal_pose is None or not self.path.poses:
             return
             
         # Check if we have reached the final goal
@@ -260,7 +279,7 @@ class Navigation(RosNode):
             self.get_logger().info("Goal reached!")
             self.move_ttbot(0.0, 0.0) # Stop the robot
             self.path = Path()       # Clear the path
-            self.goal_pose = None      # Clear the goal
+            self.goal_pose = None      # Clear the goal, making the robot wait for a new one
             return
         
         # Find the next waypoint on the path to follow
@@ -271,22 +290,36 @@ class Navigation(RosNode):
         speed, heading = self.path_follower(self.ttbot_pose, current_goal)
         self.move_ttbot(speed, heading)
 
-    def _world_to_grid(self, map_info, world_pos):
+    def _world_to_grid(self, world_pos):
         """ Converts world coordinates (meters) to grid cell coordinates. """
+        map_info = self.map_processor.map
         origin_x = map_info.origin[0]
         origin_y = map_info.origin[1]
         resolution = map_info.resolution
+
+        # This will print only the first time the function is called
+        self.get_logger().info(f"--- MAP INFO (from _world_to_grid) ---", once=True)
+        self.get_logger().info(f"Resolution: {resolution}", once=True)
+        self.get_logger().info(f"Origin (x,y): ({origin_x}, {origin_y})", once=True)
+        self.get_logger().info(f"Height: {map_info.height}", once=True)
+        
+        # Simple, direct conversion formula
         grid_j = int((world_pos[0] - origin_x) / resolution)
         grid_i = int((world_pos[1] - origin_y) / resolution)
+        
         return (grid_i, grid_j)
 
-    def _grid_to_world(self, map_info, grid_pos):
+    def _grid_to_world(self, grid_pos):
         """ Converts grid cell coordinates back to world coordinates (meters). """
+        map_info = self.map_processor.map
         origin_x = map_info.origin[0]
         origin_y = map_info.origin[1]
         resolution = map_info.resolution
+        
+        # Simple, direct conversion formula (centered in the cell)
         world_x = (grid_pos[1] * resolution) + origin_x + resolution / 2.0
         world_y = (grid_pos[0] * resolution) + origin_y + resolution / 2.0
+        
         return (world_x, world_y)
 
 

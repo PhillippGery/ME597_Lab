@@ -123,12 +123,6 @@ class AStar():
         self.dist = {name:np.inf for name,node in in_tree.g.items()}
         self.h = {name:0 for name,node in in_tree.g.items()}
         
-        for name,node in in_tree.g.items():
-            start = tuple(map(int, name.split(',')))
-            end = tuple(map(int, self.in_tree.end.split(',')))
-            self.h[name] = np.sqrt((end[0]-start[0])**2 + (end[1]-start[1])**2)
-        
-        self.via = {name:0 for name,node in in_tree.g.items()}
         self.via = {name: None for name in in_tree.g}
         for __,node in in_tree.g.items():
             self.q.push(node)
@@ -323,6 +317,15 @@ class Map():
         # Load the image and convert to a numpy array
         map_image = Image.open(self.image_file_name)
         self.image_array = np.array(map_image)
+        print(f"--- MAP DEBUG: Loaded image '{self.image_file_name}' with shape (height, width): {self.image_array.shape} ---")
+        self.height = self.image_array.shape[0]
         
-        # Binarize the map: 1 for obstacles, 0 for free space
-        self.image_array = (self.image_array < (self.occupied_thresh * 255)).astype(int)
+        obstacle_mask = self.image_array < (self.occupied_thresh * 255)
+        
+        # Start with a grid of all free space (0)
+        grid = np.zeros_like(self.image_array, dtype=int)
+        
+        # Mark only the definitively occupied/unknown pixels as 1
+        grid[obstacle_mask] = 1
+        
+        self.image_array = grid
