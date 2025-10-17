@@ -1,0 +1,19 @@
+[2.113s] Invoking command in '/home/me597/ME597_Lab/Lab3/ws1/build/task_4': PYTHONPATH=/home/me597/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[2.863s] running develop
+[2.868s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.868s]   warnings.warn(
+[3.286s] running egg_info
+[3.286s] writing task_4.egg-info/PKG-INFO
+[3.286s] writing dependency_links to task_4.egg-info/dependency_links.txt
+[3.286s] writing entry points to task_4.egg-info/entry_points.txt
+[3.286s] writing requirements to task_4.egg-info/requires.txt
+[3.286s] writing top-level names to task_4.egg-info/top_level.txt
+[3.302s] reading manifest file 'task_4.egg-info/SOURCES.txt'
+[3.302s] writing manifest file 'task_4.egg-info/SOURCES.txt'
+[3.307s] running build_ext
+[3.307s] Creating /home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages/task-4.egg-link (link to .)
+[3.312s] Installing auto_navigator script to /home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+[3.312s] 
+[3.312s] Installed /home/me597/ME597_Lab/Lab3/ws1/build/task_4
+[3.312s] running symlink_data
+[3.383s] Invoked command in '/home/me597/ME597_Lab/Lab3/ws1/build/task_4' returned '0': PYTHONPATH=/home/me597/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data

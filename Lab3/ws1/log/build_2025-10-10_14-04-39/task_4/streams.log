@@ -1,0 +1,20 @@
+[0.672s] Invoking command in '/home/me597/ME597_Lab/Lab3/ws1/build/task_4': PYTHONPATH=/home/me597/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[0.935s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.936s]   warnings.warn(
+[0.936s] running develop
+[1.105s] running egg_info
+[1.105s] writing task_4.egg-info/PKG-INFO
+[1.105s] writing dependency_links to task_4.egg-info/dependency_links.txt
+[1.107s] writing entry points to task_4.egg-info/entry_points.txt
+[1.107s] writing requirements to task_4.egg-info/requires.txt
+[1.107s] writing top-level names to task_4.egg-info/top_level.txt
+[1.108s] reading manifest file 'task_4.egg-info/SOURCES.txt'
+[1.108s] writing manifest file 'task_4.egg-info/SOURCES.txt'
+[1.109s] running build_ext
+[1.109s] Creating /home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages/task-4.egg-link (link to .)
+[1.110s] Installing auto_navigator script to /home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+[1.110s] 
+[1.110s] Installed /home/me597/ME597_Lab/Lab3/ws1/build/task_4
+[1.110s] running symlink_data
+[1.111s] symbolically linking /home/me597/ME597_Lab/Lab3/ws1/build/task_4/launch/auto_navigator.launch.py -> /home/me597/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+[1.135s] Invoked command in '/home/me597/ME597_Lab/Lab3/ws1/build/task_4' returned '0': PYTHONPATH=/home/me597/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/me597/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
