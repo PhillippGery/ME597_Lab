@@ -43,13 +43,23 @@ class Navigation(RosNode):
         self.kp_angular = 2.0747    # Proportional gain for angular velocity
         self.ki_angular = 0.1692    # Integral gain for angular velocity
         self.kd_angular = -0.02   # Derivative gain for angular velocity
-        self.k_beta = -0.0001        # Gain for final orientation correction
+        self.k_beta = -0.1        # Gain for final orientation correction
 
-        self.lookahead_dist = 0.35
+        self.yaw_tolerance = 0.1  # Radians (~5.7 degrees)
+        self.kp_final_yaw = 0.8   # Proportional gain for final yaw correction
+
+        self.min_lookahead_dist = 0.2  # The smallest the lookahead distance can be
+        self.lookahead_ratio = 0.5     # How much the lookahead increases with speed
+
+        # self.lookahead_dist = 0.35
         self.speed_max = 0.31
         self.rotspeed_max = 1.9
         self.goal_tolerance = 0.2
         self.align_threshold = 0.4
+
+        self.last_commanded_speed = 0.0
+        self.use_dynamic_lookahead = True
+        self.use_line_of_sight_check = True
 
         self.get_logger().info(f"Loading map from '{map_yaml_path}' and building graph...")
         self.map_processor = MapProcessor(map_yaml_path)
@@ -182,20 +192,54 @@ class Navigation(RosNode):
                 min_dist = dist
                 closest_idx = i
 
-        # Start searching from the closest point and find the first point
-        # that is beyond the lookahead distance
+        if self.use_dynamic_lookahead:
+            lookahead_dist = self.last_commanded_speed * self.lookahead_ratio + self.min_lookahead_dist
+        else:
+            lookahead_dist = self.min_lookahead_dist # Fallback to a minimum value if disabled
+
         lookahead_idx = closest_idx
         for i in range(closest_idx, len(path.poses)):
             dx = path.poses[i].pose.position.x - vehicle_pose.pose.position.x
             dy = path.poses[i].pose.position.y - vehicle_pose.pose.position.y
             dist = math.sqrt(dx**2 + dy**2)
-            if dist > self.lookahead_dist:
+            if dist > lookahead_dist:
                 lookahead_idx = i
                 return lookahead_idx
         
-        # If no point is far enough, target the last point
         return len(path.poses) - 1
 
+  
+    def _is_path_clear(self, start_grid, end_grid):
+        """!
+        Checks if a straight line path between two grid points is clear of obstacles.
+        Uses Bresenham's line algorithm.
+        """
+        x0, y0 = start_grid[1], start_grid[0]
+        x1, y1 = end_grid[1], end_grid[0]
+
+        dx = abs(x1 - x0)
+        dy = -abs(y1 - y0)
+        sx = 1 if x0 < x1 else -1
+        sy = 1 if y0 < y1 else -1
+        err = dx + dy
+
+        map_array = self.map_processor.inf_map_img_array
+        h, w = map_array.shape
+
+        while True:
+            # Check if current point is out of bounds or an obstacle
+            if not (0 <= y0 < h and 0 <= x0 < w) or map_array[y0, x0] == 1:
+                return False
+            if x0 == x1 and y0 == y1:
+                break
+            e2 = 2 * err
+            if e2 >= dy:
+                err += dy
+                x0 += sx
+            if e2 <= dx:
+                err += dx
+                y0 += sy
+        return True
 
     def path_follower(self, vehicle_pose, current_goal_pose):
         """! Path follower.
@@ -263,15 +307,22 @@ class Navigation(RosNode):
         self.previous_error_angular = alpha
 
         # 5. Calculate final speed and heading
-        speed = min(self.k_rho * rho, self.speed_max)
+        if  abs(alpha) > 1.57:  # If the angle to the goal is greater than 90 degrees, do not move forward
+            speed = 0.0
+        else:
+            speed = min(self.k_rho * rho, self.speed_max)
+
         
         # Combine PID terms with the final orientation correction (beta)
         heading = p_term + i_term + d_term + self.k_beta * beta
+        self.get_logger().info(f"heading speed before clipping: {heading:.3f} rad/s")
+
+        self.get_logger().info(f"Heading PID terms -> P: {p_term:.3f}, I: {i_term:.3f}, D: {d_term:.3f}, Beta: {self.k_beta * beta:.3f}")
         
         
         heading = np.clip(heading, -self.rotspeed_max, self.rotspeed_max)
 
-        self.get_logger().info(f"Controller output -> Speed: {speed:.3f} m/s, Heading: {heading:.3f} rad/s")
+        #self.get_logger().info(f"Controller output -> Speed: {speed:.3f} m/s, Heading: {heading:.3f} rad/s")
             
         return speed, heading
 
@@ -288,30 +339,77 @@ class Navigation(RosNode):
 
     def run_loop(self):
         """! Main loop of the node, called by a timer. """
-        # Wait until we have a robot pose and a path to follow
         if self.ttbot_pose is None or self.goal_pose is None or not self.path.poses:
             return
             
-        # Check if we have reached the final goal
         final_goal_pose = self.path.poses[-1]
         dx = final_goal_pose.pose.position.x - self.ttbot_pose.pose.position.x
         dy = final_goal_pose.pose.position.y - self.ttbot_pose.pose.position.y
         dist_to_final_goal = math.sqrt(dx**2 + dy**2)
         
+        # Check if we have reached the final goal position
         if dist_to_final_goal < self.goal_tolerance:
-            self.get_logger().info("Goal reached!")
-            self.move_ttbot(0.0, 0.0) # Stop the robot
-            self.path = Path()       # Clear the path
-            self.goal_pose = None      # Clear the goal, making the robot wait for a new one
-            return
+            # Position is correct. Now check for final orientation.
+            
+            # Get the desired goal orientation (yaw)
+            goal_q = self.goal_pose.pose.orientation
+            goal_siny_cosp = 2 * (goal_q.w * goal_q.z + goal_q.x * goal_q.y)
+            goal_cosy_cosp = 1 - 2 * (goal_q.y * goal_q.y + goal_q.z * goal_q.z)
+            goal_yaw = math.atan2(goal_siny_cosp, goal_cosy_cosp)
+
+            # Get the robot's current orientation (yaw)
+            robot_q = self.ttbot_pose.pose.orientation
+            robot_siny_cosp = 2 * (robot_q.w * robot_q.z + robot_q.x * robot_q.y)
+            robot_cosy_cosp = 1 - 2 * (robot_q.y * robot_q.y + robot_q.z * robot_q.z)
+            robot_yaw = math.atan2(robot_siny_cosp, robot_cosy_cosp)
+            
+            # Calculate the orientation error
+            yaw_error = goal_yaw - robot_yaw
+            
+            # Normalize the error to be between -pi and pi
+            if yaw_error > math.pi:
+                yaw_error -= 2 * math.pi
+            elif yaw_error < -math.pi:
+                yaw_error += 2 * math.pi
+
+            # Check if the orientation is also within tolerance
+            if abs(yaw_error) < self.yaw_tolerance:
+                # GOAL REACHED: Position and orientation are correct. Stop everything.
+                self.get_logger().info("Goal reached!")
+                self.move_ttbot(0.0, 0.0)
+                self.path = Path()
+                self.goal_pose = None
+                self.last_commanded_speed = 0.0
+                return
+            else:
+                # ALIGNING: Position is correct, so stop moving and only rotate.
+                speed = 0.0
+                heading = self.kp_final_yaw * yaw_error
+                # Clamp rotation speed to max value
+                heading = np.clip(heading, -self.rotspeed_max, self.rotspeed_max)
+                self.move_ttbot(speed, heading)
+                # Skip the rest of the loop while we are aligning
+                return
         
-        # Find the next waypoint on the path to follow
-        idx = self.get_path_idx(self.path, self.ttbot_pose)
-        current_goal = self.path.poses[idx]
+        current_goal = None
+
+        if self.use_line_of_sight_check:
+            start_grid = self._world_to_grid((self.ttbot_pose.pose.position.x, self.ttbot_pose.pose.position.y))
+            end_grid = self._world_to_grid((final_goal_pose.pose.position.x, final_goal_pose.pose.position.y))
+            if self._is_path_clear(start_grid, end_grid):
+                current_goal = final_goal_pose
+                self.get_logger().info("Path is clear. Taking a shortcut to the final goal.", throttle_duration_sec=2)
+
+        # If no clear path, use the standard pure pursuit logic
+        if current_goal is None:
+            idx = self.get_path_idx(self.path, self.ttbot_pose)
+            current_goal = self.path.poses[idx]
         
         # Calculate and publish robot commands
         speed, heading = self.path_follower(self.ttbot_pose, current_goal)
         self.move_ttbot(speed, heading)
+
+        self.last_commanded_speed = speed
 
 
 
