@@ -183,6 +183,37 @@ class AStar():
         # path is reverse, so flip it 
         return path[::-1], dist
     
+class Map():
+
+    def __init__(self, name):
+        with open(name, 'r') as f:
+            self.map_yaml = yaml.safe_load(f)
+
+        map_directory = os.path.dirname(name)
+        image_filename = self.map_yaml['image']
+        self.image_file_name = os.path.join(map_directory, image_filename)
+        
+        self.resolution = self.map_yaml['resolution']
+        self.origin = self.map_yaml['origin']
+        self.negate = self.map_yaml['negate']
+        self.occupied_thresh = self.map_yaml['occupied_thresh']
+        self.free_thresh = self.map_yaml['free_thresh']
+        
+        map_image = Image.open(self.image_file_name)
+        raw_image_array = np.array(map_image)
+        
+        self.height = raw_image_array.shape[0]
+
+        free_pixel_threshold = int(255 * (1 - self.free_thresh))
+
+        # Start with a grid where everything is an obstacle (value = 1).
+        grid = np.ones_like(raw_image_array, dtype=int)
+
+        grid[raw_image_array > free_pixel_threshold] = 0
+        
+        self.image_array = grid
+
+
 
 class MapProcessor():
     def __init__(self,name):
@@ -311,67 +342,5 @@ class MapProcessor():
             path_tuple_list.append(tup)
             path_array[tup] = 0.5
         return path_array
-    
-
-class Map():
-    def __init__(self, name):
-        with open(name, 'r') as f:
-            self.map_yaml = yaml.safe_load(f)
-
-        map_directory = os.path.dirname(name)
-        image_filename = self.map_yaml['image']
-        self.image_file_name = os.path.join(map_directory, image_filename)
-        
-        self.resolution = self.map_yaml['resolution']
-        self.origin = self.map_yaml['origin']
-        self.negate = self.map_yaml['negate']
-        self.occupied_thresh = self.map_yaml['occupied_thresh']
-        self.free_thresh = self.map_yaml['free_thresh']
-        
-        map_image = Image.open(self.image_file_name)
-        raw_image_array = np.array(map_image)
-        
-        self.height = raw_image_array.shape[0]
-
-        free_pixel_threshold = int(255 * (1 - self.free_thresh))
-
-        # Start with a grid where everything is an obstacle (value = 1).
-        grid = np.ones_like(raw_image_array, dtype=int)
-
-        grid[raw_image_array > free_pixel_threshold] = 0
-        
-        self.image_array = grid
 
 
-# if __name__ == '__main__':
-    # === ROBUST PATH FIX START ===
-    # Get the absolute path of the directory where the AStar.py script is located
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    # Construct the full, absolute path to the YAML file
-    # This goes up one level from the script's dir, then into the 'maps' folder
-    map_file_path = os.path.join(os.path.dirname(script_dir), 'maps', 'sync_classroom_map.yaml')
-    # === ROBUST PATH FIX END ===
-
-    # Now, the rest of your debugging code will work correctly
-    processor = MapProcessor(map_file_path)
-
-    print(f"Successfully loaded map from: {map_file_path}")
-
-    # --- The rest of your debugging code from the previous step ---
-    print("\nDisplaying initial map from Map class...")
-    print("Obstacles should appear as BLACK pixels.")
-    processor.visualize_map_array(processor.map.image_array, title="1. Initial Loaded Map")
-
-    unique_vals = np.unique(processor.map.image_array)
-    print(f"Unique values in initial map array: {unique_vals}")
-    if len(unique_vals) < 2:
-        print("!! ERROR: Obstacles are not being detected correctly in the Map class.")
-
-    print("\nInflating map...")
-    kernel = processor.rect_kernel(size=5, value=1)
-    processor.inflate_map(kernel)
-
-    print("Displaying inflated map...")
-    print("Obstacles (walls) should be thicker now.")
-    processor.visualize_map_array(processor.inf_map_img_array, title="2. Inflated Map")
