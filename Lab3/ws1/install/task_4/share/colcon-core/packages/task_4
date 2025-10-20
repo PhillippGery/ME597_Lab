@@ -1,1 +1,1 @@
-geometry_msgs:nav_msgs:rclpy:slam_toolbox:std_msgs:tf_transformations:turtlebot4_navigation:turtlebot4_viz
+setuptools

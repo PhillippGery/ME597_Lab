@@ -1,0 +1,40 @@
+[1.087s] Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[1.399s] running develop
+[1.401s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.401s]   warnings.warn(
+[1.589s] running egg_info
+[1.590s] creating task_4.egg-info
+[1.591s] writing task_4.egg-info/PKG-INFO
+[1.591s] writing dependency_links to task_4.egg-info/dependency_links.txt
+[1.591s] writing entry points to task_4.egg-info/entry_points.txt
+[1.591s] writing requirements to task_4.egg-info/requires.txt
+[1.591s] writing top-level names to task_4.egg-info/top_level.txt
+[1.591s] writing manifest file 'task_4.egg-info/SOURCES.txt'
+[1.593s] reading manifest file 'task_4.egg-info/SOURCES.txt'
+[1.593s] writing manifest file 'task_4.egg-info/SOURCES.txt'
+[1.594s] running build_ext
+[1.594s] Creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages/task-4.egg-link (link to .)
+[1.595s] Installing auto_navigator script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+[1.596s] Installing auto_navigator2 script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+[1.596s] 
+[1.596s] Installed /home/Gery/ME597_Lab/Lab3/ws1/build/task_4
+[1.596s] running symlink_data
+[1.596s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index
+[1.596s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index
+[1.596s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index/packages
+[1.598s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/resource/task_4 -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index/packages
+[1.598s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/package.xml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4
+[1.598s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+[1.598s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/auto_navigator.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+[1.598s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/gen_sync_map_launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/view_robot.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/turtlebot4_navigator.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+[1.599s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/sync_classroom_map.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/classroom_map.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/sync_classroom_map.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/map_name.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/navigation_astar_f24.ipynb -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/map_name.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.599s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/classroom_map.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+[1.625s] Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4' returned '0': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data

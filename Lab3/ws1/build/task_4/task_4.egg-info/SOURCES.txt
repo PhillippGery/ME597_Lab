@@ -3,6 +3,8 @@ setup.cfg
 setup.py
 launch/auto_navigator.launch.py
 launch/gen_sync_map_launch.py
+launch/turtlebot4_navigator.launch.py
+launch/view_robot.launch.py
 maps/classroom_map.pgm
 maps/classroom_map.yaml
 maps/map_name.pgm

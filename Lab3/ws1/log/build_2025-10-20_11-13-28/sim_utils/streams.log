@@ -1,0 +1,26 @@
+[0.837s] Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data
+[1.149s] running develop
+[1.150s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.150s]   warnings.warn(
+[1.358s] running egg_info
+[1.358s] creating sim_utils.egg-info
+[1.359s] writing sim_utils.egg-info/PKG-INFO
+[1.360s] writing dependency_links to sim_utils.egg-info/dependency_links.txt
+[1.360s] writing entry points to sim_utils.egg-info/entry_points.txt
+[1.360s] writing requirements to sim_utils.egg-info/requires.txt
+[1.360s] writing top-level names to sim_utils.egg-info/top_level.txt
+[1.360s] writing manifest file 'sim_utils.egg-info/SOURCES.txt'
+[1.363s] reading manifest file 'sim_utils.egg-info/SOURCES.txt'
+[1.363s] writing manifest file 'sim_utils.egg-info/SOURCES.txt'
+[1.367s] running build_ext
+[1.367s] Creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages/sim-utils.egg-link (link to .)
+[1.367s] Installing red_ball_controller script to /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/sim_utils
+[1.367s] 
+[1.367s] Installed /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils
+[1.367s] running symlink_data
+[1.367s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index
+[1.367s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index/resource_index
+[1.367s] creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index/resource_index/packages
+[1.367s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/resource/sim_utils -> /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index/resource_index/packages
+[1.367s] symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/package.xml -> /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils
+[1.401s] Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils' returned '0': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data
