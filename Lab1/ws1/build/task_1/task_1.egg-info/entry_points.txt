@@ -1,0 +1,4 @@
+[console_scripts]
+listener = task_1.listener:main
+talker = task_1.talker:main
+

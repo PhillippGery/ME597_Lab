@@ -1,0 +1,1 @@
+/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.bash

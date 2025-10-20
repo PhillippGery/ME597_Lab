@@ -1,0 +1,42 @@
+[0.930s] Invoking command in '/home/me597/me597/Lab2/ws1/src/task_3': PYTHONPATH=/home/me597/me597/Lab2/ws1/src/build/task_3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_3 build --build-base /home/me597/me597/Lab2/ws1/src/build/task_3/build install --record /home/me597/me597/Lab2/ws1/src/build/task_3/install.log --single-version-externally-managed install_data
+[1.201s] running egg_info
+[1.204s] creating ../build/task_3/task_3.egg-info
+[1.204s] writing ../build/task_3/task_3.egg-info/PKG-INFO
+[1.206s] writing dependency_links to ../build/task_3/task_3.egg-info/dependency_links.txt
+[1.206s] writing entry points to ../build/task_3/task_3.egg-info/entry_points.txt
+[1.206s] writing requirements to ../build/task_3/task_3.egg-info/requires.txt
+[1.206s] writing top-level names to ../build/task_3/task_3.egg-info/top_level.txt
+[1.207s] writing manifest file '../build/task_3/task_3.egg-info/SOURCES.txt'
+[1.207s] reading manifest file '../build/task_3/task_3.egg-info/SOURCES.txt'
+[1.207s] writing manifest file '../build/task_3/task_3.egg-info/SOURCES.txt'
+[1.207s] running build
+[1.207s] running build_py
+[1.207s] creating /home/me597/me597/Lab2/ws1/src/build/task_3/build
+[1.207s] creating /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib
+[1.207s] creating /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib/task_3
+[1.207s] copying task_3/pid_controller copy.py -> /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib/task_3
+[1.207s] copying task_3/__init__.py -> /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib/task_3
+[1.207s] copying task_3/pid_controller.py -> /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib/task_3
+[1.208s] running install
+[1.208s] running install_lib
+[1.209s] creating /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3
+[1.210s] copying /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib/task_3/pid_controller copy.py -> /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3
+[1.210s] copying /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib/task_3/__init__.py -> /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3
+[1.210s] copying /home/me597/me597/Lab2/ws1/src/build/task_3/build/lib/task_3/pid_controller.py -> /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3
+[1.212s] byte-compiling /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3/pid_controller copy.py to pid_controller copy.cpython-310.pyc
+[1.212s] byte-compiling /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3/__init__.py to __init__.cpython-310.pyc
+[1.212s] byte-compiling /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3/pid_controller.py to pid_controller.cpython-310.pyc
+[1.213s] running install_data
+[1.213s] creating /home/me597/me597/Lab2/ws1/src/install/task_3/share/ament_index
+[1.214s] creating /home/me597/me597/Lab2/ws1/src/install/task_3/share/ament_index/resource_index
+[1.214s] creating /home/me597/me597/Lab2/ws1/src/install/task_3/share/ament_index/resource_index/packages
+[1.214s] copying resource/task_3 -> /home/me597/me597/Lab2/ws1/src/install/task_3/share/ament_index/resource_index/packages
+[1.214s] copying package.xml -> /home/me597/me597/Lab2/ws1/src/install/task_3/share/task_3
+[1.215s] creating /home/me597/me597/Lab2/ws1/src/install/task_3/share/task_3/launch
+[1.215s] copying launch/pid_control_launch.py -> /home/me597/me597/Lab2/ws1/src/install/task_3/share/task_3/launch
+[1.215s] running install_egg_info
+[1.217s] Copying ../build/task_3/task_3.egg-info to /home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages/task_3-0.0.0-py3.10.egg-info
+[1.218s] running install_scripts
+[1.242s] Installing pid_speed_controller script to /home/me597/me597/Lab2/ws1/src/install/task_3/lib/task_3
+[1.242s] writing list of installed files to '/home/me597/me597/Lab2/ws1/src/build/task_3/install.log'
+[1.271s] Invoked command in '/home/me597/me597/Lab2/ws1/src/task_3' returned '0': PYTHONPATH=/home/me597/me597/Lab2/ws1/src/build/task_3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/me597/me597/Lab2/ws1/src/install/task_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/task_3 build --build-base /home/me597/me597/Lab2/ws1/src/build/task_3/build install --record /home/me597/me597/Lab2/ws1/src/build/task_3/install.log --single-version-externally-managed install_data

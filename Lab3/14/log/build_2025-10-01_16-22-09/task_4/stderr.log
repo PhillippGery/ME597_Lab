@@ -1,0 +1,3 @@
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+error: [Errno 17] File exists: '/home/me597/ME597_Lab/Lab3/ws1/build/task_4/resource/task_4' -> '/home/me597/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index/packages/task_4'

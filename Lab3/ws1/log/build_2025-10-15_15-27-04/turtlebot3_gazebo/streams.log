@@ -1,0 +1,78 @@
+[1.281s] Invoking command in '/home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/ME597_Lab/Lab3/ws1/install/task_4:/home/me597/ME597_Lab/Lab3/ws1/install/sim_utils:/home/me597/ME597_Lab/Lab3/ws1/src/sim_ws/install/sim_utils:/opt/ros/humble /usr/bin/cmake --build /home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo -- -j4 -l4
+[1.507s] Invoked command in '/home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/ME597_Lab/Lab3/ws1/install/task_4:/home/me597/ME597_Lab/Lab3/ws1/install/sim_utils:/home/me597/ME597_Lab/Lab3/ws1/src/sim_ws/install/sim_utils:/opt/ros/humble /usr/bin/cmake --build /home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo -- -j4 -l4
+[1.777s] Invoking command in '/home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/ME597_Lab/Lab3/ws1/install/task_4:/home/me597/ME597_Lab/Lab3/ws1/install/sim_utils:/home/me597/ME597_Lab/Lab3/ws1/src/sim_ws/install/sim_utils:/opt/ros/humble /usr/bin/cmake --install /home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo
+[1.826s] -- Install configuration: ""
+[1.830s] -- Execute custom install script
+[1.837s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/amcl.launch.py
+[1.838s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/map_loader.launch.py
+[1.838s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/mapper.launch.py
+[1.838s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/navigator.launch.py
+[1.838s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[1.839s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_cricketball.launch.py
+[1.842s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[1.842s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/task_6.launch.py
+[1.842s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_bonus_world.launch.py
+[1.843s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[1.843s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house_norviz.launch.py
+[1.843s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/blue_object/model.config
+[1.843s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/blue_object/model.rsdf
+[1.843s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/blue_object/model.sdf
+[1.843s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.config
+[1.843s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.rsdf
+[1.859s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.sdf
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/green_object/model.config
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/green_object/model.rsdf
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/green_object/model.sdf
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/red_object/model.config
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/red_object/model.rsdf
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/red_object/model.sdf
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/meshes/trash_can.dae
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/model.config
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/model.sdf
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[1.860s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[1.861s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[1.861s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[1.861s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[1.861s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[1.861s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[1.861s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[1.868s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[1.870s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[1.871s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[1.872s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/Bonus
+[1.872s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[1.872s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/house_closed.world
+[1.872s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[1.872s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/map.pgm
+[1.872s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/map.yaml
+[1.872s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/sync_classroom_map.pgm
+[1.880s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/sync_classroom_map.yaml
+[1.882s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/amcl.yaml
+[1.882s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/map_server.yaml
+[1.882s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/mapper_params_online_async.yaml
+[1.882s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[1.882s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[1.882s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[1.883s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[1.886s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[1.886s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[1.889s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[1.889s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[1.889s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[1.889s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[1.889s] -- Symlinking: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[1.965s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[1.965s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.965s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.965s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[1.965s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[1.966s] -- Up-to-date symlink: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[1.966s] -- Up-to-date: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task1
+[1.966s] -- Up-to-date: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2
+[1.966s] -- Up-to-date: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task3
+[1.966s] -- Up-to-date: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/spawn_objects
+[1.966s] -- Up-to-date: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2_bonus
+[1.966s] -- Up-to-date: /home/me597/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/static_obstacles
+[1.974s] Invoked command in '/home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/me597/ME597_Lab/Lab3/ws1/install/task_4:/home/me597/ME597_Lab/Lab3/ws1/install/sim_utils:/home/me597/ME597_Lab/Lab3/ws1/src/sim_ws/install/sim_utils:/opt/ros/humble /usr/bin/cmake --install /home/me597/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo

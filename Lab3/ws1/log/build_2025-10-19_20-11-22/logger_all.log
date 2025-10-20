@@ -1,0 +1,301 @@
+[0.236s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.236s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74a3b3159b10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74a3b3266830>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74a3b3266830>>, mixin_verb=('build',))
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.529s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/Gery/ME597_Lab/Lab3/ws1'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'ignore'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extensions ['colcon_pkg']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'colcon_pkg'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extensions ['colcon_meta']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'colcon_meta'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extensions ['ros']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'ros'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extensions ['cmake', 'python']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'cmake'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'python'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extensions ['python_setup_py']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws) by extension 'python_setup_py'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/build) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/build) ignored
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/install) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/install) ignored
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/log) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/log) ignored
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'ignore_ament_install'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extensions ['colcon_pkg']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'colcon_pkg'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extensions ['colcon_meta']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'colcon_meta'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extensions ['ros']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'ros'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extensions ['cmake', 'python']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'cmake'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'python'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extensions ['python_setup_py']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src) by extension 'python_setup_py'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/build) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/build) ignored
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/install) by extension 'ignore'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/install) ignored
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/log) by extension 'ignore'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/log) ignored
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extension 'ignore'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extension 'ignore_ament_install'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extensions ['colcon_pkg']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extension 'colcon_pkg'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extensions ['colcon_meta']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extension 'colcon_meta'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extensions ['ros']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/sim_utils) by extension 'ros'
+[0.557s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim_ws/src/sim_utils' with type 'ros.ament_python' and name 'sim_utils'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extension 'ignore_ament_install'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extensions ['colcon_pkg']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extension 'colcon_pkg'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extensions ['colcon_meta']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extension 'colcon_meta'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extensions ['ros']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim_ws/src/turtlebot3_gazebo) by extension 'ros'
+[0.560s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim_ws/src/turtlebot3_gazebo' with type 'ros.ament_cmake' and name 'turtlebot3_gazebo'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extension 'ignore_ament_install'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extensions ['colcon_pkg']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extension 'colcon_pkg'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extensions ['colcon_meta']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extension 'colcon_meta'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extensions ['ros']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_4) by extension 'ros'
+[0.562s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task_4' with type 'ros.ament_python' and name 'task_4'
+[0.562s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.562s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.562s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.562s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.562s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.590s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.590s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.591s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.591s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.592s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/Gery/ME597_Lab/Lab3/ws1/install
+[0.594s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 334 installed packages in /opt/ros/humble
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.674s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_args' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_target' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'sim_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.675s] DEBUG:colcon.colcon_core.verb:Building package 'sim_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils', 'merge_install': False, 'path': '/home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/sim_utils', 'symlink_install': True, 'test_result_base': None}
+[0.675s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'cmake_args' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'cmake_target' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'cmake_clean_first' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'cmake_force_configure' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'ament_cmake_args' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'task_4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.676s] DEBUG:colcon.colcon_core.verb:Building package 'task_4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4', 'merge_install': False, 'path': '/home/Gery/ME597_Lab/Lab3/ws1/src/task_4', 'symlink_install': True, 'test_result_base': None}
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.676s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.677s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.677s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.677s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.677s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.677s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.677s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo', 'merge_install': False, 'path': '/home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/turtlebot3_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.677s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.678s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.679s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/sim_utils' with build type 'ament_python'
+[0.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_utils', 'ament_prefix_path')
+[0.681s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/hook/ament_prefix_path.ps1'
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/hook/ament_prefix_path.dsv'
+[0.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/hook/ament_prefix_path.sh'
+[0.684s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.684s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.690s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/Gery/ME597_Lab/Lab3/ws1/src/task_4' with build type 'ament_python'
+[0.691s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_4', 'ament_prefix_path')
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/hook/ament_prefix_path.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/hook/ament_prefix_path.dsv'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/hook/ament_prefix_path.sh'
+[0.693s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.693s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.709s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/turtlebot3_gazebo' with build type 'ament_cmake'
+[0.710s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/turtlebot3_gazebo'
+[0.710s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.710s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.207s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/sim_utils'
+[1.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/turtlebot3_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo
+[2.059s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/Gery/ME597_Lab/Lab3/ws1/src/task_4'
+[2.060s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.061s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data
+[3.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[6.006s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_4', 'pythonpath_develop')
+[6.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/share/task_4/hook/pythonpath_develop.ps1'
+[6.007s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/share/task_4/hook/pythonpath_develop.dsv'
+[6.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/share/task_4/hook/pythonpath_develop.sh'
+[6.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4' returned '0': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[6.016s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4' for CMake module files
+[6.020s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4' for CMake config files
+[6.023s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib'
+[6.023s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/bin'
+[6.023s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/pkgconfig/task_4.pc'
+[6.024s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages'
+[6.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_4', 'pythonpath')
+[6.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/hook/pythonpath.ps1'
+[6.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/hook/pythonpath.dsv'
+[6.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/hook/pythonpath.sh'
+[6.026s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/bin'
+[6.027s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_4)
+[6.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/package.ps1'
+[6.032s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/package.dsv'
+[6.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/package.sh'
+[6.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/package.bash'
+[6.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/package.zsh'
+[6.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/colcon-core/packages/task_4)
+[6.196s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_utils', 'pythonpath_develop')
+[6.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/share/sim_utils/hook/pythonpath_develop.ps1'
+[6.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/share/sim_utils/hook/pythonpath_develop.dsv'
+[6.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils' returned '0': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data
+[6.200s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/share/sim_utils/hook/pythonpath_develop.sh'
+[6.203s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils' for CMake module files
+[6.207s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils' for CMake config files
+[6.212s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib'
+[6.212s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/bin'
+[6.212s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/pkgconfig/sim_utils.pc'
+[6.213s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages'
+[6.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_utils', 'pythonpath')
+[6.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/hook/pythonpath.ps1'
+[6.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/hook/pythonpath.dsv'
+[6.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/hook/pythonpath.sh'
+[6.223s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/bin'
+[6.223s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim_utils)
+[6.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/package.ps1'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/package.dsv'
+[6.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/package.sh'
+[6.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/package.bash'
+[6.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils/package.zsh'
+[6.228s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/colcon-core/packages/sim_utils)
+[8.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/turtlebot3_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo
+[8.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo -- -j4 -l4
+[8.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo -- -j4 -l4
+[8.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo
+[10.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[10.616s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo' for CMake module files
+[10.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo
+[10.619s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo' for CMake config files
+[10.621s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[10.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[10.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[10.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[10.623s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib'
+[10.624s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/bin'
+[10.624s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[10.624s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[10.624s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/bin'
+[10.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[10.629s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[10.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[10.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[10.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[10.633s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[10.748s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[10.748s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo' for CMake module files
+[10.749s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo' for CMake config files
+[10.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[10.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[10.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[10.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[10.757s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib'
+[10.757s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/bin'
+[10.757s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[10.757s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[10.758s] Level 1:colcon.colcon_core.environment:checking '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/bin'
+[10.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[10.760s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[10.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[10.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[10.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[10.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[10.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.778s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.791s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.792s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.792s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.842s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.843s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Gery/ME597_Lab/Lab3/ws1/install/local_setup.ps1'
+[10.845s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/Gery/ME597_Lab/Lab3/ws1/install/_local_setup_util_ps1.py'
+[10.850s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Gery/ME597_Lab/Lab3/ws1/install/setup.ps1'
+[10.852s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Gery/ME597_Lab/Lab3/ws1/install/local_setup.sh'
+[10.853s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/Gery/ME597_Lab/Lab3/ws1/install/_local_setup_util_sh.py'
+[10.853s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Gery/ME597_Lab/Lab3/ws1/install/setup.sh'
+[10.859s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Gery/ME597_Lab/Lab3/ws1/install/local_setup.bash'
+[10.860s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Gery/ME597_Lab/Lab3/ws1/install/setup.bash'
+[10.865s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Gery/ME597_Lab/Lab3/ws1/install/local_setup.zsh'
+[10.865s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Gery/ME597_Lab/Lab3/ws1/install/setup.zsh'

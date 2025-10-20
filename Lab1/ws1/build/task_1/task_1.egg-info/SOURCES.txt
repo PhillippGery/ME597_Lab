@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+launch/pub_sub_launch.py
+resource/task_1
+task_1/__init__.py
+task_1/listener.py
+task_1/talker.py
+task_1.egg-info/PKG-INFO
+task_1.egg-info/SOURCES.txt
+task_1.egg-info/dependency_links.txt
+task_1.egg-info/entry_points.txt
+task_1.egg-info/requires.txt
+task_1.egg-info/top_level.txt
+task_1.egg-info/zip-safe
