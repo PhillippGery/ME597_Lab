@@ -344,3 +344,29 @@ class MapProcessor():
         return path_array
 
 
+if __name__ == '__main__':
+    # === ROBUST PATH FIX START ===
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    map_file_path = os.path.join(os.path.dirname(script_dir), 'maps', 'sync_classroom_map.yaml')
+    # === ROBUST PATH FIX END ===
+
+    processor = MapProcessor(map_file_path)
+
+    print(f"Successfully loaded map from: {map_file_path}")
+
+    print("\nDisplaying initial map from Map class...")
+    print("Obstacles should appear as BLACK pixels.")
+    processor.visualize_map_array(processor.map.image_array, title="1. Initial Loaded Map")
+
+    unique_vals = np.unique(processor.map.image_array)
+    print(f"Unique values in initial map array: {unique_vals}")
+    if len(unique_vals) < 2:
+        print("!! ERROR: Obstacles are not being detected correctly in the Map class.")
+
+    print("\nInflating map...")
+    kernel = processor.rect_kernel(size=5, value=1)
+    processor.inflate_map(kernel)
+
+    print("Displaying inflated map...")
+    print("Obstacles (walls) should be thicker now.")
+    processor.visualize_map_array(processor.inf_map_img_array, title="2. Inflated Map")

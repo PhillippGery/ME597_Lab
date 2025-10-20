@@ -37,15 +37,15 @@ class Navigation(RosNode):
         pkg_share_path = get_package_share_directory('task_4')
         map_yaml_path = os.path.join(pkg_share_path, 'maps', 'sync_classroom_map.yaml')
         
-        inflation_kernel_size = 8
+        inflation_kernel_size = 10
         
         self.k_rho = 0.8608         # Proportional gain for linear speed
-        self.kp_angular = 2.5747    # Proportional gain for angular velocity
+        self.kp_angular = 2.0747    # Proportional gain for angular velocity
         self.ki_angular = 0.1692    # Integral gain for angular velocity
-        self.kd_angular = 0.2160    # Derivative gain for angular velocity
-        self.k_beta = -0.01        # Gain for final orientation correction
+        self.kd_angular = -0.02   # Derivative gain for angular velocity
+        self.k_beta = -0.0001        # Gain for final orientation correction
 
-        self.lookahead_dist = 0.5
+        self.lookahead_dist = 0.35
         self.speed_max = 0.31
         self.rotspeed_max = 1.9
         self.goal_tolerance = 0.2
@@ -256,6 +256,7 @@ class Navigation(RosNode):
 
         # Derivative term
         derivative_error = (alpha - self.previous_error_angular) / dt
+        self.get_logger().info(f"Derivative error: {derivative_error:.3f}")
         d_term = self.kd_angular * derivative_error
 
         # Update the previous error for the next iteration
@@ -312,27 +313,43 @@ class Navigation(RosNode):
         speed, heading = self.path_follower(self.ttbot_pose, current_goal)
         self.move_ttbot(speed, heading)
 
-    def _world_to_grid(self, world_pos):
-        """ Converts world coordinates (meters) to grid cell coordinates. """
-        map_info = self.map_processor.map
-        origin_x = map_info.origin[0]
-        origin_y = map_info.origin[1]
-        resolution = map_info.resolution
-        
-        grid_j = int((world_pos[0] - origin_x) / resolution)
-        grid_i = int((world_pos[1] - origin_y) / resolution)
-        
-        return (grid_i, grid_j)
 
-    def _grid_to_world(self, grid_pos):
-        """ Converts grid cell coordinates back to world coordinates (meters). """
-        map_info = self.map_processor.map
-        origin_x = map_info.origin[0]
-        origin_y = map_info.origin[1]
-        resolution = map_info.resolution
 
-        world_x = (grid_pos[1] * resolution) + origin_x + resolution / 2.0
-        world_y = (grid_pos[0] * resolution) + origin_y + resolution / 2.0
+    def _world_to_grid(self, world_coords):
+        """!
+        Converts continuous world coordinates (meters) to discrete grid coordinates (pixels).
+        """
+        origin_x = self.map_processor.map.origin[0]
+        origin_y = self.map_processor.map.origin[1]
+        resolution = self.map_processor.map.resolution
+        map_height_pixels = self.map_processor.map.height
+
+        # Translate world coordinates relative to the map's origin
+        relative_x = world_coords[0] - origin_x
+        relative_y = world_coords[1] - origin_y
+
+        # Convert from meters to pixels
+        grid_x = int(relative_x / resolution)
+        grid_y = map_height_pixels - 1 - int(relative_y / resolution)
+
+        # Return as (row, col) which matches NumPy array indexing
+        return (grid_y, grid_x)
+
+    def _grid_to_world(self, grid_coords):
+        """!
+        Converts discrete grid coordinates (pixels) back to continuous world coordinates (meters).
+        """
+        origin_x = self.map_processor.map.origin[0]
+        origin_y = self.map_processor.map.origin[1]
+        resolution = self.map_processor.map.resolution
+        map_height_pixels = self.map_processor.map.height
+
+        grid_y, grid_x = grid_coords # Expecting (row, col)
+
+        unflipped_grid_y = map_height_pixels - 1 - grid_y
+
+        world_x = (grid_x + 0.5) * resolution + origin_x
+        world_y = (unflipped_grid_y + 0.5) * resolution + origin_y
         
         return (world_x, world_y)
 
