@@ -168,6 +168,7 @@ class Navigation(RosNode):
                 path.poses.append(pose)
         else:
             self.get_logger().warn("A* failed to find a path.")
+            self.move_ttbot(0.0, 0.0)
 
         self.astarTime = Float32()
         self.astarTime.data = float(self.get_clock().now().nanoseconds*1e-9-self.start_time)
@@ -459,7 +460,8 @@ def main(args=None):
     try:
         rclpy.spin(nav) 
     except KeyboardInterrupt:
-        pass
+        nav.get_logger().info('Keyboard interrupt received. Stopping the robot...')
+        nav.move_ttbot(0.0, 0.0)
     finally:
         nav.destroy_node()
         rclpy.shutdown()
