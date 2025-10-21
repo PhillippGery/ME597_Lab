@@ -1,15 +1,15 @@
+import os
 from PIL import Image, ImageOps 
 
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-
 
 import yaml
 import pandas as pd
 
 from copy import copy, deepcopy
 import time
+from queue import PriorityQueue
+
 
 
 class Queue():
@@ -80,25 +80,25 @@ class Tree():
         self.root = 0
         self.end = 0
         self.g = {}
-        self.g_visual = Graph('G')
+    #     self.g_visual = Graph('G')
     
-    def __call__(self):
-        for name,node in self.g.items():
-            if(self.root == name):
-                self.g_visual.node(name,name,color='red')
-            elif(self.end == name):
-                self.g_visual.node(name,name,color='blue')
-            else:
-                self.g_visual.node(name,name)
-            for i in range(len(node.children)):
-                c = node.children[i]
-                w = node.weight[i]
-                #print('%s -> %s'%(name,c.name))
-                if w == 0:
-                    self.g_visual.edge(name,c.name)
-                else:
-                    self.g_visual.edge(name,c.name,label=str(w))
-        return self.g_visual
+    # def __call__(self):
+    #     for name,node in self.g.items():
+    #         if(self.root == name):
+    #             self.g_visual.node(name,name,color='red')
+    #         elif(self.end == name):
+    #             self.g_visual.node(name,name,color='blue')
+    #         else:
+    #             self.g_visual.node(name,name)
+    #         for i in range(len(node.children)):
+    #             c = node.children[i]
+    #             w = node.weight[i]
+    #             #print('%s -> %s'%(name,c.name))
+    #             if w == 0:
+    #                 self.g_visual.edge(name,c.name)
+    #             else:
+    #                 self.g_visual.edge(name,c.name,label=str(w))
+        return #self.g_visual
     
     def add_node(self, node, start = False, end = False):
         self.g[node.name] = node
@@ -124,12 +124,6 @@ class AStar():
         self.dist = {name:np.inf for name,node in in_tree.g.items()}
         self.h = {name:0 for name,node in in_tree.g.items()}
         
-        for name,node in in_tree.g.items():
-            start = tuple(map(int, name.split(',')))
-            end = tuple(map(int, self.in_tree.end.split(',')))
-            self.h[name] = np.sqrt((end[0]-start[0])**2 + (end[1]-start[1])**2)
-        
-        self.via = {name:0 for name,node in in_tree.g.items()}
         self.via = {name: None for name in in_tree.g}
         for __,node in in_tree.g.items():
             self.q.push(node)
@@ -189,12 +183,57 @@ class AStar():
         # path is reverse, so flip it 
         return path[::-1], dist
     
+class Map():
+
+    def __init__(self, name):
+        with open(name, 'r') as f:
+            self.map_yaml = yaml.safe_load(f)
+
+        map_directory = os.path.dirname(name)
+        image_filename = self.map_yaml['image']
+        self.image_file_name = os.path.join(map_directory, image_filename)
+        
+        self.resolution = self.map_yaml['resolution']
+        self.origin = self.map_yaml['origin']
+        self.negate = self.map_yaml['negate']
+        self.occupied_thresh = self.map_yaml['occupied_thresh']
+        self.free_thresh = self.map_yaml['free_thresh']
+        
+        map_image = Image.open(self.image_file_name)
+        raw_image_array = np.array(map_image)
+        
+        self.height = raw_image_array.shape[0]
+
+        free_pixel_threshold = int(255 * (1 - self.free_thresh))
+
+        # Start with a grid where everything is an obstacle (value = 1).
+        grid = np.ones_like(raw_image_array, dtype=int)
+
+        grid[raw_image_array > free_pixel_threshold] = 0
+        
+        self.image_array = grid
+
+
 
 class MapProcessor():
     def __init__(self,name):
         self.map = Map(name)
-        self.inf_map_img_array = np.zeros(self.map.image_array.shape)
+        self.inf_map_img_array = np.copy(self.map.image_array) 
         self.map_graph = Tree(name)
+
+    # Add this method inside your MapProcessor class
+    def visualize_map_array(self, map_array, title="Map"):
+        """
+        Displays the given map array using matplotlib.
+        Obstacles (1) will be black, Free space (0) will be white.
+        """
+        try:
+            import matplotlib.pyplot as plt
+            plt.imshow(map_array, cmap='gray_r') # gray_r makes 0=white, 1=black
+            plt.title(title)
+            plt.show()
+        except ImportError:
+            print("Matplotlib is not installed. Please run 'pip install matplotlib' to visualize the map.")
     
     def __modify_map_pixel(self,map_array,i,j,value,absolute):
         if( (i >= 0) and 
@@ -219,15 +258,16 @@ class MapProcessor():
     def inflate_map(self,kernel,absolute=True):
         # Perform an operation like dilation, such that the small wall found during the mapping process
         # are increased in size, thus forcing a safer path.
-        self.inf_map_img_array = np.zeros(self.map.image_array.shape)
-        for i in range(self.map.image_array.shape[0]):
-            for j in range(self.map.image_array.shape[1]):
-                if self.map.image_array[i][j] == 0:
-                    self.__inflate_obstacle(kernel,self.inf_map_img_array,i,j,absolute)
-        r = np.max(self.inf_map_img_array)-np.min(self.inf_map_img_array)
-        if r == 0:
-            r = 1
-        self.inf_map_img_array = (self.inf_map_img_array - np.min(self.inf_map_img_array))/r
+        self.inf_map_img_array = np.copy(self.map.image_array)
+        
+        # We need to find the locations of the original obstacles (value=1)
+        obstacle_indices = np.where(self.map.image_array == 1)
+        
+        # Now, for each original obstacle, inflate it onto our new map
+        for i, j in zip(*obstacle_indices):
+            self.__inflate_obstacle(kernel, self.inf_map_img_array, i, j, absolute)
+            
+        self.inf_map_img_array[self.inf_map_img_array > 0] = 1
                 
     def get_graph_from_map(self):
         # Create the nodes that will be part of the graph, considering only valid nodes or the free space
@@ -302,3 +342,31 @@ class MapProcessor():
             path_tuple_list.append(tup)
             path_array[tup] = 0.5
         return path_array
+
+
+if __name__ == '__main__':
+    # === ROBUST PATH FIX START ===
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    map_file_path = os.path.join(os.path.dirname(script_dir), 'maps', 'sync_classroom_map.yaml')
+    # === ROBUST PATH FIX END ===
+
+    processor = MapProcessor(map_file_path)
+
+    print(f"Successfully loaded map from: {map_file_path}")
+
+    print("\nDisplaying initial map from Map class...")
+    print("Obstacles should appear as BLACK pixels.")
+    processor.visualize_map_array(processor.map.image_array, title="1. Initial Loaded Map")
+
+    unique_vals = np.unique(processor.map.image_array)
+    print(f"Unique values in initial map array: {unique_vals}")
+    if len(unique_vals) < 2:
+        print("!! ERROR: Obstacles are not being detected correctly in the Map class.")
+
+    print("\nInflating map...")
+    kernel = processor.rect_kernel(size=5, value=1)
+    processor.inflate_map(kernel)
+
+    print("Displaying inflated map...")
+    print("Obstacles (walls) should be thicker now.")
+    processor.visualize_map_array(processor.inf_map_img_array, title="2. Inflated Map")

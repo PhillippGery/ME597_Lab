@@ -309,7 +309,6 @@ class Navigation(RosNode):
 
         # Derivative term
         derivative_error = (alpha - self.previous_error_angular) / dt
-        self.get_logger().info(f"Derivative error: {derivative_error:.3f}")
         d_term = self.kd_angular * derivative_error
 
         # Update the previous error for the next iteration
@@ -323,12 +322,7 @@ class Navigation(RosNode):
 
         
         # Combine PID terms with the final orientation correction (beta)
-        heading = p_term + i_term + d_term + self.k_beta * beta
-        self.get_logger().info(f"heading speed before clipping: {heading:.3f} rad/s")
-
-        self.get_logger().info(f"Heading PID terms -> P: {p_term:.3f}, I: {i_term:.3f}, D: {d_term:.3f}, Beta: {self.k_beta * beta:.3f}")
-        
-        
+        heading = p_term + i_term + d_term + self.k_beta * beta        
         heading = np.clip(heading, -self.rotspeed_max, self.rotspeed_max)
 
         #self.get_logger().info(f"Controller output -> Speed: {speed:.3f} m/s, Heading: {heading:.3f} rad/s")
