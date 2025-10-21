@@ -1,0 +1,19 @@
+[1.559s] Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data
+[1.887s] running develop
+[1.888s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.888s]   warnings.warn(
+[2.099s] running egg_info
+[2.100s] writing sim_utils.egg-info/PKG-INFO
+[2.100s] writing dependency_links to sim_utils.egg-info/dependency_links.txt
+[2.100s] writing entry points to sim_utils.egg-info/entry_points.txt
+[2.101s] writing requirements to sim_utils.egg-info/requires.txt
+[2.101s] writing top-level names to sim_utils.egg-info/top_level.txt
+[2.103s] reading manifest file 'sim_utils.egg-info/SOURCES.txt'
+[2.104s] writing manifest file 'sim_utils.egg-info/SOURCES.txt'
+[2.110s] running build_ext
+[2.111s] Creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages/sim-utils.egg-link (link to .)
+[2.111s] Installing red_ball_controller script to /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/sim_utils
+[2.111s] 
+[2.111s] Installed /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils
+[2.111s] running symlink_data
+[2.152s] Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils' returned '0': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data

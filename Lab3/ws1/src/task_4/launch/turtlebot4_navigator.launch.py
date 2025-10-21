@@ -54,6 +54,9 @@ def generate_launch_description():
         executable='auto_navigator', # The name of the entry point in your setup.py
         name='auto_navigator',
         output='screen',
+        parameters=[{
+            'map_yaml_path': map_path
+        }],
         # Remap topics to be under the /robot namespace
         remappings=[
             ('/cmd_vel', '/robot/cmd_vel'),

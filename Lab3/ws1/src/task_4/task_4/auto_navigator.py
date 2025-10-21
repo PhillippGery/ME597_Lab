@@ -34,8 +34,16 @@ class Navigation(RosNode):
         self.start_time = 0.0
         self.get_logger().info("Graph built successfully.")
 
+
         pkg_share_path = get_package_share_directory('task_4')
-        map_yaml_path = os.path.join(pkg_share_path, 'maps', 'sync_classroom_map.yaml')
+        default_map_path = os.path.join(pkg_share_path, 'maps', 'sync_classroom_map.yaml')
+
+        # 2. Declare the 'map_yaml_path' parameter with the default value
+        self.declare_parameter('map_yaml_path', default_map_path)
+
+        # 3. Get the value of the parameter from the launch file (or use the default)
+        map_yaml_path = self.get_parameter('map_yaml_path').get_parameter_value().string_value
+
         
         inflation_kernel_size = 10
         
