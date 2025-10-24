@@ -45,7 +45,9 @@ class Navigation(RosNode):
         map_yaml_path = self.get_parameter('map_yaml_path').get_parameter_value().string_value
 
         
-        inflation_kernel_size = 10
+        inflation_kernel_size = 8
+        self.max_dist_alternate_Ponit = 1.0  # if start or stop pose is not valid, search for alternate point within this distance (meters)
+        self.max_angle_alpha_to_startdrive = 1.0  # radian (57 degrees)
         
         self.k_rho = 0.8608         # Proportional gain for linear speed
         self.kp_angular = 2.0747    # Proportional gain for angular velocity
@@ -66,8 +68,9 @@ class Navigation(RosNode):
         self.align_threshold = 0.4
 
         self.last_commanded_speed = 0.0
-        self.use_dynamic_lookahead = True
-        self.use_line_of_sight_check = True
+        self.use_dynamic_lookahead = True # Enable dynamic lookahead based on speed
+        self.use_line_of_sight_check = True # Enable line-of-sight shortcut checking
+        self.shortcut_active = False #if a shortcut is being taken true
 
         self.get_logger().info(f"Loading map from '{map_yaml_path}' and building graph...")
         self.map_processor = MapProcessor(map_yaml_path)
@@ -103,12 +106,14 @@ class Navigation(RosNode):
         # Call the path planner to generate a new path
         self.path = self.a_star_path_planner(self.ttbot_pose, self.goal_pose)
         
-        # If a valid path was found, publish it and reset the path follower index
+        # If a valid path was found, publish it and reset the path follower index and shortcut flag
         if self.path.poses:
             self.path_pub.publish(self.path)
-            self.current_path_idx = 0 
+            self.current_path_idx = 0
+            self.shortcut_active = False
         else:
             self.get_logger().warn("A* failed to find a path to the goal.")
+            self.move_ttbot(0.0, 0.0)
 
     def __ttbot_pose_cbk(self, data):
         """! Callback to catch the position of the vehicle.
@@ -124,30 +129,82 @@ class Navigation(RosNode):
     def a_star_path_planner(self, start_pose, end_pose):
         """! A Start path planner. """
         path = Path()
-        self.get_logger().info(
-            'A* planner.\n> start: {},\n> end: {}'.format(start_pose.pose.position, end_pose.pose.position))
+        #self.get_logger().info('A* planner.\n> start: {},\n> end: {}'.format(start_pose.pose.position, end_pose.pose.position))
         self.start_time = self.get_clock().now().nanoseconds*1e-9 #Do not edit this line (required for autograder)
 
         start_world = (start_pose.pose.position.x, start_pose.pose.position.y)
         end_world = (end_pose.pose.position.x, end_pose.pose.position.y)
         
         start_grid = self._world_to_grid(start_world)
+        #self.get_logger().info(f"Start grid: {start_grid}")
         end_grid = self._world_to_grid(end_world)
+        #self.get_logger().info(f"End grid: {end_grid}")
 
         start_name = f"{start_grid[0]},{start_grid[1]}"
+        #self.get_logger().info(f"start_name: {start_name}")
         end_name = f"{end_grid[0]},{end_grid[1]}"
         
-
         is_start_valid = start_name in self.map_processor.map_graph.g
+        #self.get_logger().info(f"is_start_valid: {is_start_valid}")
         is_end_valid = end_name in self.map_processor.map_graph.g
+        #self.get_logger().info(f"is_end_valid: {is_end_valid}")
         
+        # 1. If the start pose is invalid, find the closest valid one.
+        if not is_start_valid:
+            self.get_logger().warn(f"start pose {start_name} is NOT valid. taking closest point.")
+            
+            min_dist_sq = float('inf')
+            max_dist_sq = (self.max_dist_alternate_Ponit  / self.map_processor.map.resolution)**2
+            closest_node_name = None
+            original_strt_y, original_strt_x = start_grid
 
-        if not is_start_valid or not is_end_valid:
-            self.get_logger().error("Start or end pose is inside an obstacle or out of bounds.")
-            self.astarTime = Float32()
-            self.astarTime.data = float(self.get_clock().now().nanoseconds*1e-9-self.start_time)
-            self.calc_time_pub.publish(self.astarTime)
-            return Path()
+            # Iterate through all known valid nodes to find the nearest one
+            for valid_node_name in self.map_processor.map_graph.g:
+                node_y, node_x = map(int, valid_node_name.split(','))
+                
+      
+                dist_sq = (node_x - original_strt_x)**2 + (node_y - original_strt_y)**2
+                
+                if dist_sq < min_dist_sq and dist_sq <= max_dist_sq:
+                    min_dist_sq = dist_sq
+                    closest_node_name = valid_node_name
+
+            if closest_node_name:
+                self.get_logger().info(f"New start set to the closest valid point: {closest_node_name}")
+                # Update the goal variables to the new, valid location
+                start_name = closest_node_name
+                start_grid = tuple(map(int, closest_node_name.split(',')))
+            else:
+                self.get_logger().error("Could not find any valid nodes in the map. Planning failed.")
+                return Path()
+            
+        # 2. If the end pose is invalid, find the closest valid one.
+        if not is_end_valid:
+            self.get_logger().warn(f"Goal pose {end_name} is NOT valid. taking closest point.")
+            
+            min_dist_sq = float('inf')
+            max_dist_sq = (self.max_dist_alternate_Ponit  / self.map_processor.map.resolution)**2
+            closest_node_name = None
+            original_end_y, original_end_x = end_grid
+
+            # Iterate through all known valid nodes to find the nearest one
+            for valid_node_name in self.map_processor.map_graph.g:
+                node_y, node_x = map(int, valid_node_name.split(','))
+                
+                dist_sq = (node_x - original_end_x)**2 + (node_y - original_end_y)**2
+                
+                if dist_sq < min_dist_sq and dist_sq <= max_dist_sq:
+                    min_dist_sq = dist_sq
+                    closest_node_name = valid_node_name
+
+            if closest_node_name:
+                self.get_logger().info(f"New goal set to the closest valid point: {closest_node_name}")
+                # Update the goal variables to the new, valid location
+                end_name = closest_node_name
+                end_grid = tuple(map(int, closest_node_name.split(',')))
+            else:
+                self.get_logger().error("Could not find any valid nodes in the map. Planning failed.")
+                return Path()
             
         start_node = self.map_processor.map_graph.g[start_name]
         end_node = self.map_processor.map_graph.g[end_name]
@@ -315,7 +372,7 @@ class Navigation(RosNode):
         self.previous_error_angular = alpha
 
         # 5. Calculate final speed and heading
-        if  abs(alpha) > 1.57:  # If the angle to the goal is greater than 90 degrees, do not move forward
+        if  abs(alpha) > self.max_angle_alpha_to_startdrive:  # If the angle to the goal is greater than 90 degrees, do not move forward
             speed = 0.0
         else:
             speed = min(self.k_rho * rho, self.speed_max)
@@ -396,15 +453,19 @@ class Navigation(RosNode):
         
         current_goal = None
 
-        if self.use_line_of_sight_check:
+        if self.use_line_of_sight_check and not self.shortcut_active:
             start_grid = self._world_to_grid((self.ttbot_pose.pose.position.x, self.ttbot_pose.pose.position.y))
             end_grid = self._world_to_grid((final_goal_pose.pose.position.x, final_goal_pose.pose.position.y))
+
             if self._is_path_clear(start_grid, end_grid):
                 current_goal = final_goal_pose
-                self.get_logger().info("Path is clear. Taking a shortcut to the final goal.", throttle_duration_sec=2)
+                self.shortcut_active = True
+                self.get_logger().info("Path is clear. Taking a shortcut to the final goal.")
 
-        # If no clear path, use the standard pure pursuit logic
-        if current_goal is None:
+        # If no clear path, use the standard logic
+        if self.shortcut_active:
+            current_goal = final_goal_pose
+        else:
             idx = self.get_path_idx(self.path, self.ttbot_pose)
             current_goal = self.path.poses[idx]
         

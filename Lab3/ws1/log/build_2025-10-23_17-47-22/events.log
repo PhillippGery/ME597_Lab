@@ -1,0 +1,360 @@
+[0.000000] (-) TimerEvent: {}
+[0.008030] (sim_utils) JobQueued: {'identifier': 'sim_utils', 'dependencies': OrderedDict()}
+[0.008142] (task_4) JobQueued: {'identifier': 'task_4', 'dependencies': OrderedDict()}
+[0.008198] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict()}
+[0.008257] (sim_utils) JobStarted: {'identifier': 'sim_utils'}
+[0.032343] (task_4) JobStarted: {'identifier': 'task_4'}
+[0.056957] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[0.099815] (-) TimerEvent: {}
+[0.200262] (-) TimerEvent: {}
+[0.303438] (-) TimerEvent: {}
+[0.407498] (-) TimerEvent: {}
+[0.508859] (-) TimerEvent: {}
+[0.613775] (-) TimerEvent: {}
+[0.714593] (-) TimerEvent: {}
+[0.819918] (-) TimerEvent: {}
+[0.924401] (-) TimerEvent: {}
+[1.032400] (-) TimerEvent: {}
+[1.133191] (-) TimerEvent: {}
+[1.236057] (-) TimerEvent: {}
+[1.340447] (-) TimerEvent: {}
+[1.444220] (-) TimerEvent: {}
+[1.548683] (-) TimerEvent: {}
+[1.653662] (-) TimerEvent: {}
+[1.754140] (-) TimerEvent: {}
+[1.854752] (-) TimerEvent: {}
+[1.955424] (-) TimerEvent: {}
+[2.059146] (-) TimerEvent: {}
+[2.107260] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[2.108078] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/Gery/ME597_Lab/Lab3/ws1/src/sim_ws/src/turtlebot3_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo'], 'cwd': '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('OLDPWD', '/home/Gery/ME597_Lab/Lab3/ws1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2294'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ROS_SUPER_CLIENT', 'True'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2268,unix/me597:/tmp/.ICE-unix/2268'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5697159b_1a03_4fad_8299_f61a7810d8a8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZS4ME3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.259'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '15'), ('AMENT_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab3/ws1'), ('ROS_DISCOVERY_SERVER', ';;;;;;;;;;;;;;;192.168.1.115:11811;'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[2.159666] (-) TimerEvent: {}
+[2.263558] (-) TimerEvent: {}
+[2.364139] (-) TimerEvent: {}
+[2.464894] (-) TimerEvent: {}
+[2.567305] (-) TimerEvent: {}
+[2.668360] (-) TimerEvent: {}
+[2.771772] (-) TimerEvent: {}
+[2.791716] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.871860] (-) TimerEvent: {}
+[2.974228] (-) TimerEvent: {}
+[3.049311] (sim_utils) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build', '--no-deps', 'symlink_data'], 'cwd': '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'Gery', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/Gery', 'OLDPWD': '/home/Gery/ME597_Lab/Lab3/ws1', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2294', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab3/ws1/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'Gery', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'ROS_SUPER_CLIENT': 'True', 'USERNAME': 'Gery', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/2268,unix/me597:/tmp/.ICE-unix/2268', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5697159b_1a03_4fad_8299_f61a7810d8a8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZS4ME3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.259', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '15', 'AMENT_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble', 'SHELL': '/bin/bash', 'ROS_WS': '/home/Gery/ME597_Lab/Lab3/ws1', 'ROS_DISCOVERY_SERVER': ';;;;;;;;;;;;;;;192.168.1.115:11811;', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab3/ws1/build/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo'}, 'shell': False}
+[3.074566] (task_4) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build', '--no-deps', 'symlink_data'], 'cwd': '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'Gery', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/Gery', 'OLDPWD': '/home/Gery/ME597_Lab/Lab3/ws1', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2294', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab3/ws1/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'Gery', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'ROS_SUPER_CLIENT': 'True', 'USERNAME': 'Gery', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/2268,unix/me597:/tmp/.ICE-unix/2268', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5697159b_1a03_4fad_8299_f61a7810d8a8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZS4ME3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.259', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '15', 'AMENT_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble', 'SHELL': '/bin/bash', 'ROS_WS': '/home/Gery/ME597_Lab/Lab3/ws1', 'ROS_DISCOVERY_SERVER': ';;;;;;;;;;;;;;;192.168.1.115:11811;', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab3/ws1/build/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo'}, 'shell': False}
+[3.075796] (-) TimerEvent: {}
+[3.120216] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.163018] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.176194] (-) TimerEvent: {}
+[3.276693] (-) TimerEvent: {}
+[3.379292] (-) TimerEvent: {}
+[3.469599] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.480840] (-) TimerEvent: {}
+[3.487489] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.489164] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.491459] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.500302] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.519385] (sim_utils) StdoutLine: {'line': b'running develop\n'}
+[3.519821] (sim_utils) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.520035] (sim_utils) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.581014] (-) TimerEvent: {}
+[3.596825] (task_4) StdoutLine: {'line': b'running develop\n'}
+[3.597098] (task_4) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.597219] (task_4) StderrLine: {'line': b'  warnings.warn(\n'}
+[3.655303] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.666331] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.667239] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.669670] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.681215] (-) TimerEvent: {}
+[3.717356] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.781896] (-) TimerEvent: {}
+[3.845446] (sim_utils) StdoutLine: {'line': b'running egg_info\n'}
+[3.845836] (sim_utils) StdoutLine: {'line': b'creating sim_utils.egg-info\n'}
+[3.846005] (sim_utils) StdoutLine: {'line': b'writing sim_utils.egg-info/PKG-INFO\n'}
+[3.846200] (sim_utils) StdoutLine: {'line': b'writing dependency_links to sim_utils.egg-info/dependency_links.txt\n'}
+[3.846396] (sim_utils) StdoutLine: {'line': b'writing entry points to sim_utils.egg-info/entry_points.txt\n'}
+[3.849107] (sim_utils) StdoutLine: {'line': b'writing requirements to sim_utils.egg-info/requires.txt\n'}
+[3.849384] (sim_utils) StdoutLine: {'line': b'writing top-level names to sim_utils.egg-info/top_level.txt\n'}
+[3.849504] (sim_utils) StdoutLine: {'line': b"writing manifest file 'sim_utils.egg-info/SOURCES.txt'\n"}
+[3.851286] (sim_utils) StdoutLine: {'line': b"reading manifest file 'sim_utils.egg-info/SOURCES.txt'\n"}
+[3.853010] (sim_utils) StdoutLine: {'line': b"writing manifest file 'sim_utils.egg-info/SOURCES.txt'\n"}
+[3.855424] (sim_utils) StdoutLine: {'line': b'running build_ext\n'}
+[3.855677] (sim_utils) StdoutLine: {'line': b'Creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages/sim-utils.egg-link (link to .)\n'}
+[3.856991] (sim_utils) StdoutLine: {'line': b'Installing red_ball_controller script to /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/sim_utils\n'}
+[3.859892] (sim_utils) StdoutLine: {'line': b'\n'}
+[3.860124] (sim_utils) StdoutLine: {'line': b'Installed /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils\n'}
+[3.860269] (sim_utils) StdoutLine: {'line': b'running symlink_data\n'}
+[3.860559] (sim_utils) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index\n'}
+[3.860794] (sim_utils) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index/resource_index\n'}
+[3.861054] (sim_utils) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index/resource_index/packages\n'}
+[3.861143] (sim_utils) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/resource/sim_utils -> /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/ament_index/resource_index/packages\n'}
+[3.863975] (sim_utils) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/package.xml -> /home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/share/sim_utils\n'}
+[3.882157] (-) TimerEvent: {}
+[3.917894] (sim_utils) CommandEnded: {'returncode': 0}
+[3.943905] (sim_utils) JobEnded: {'identifier': 'sim_utils', 'rc': 0}
+[3.983388] (-) TimerEvent: {}
+[3.984104] (task_4) StdoutLine: {'line': b'running egg_info\n'}
+[3.984279] (task_4) StdoutLine: {'line': b'creating task_4.egg-info\n'}
+[3.985800] (task_4) StdoutLine: {'line': b'writing task_4.egg-info/PKG-INFO\n'}
+[3.986131] (task_4) StdoutLine: {'line': b'writing dependency_links to task_4.egg-info/dependency_links.txt\n'}
+[3.986276] (task_4) StdoutLine: {'line': b'writing entry points to task_4.egg-info/entry_points.txt\n'}
+[3.986365] (task_4) StdoutLine: {'line': b'writing requirements to task_4.egg-info/requires.txt\n'}
+[3.986609] (task_4) StdoutLine: {'line': b'writing top-level names to task_4.egg-info/top_level.txt\n'}
+[3.986890] (task_4) StdoutLine: {'line': b"writing manifest file 'task_4.egg-info/SOURCES.txt'\n"}
+[3.990319] (task_4) StdoutLine: {'line': b"reading manifest file 'task_4.egg-info/SOURCES.txt'\n"}
+[3.991301] (task_4) StdoutLine: {'line': b"writing manifest file 'task_4.egg-info/SOURCES.txt'\n"}
+[3.993159] (task_4) StdoutLine: {'line': b'running build_ext\n'}
+[3.993902] (task_4) StdoutLine: {'line': b'Creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages/task-4.egg-link (link to .)\n'}
+[3.994567] (task_4) StdoutLine: {'line': b'Installing auto_navigator script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4\n'}
+[3.995286] (task_4) StdoutLine: {'line': b'Installing auto_navigator2 script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4\n'}
+[3.997094] (task_4) StdoutLine: {'line': b'\n'}
+[3.997430] (task_4) StdoutLine: {'line': b'Installed /home/Gery/ME597_Lab/Lab3/ws1/build/task_4\n'}
+[3.998724] (task_4) StdoutLine: {'line': b'running symlink_data\n'}
+[3.998964] (task_4) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index\n'}
+[3.999083] (task_4) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index\n'}
+[3.999175] (task_4) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index/packages\n'}
+[4.001221] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/resource/task_4 -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index/packages\n'}
+[4.001520] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/package.xml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4\n'}
+[4.001979] (task_4) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch\n'}
+[4.002082] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/auto_navigator.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch\n'}
+[4.002166] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/gen_sync_map_launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch\n'}
+[4.004283] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/view_robot.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch\n'}
+[4.004746] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/turtlebot4_navigator.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch\n'}
+[4.004893] (task_4) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.004979] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/sync_classroom_map.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.005059] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/classroom_map.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.005136] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/sync_classroom_map.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.005210] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/map_name.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.005286] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/navigation_astar_f24.ipynb -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.005360] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/map_name.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.005477] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/classroom_map.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps\n'}
+[4.005563] (task_4) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/rviz\n'}
+[4.005650] (task_4) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/rviz/robot.rviz -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/rviz\n'}
+[4.055583] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.066485] (task_4) CommandEnded: {'returncode': 0}
+[4.084356] (-) TimerEvent: {}
+[4.090088] (task_4) JobEnded: {'identifier': 'task_4', 'rc': 0}
+[4.184655] (-) TimerEvent: {}
+[4.200490] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.285167] (-) TimerEvent: {}
+[4.344153] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[4.351249] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[4.351815] (turtlebot3_gazebo) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[4.352003] (turtlebot3_gazebo) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[4.352157] (turtlebot3_gazebo) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[4.352317] (turtlebot3_gazebo) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[4.352423] (turtlebot3_gazebo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.352565] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[4.352933] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[4.353123] (turtlebot3_gazebo) StderrLine: {'line': b'  CMakeLists.txt:23 (find_package)\n'}
+[4.353326] (turtlebot3_gazebo) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[4.353549] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[4.359026] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[4.385417] (-) TimerEvent: {}
+[4.413929] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[4.485720] (-) TimerEvent: {}
+[4.586929] (-) TimerEvent: {}
+[4.678209] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[4.687213] (-) TimerEvent: {}
+[4.787746] (-) TimerEvent: {}
+[4.811797] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[4.887910] (-) TimerEvent: {}
+[4.907874] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[4.988089] (-) TimerEvent: {}
+[5.088786] (-) TimerEvent: {}
+[5.190476] (-) TimerEvent: {}
+[5.292238] (-) TimerEvent: {}
+[5.394794] (-) TimerEvent: {}
+[5.496650] (-) TimerEvent: {}
+[5.597853] (-) TimerEvent: {}
+[5.702082] (-) TimerEvent: {}
+[5.710037] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[5.802363] (-) TimerEvent: {}
+[5.814577] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[5.839906] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.887061] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[5.891916] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[5.892169] (turtlebot3_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[5.902679] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[5.902981] (-) TimerEvent: {}
+[5.934236] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[6.004779] (-) TimerEvent: {}
+[6.111587] (-) TimerEvent: {}
+[6.132174] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[6.182809] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[6.207442] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[6.213922] (-) TimerEvent: {}
+[6.226986] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[6.227308] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[6.238570] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[6.239334] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[6.253820] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[6.254089] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[6.271353] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[6.271902] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[6.290172] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[6.290917] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[6.303451] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[6.314214] (-) TimerEvent: {}
+[6.415925] (-) TimerEvent: {}
+[6.519935] (-) TimerEvent: {}
+[6.620689] (-) TimerEvent: {}
+[6.724447] (-) TimerEvent: {}
+[6.735438] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.746047] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[6.749376] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[6.825618] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[6.826892] (-) TimerEvent: {}
+[6.851871] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[6.870837] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[6.927125] (-) TimerEvent: {}
+[6.936275] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[7.032514] (-) TimerEvent: {}
+[7.088347] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[7.113097] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[7.134265] (-) TimerEvent: {}
+[7.180348] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[7.260396] (-) TimerEvent: {}
+[7.361328] (-) TimerEvent: {}
+[7.467441] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[7.467843] (-) TimerEvent: {}
+[7.473953] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[7.475157] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[7.530051] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.545400] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[7.568164] (-) TimerEvent: {}
+[7.615556] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[7.669875] (-) TimerEvent: {}
+[7.759931] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[7.769003] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[7.769482] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[7.770016] (-) TimerEvent: {}
+[7.771363] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[7.775670] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[7.776846] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[7.808155] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[7.812290] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[7.820105] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[7.820331] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[7.820557] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.832419] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[7.833629] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[7.874096] (-) TimerEvent: {}
+[7.974831] (-) TimerEvent: {}
+[8.073023] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[8.075310] (-) TimerEvent: {}
+[8.113074] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[8.170984] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[8.175524] (-) TimerEvent: {}
+[8.263730] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[8.276064] (-) TimerEvent: {}
+[8.282225] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[8.313119] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[8.376392] (-) TimerEvent: {}
+[8.401370] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[8.402090] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[8.402755] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[8.405107] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[8.421961] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[8.476655] (-) TimerEvent: {}
+[8.577396] (-) TimerEvent: {}
+[8.598190] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.613329] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[8.618836] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo\n'}
+[8.636853] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[8.641541] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'build'}
+[8.642134] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo', '--', '-j4', '-l4'], 'cwd': '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('OLDPWD', '/home/Gery/ME597_Lab/Lab3/ws1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2294'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ROS_SUPER_CLIENT', 'True'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2268,unix/me597:/tmp/.ICE-unix/2268'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5697159b_1a03_4fad_8299_f61a7810d8a8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZS4ME3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.259'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '15'), ('AMENT_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab3/ws1'), ('ROS_DISCOVERY_SERVER', ';;;;;;;;;;;;;;;192.168.1.115:11811;'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[8.677871] (-) TimerEvent: {}
+[8.742756] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[8.778805] (-) TimerEvent: {}
+[8.816169] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'install'}
+[8.842960] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo'], 'cwd': '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('OLDPWD', '/home/Gery/ME597_Lab/Lab3/ws1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2294'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ROS_SUPER_CLIENT', 'True'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2268,unix/me597:/tmp/.ICE-unix/2268'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5697159b_1a03_4fad_8299_f61a7810d8a8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZS4ME3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.259'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '15'), ('AMENT_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab3/ws1'), ('ROS_DISCOVERY_SERVER', ';;;;;;;;;;;;;;;192.168.1.115:11811;'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils:/opt/ros/humble')]), 'shell': False}
+[8.859017] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.859266] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.860181] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/amcl.launch.py\n'}
+[8.877873] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/map_loader.launch.py\n'}
+[8.878985] (-) TimerEvent: {}
+[8.895573] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/mapper.launch.py\n'}
+[8.918065] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/navigator.launch.py\n'}
+[8.935133] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py\n'}
+[8.968023] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_cricketball.launch.py\n'}
+[8.979222] (-) TimerEvent: {}
+[8.995001] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py\n'}
+[9.041904] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/task_6.launch.py\n'}
+[9.075493] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_bonus_world.launch.py\n'}
+[9.082036] (-) TimerEvent: {}
+[9.111505] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py\n'}
+[9.135903] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house_norviz.launch.py\n'}
+[9.159494] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/blue_object/model.config\n'}
+[9.181456] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/blue_object/model.rsdf\n'}
+[9.182021] (-) TimerEvent: {}
+[9.202484] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/blue_object/model.sdf\n'}
+[9.224813] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.config\n'}
+[9.242906] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.rsdf\n'}
+[9.260308] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/cricket_ball/model.sdf\n'}
+[9.277412] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/green_object/model.config\n'}
+[9.282411] (-) TimerEvent: {}
+[9.294318] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/green_object/model.rsdf\n'}
+[9.315956] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/green_object/model.sdf\n'}
+[9.332775] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/red_object/model.config\n'}
+[9.348495] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/red_object/model.rsdf\n'}
+[9.366138] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/red_object/model.sdf\n'}
+[9.382765] (-) TimerEvent: {}
+[9.384969] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/meshes/trash_can.dae\n'}
+[9.404926] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/model.config\n'}
+[9.427404] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/trash_can/model.sdf\n'}
+[9.444578] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae\n'}
+[9.464302] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae\n'}
+[9.482525] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae\n'}
+[9.483052] (-) TimerEvent: {}
+[9.503533] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae\n'}
+[9.526049] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae\n'}
+[9.541689] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config\n'}
+[9.560062] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config\n'}
+[9.580812] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf\n'}
+[9.583357] (-) TimerEvent: {}
+[9.600277] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config\n'}
+[9.620993] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf\n'}
+[9.637174] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz\n'}
+[9.656051] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf\n'}
+[9.674925] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/Bonus\n'}
+[9.683763] (-) TimerEvent: {}
+[9.693293] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world\n'}
+[9.712097] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/house_closed.world\n'}
+[9.732141] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world\n'}
+[9.748977] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/map.pgm\n'}
+[9.768118] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/map.yaml\n'}
+[9.784084] (-) TimerEvent: {}
+[9.787378] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/sync_classroom_map.pgm\n'}
+[9.806742] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//maps/sync_classroom_map.yaml\n'}
+[9.831881] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/amcl.yaml\n'}
+[9.851736] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/map_server.yaml\n'}
+[9.874598] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/mapper_params_online_async.yaml\n'}
+[9.884426] (-) TimerEvent: {}
+[9.894812] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo\n'}
+[9.913369] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo\n'}
+[9.943389] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh\n'}
+[9.963863] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv\n'}
+[9.985893] (-) TimerEvent: {}
+[9.986166] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh\n'}
+[10.006290] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv\n'}
+[10.026398] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash\n'}
+[10.045457] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh\n'}
+[10.062653] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh\n'}
+[10.086231] (-) TimerEvent: {}
+[10.089170] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv\n'}
+[10.107977] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv\n'}
+[10.130803] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo\n'}
+[10.154238] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.176276] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.186516] (-) TimerEvent: {}
+[10.197877] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake\n'}
+[10.227292] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake\n'}
+[10.251513] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml\n'}
+[10.268973] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task1\n'}
+[10.269204] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2\n'}
+[10.269294] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task3\n'}
+[10.269392] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/spawn_objects\n'}
+[10.269693] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/task2_bonus\n'}
+[10.269812] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab3/ws1/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/static_obstacles\n'}
+[10.273016] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[10.286768] (-) TimerEvent: {}
+[10.345544] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 0}
+[10.347862] (-) EventReactorShutdown: {}

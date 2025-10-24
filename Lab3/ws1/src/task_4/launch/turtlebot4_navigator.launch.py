@@ -61,13 +61,12 @@ def generate_launch_description():
         remappings=[
             ('/cmd_vel', '/robot/cmd_vel'),
             ('/amcl_pose', '/robot/amcl_pose'),
-            # Add other remappings if your node uses them
             ('/global_plan', '/robot/global_plan'),
         ]
     )
 
     return LaunchDescription([
-        localization_launch,
-        rviz_launch,
+        # localization_launch,
+        # rviz_launch,
         auto_navigator_node
     ])
