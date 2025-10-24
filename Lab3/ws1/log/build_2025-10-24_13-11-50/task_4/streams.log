@@ -1,0 +1,20 @@
+[0.997s] Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[1.178s] /home/Gery/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.178s]   warnings.warn(msg)
+[1.376s] running develop
+[1.719s] running egg_info
+[1.742s] writing task_4.egg-info/PKG-INFO
+[1.742s] writing dependency_links to task_4.egg-info/dependency_links.txt
+[1.742s] writing entry points to task_4.egg-info/entry_points.txt
+[1.742s] writing requirements to task_4.egg-info/requires.txt
+[1.742s] writing top-level names to task_4.egg-info/top_level.txt
+[1.779s] reading manifest file 'task_4.egg-info/SOURCES.txt'
+[1.781s] writing manifest file 'task_4.egg-info/SOURCES.txt'
+[1.802s] running build_ext
+[1.803s] Creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages/task-4.egg-link (link to .)
+[1.804s] Installing auto_navigator script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+[1.804s] Installing auto_navigator2 script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+[1.804s] 
+[1.804s] Installed /home/Gery/ME597_Lab/Lab3/ws1/build/task_4
+[1.804s] running symlink_data
+[1.842s] Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4' returned '0': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data

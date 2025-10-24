@@ -1,0 +1,2 @@
+Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo -- -j4 -l4
+Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab3/ws1/build/turtlebot3_gazebo -- -j4 -l4

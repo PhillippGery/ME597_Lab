@@ -1,0 +1,36 @@
+running develop
+running egg_info
+creating task_4.egg-info
+writing task_4.egg-info/PKG-INFO
+writing dependency_links to task_4.egg-info/dependency_links.txt
+writing entry points to task_4.egg-info/entry_points.txt
+writing requirements to task_4.egg-info/requires.txt
+writing top-level names to task_4.egg-info/top_level.txt
+writing manifest file 'task_4.egg-info/SOURCES.txt'
+reading manifest file 'task_4.egg-info/SOURCES.txt'
+writing manifest file 'task_4.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages/task-4.egg-link (link to .)
+Installing auto_navigator script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+Installing auto_navigator2 script to /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/task_4
+
+Installed /home/Gery/ME597_Lab/Lab3/ws1/build/task_4
+running symlink_data
+creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index/packages
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/resource/task_4 -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/ament_index/resource_index/packages
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/package.xml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4
+creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/auto_navigator.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/gen_sync_map_launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/view_robot.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/launch/turtlebot4_navigator.launch.py -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/launch
+creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/sync_classroom_map.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/classroom_map.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/sync_classroom_map.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/map_name.yaml -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/navigation_astar_f24.ipynb -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/map_name.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/maps/classroom_map.pgm -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/maps
+creating /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/rviz
+symbolically linking /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/rviz/robot.rviz -> /home/Gery/ME597_Lab/Lab3/ws1/install/task_4/share/task_4/rviz

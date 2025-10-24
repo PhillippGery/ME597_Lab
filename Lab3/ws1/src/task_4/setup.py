@@ -26,7 +26,6 @@ setup(
     entry_points={
         'console_scripts': [
             'auto_navigator = task_4.auto_navigator:main',
-            'auto_navigator2 = task_4.auto_navigator2:main',
         ],
     },
 )

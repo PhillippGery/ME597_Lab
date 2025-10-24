@@ -1,0 +1,10 @@
+[1.010s] Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data
+[1.214s] /home/Gery/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.214s]   warnings.warn(msg)
+[1.274s] usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+[1.274s]    or: setup.py --help [cmd1 cmd2 ...]
+[1.274s]    or: setup.py --help-commands
+[1.274s]    or: setup.py cmd --help
+[1.274s] 
+[1.275s] error: option --editable not recognized
+[1.294s] Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/task_4' returned '1': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/task_4/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/task_4/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/task_4/build --no-deps symlink_data

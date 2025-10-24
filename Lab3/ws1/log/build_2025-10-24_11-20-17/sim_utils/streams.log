@@ -1,0 +1,10 @@
+[1.064s] Invoking command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data
+[1.283s] /home/Gery/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.283s]   warnings.warn(msg)
+[1.341s] usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+[1.342s]    or: setup.py --help [cmd1 cmd2 ...]
+[1.342s]    or: setup.py --help-commands
+[1.342s]    or: setup.py cmd --help
+[1.342s] 
+[1.342s] error: option --editable not recognized
+[1.367s] Invoked command in '/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils' returned '1': PYTHONPATH=/home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab3/ws1/install/sim_utils/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab3/ws1/build/sim_utils/build --no-deps symlink_data

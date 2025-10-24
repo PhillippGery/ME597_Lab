@@ -4,6 +4,7 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription, TimerAction, LogInfo
 
 def generate_launch_description():
     # Define package names
@@ -65,8 +66,34 @@ def generate_launch_description():
         ]
     )
 
+    # return LaunchDescription([
+    #     localization_launch,
+    #     rviz_launch,
+    #     auto_navigator_node        
+    # ])
+
+
+    # Delaied Launch to prevent conflicts
     return LaunchDescription([
-        # localization_launch,
-        # rviz_launch,
-        auto_navigator_node
-    ])
+
+            LogInfo(msg='Launching localization'),
+            localization_launch,
+
+            # Announce the delay for RViz
+            LogInfo(msg='Delaying RViz launch by 5 seconds'),
+            TimerAction(
+                period=5.0,
+                actions=[
+                    LogInfo(msg='---------------> Launching RViz--------------------------------------------------'),
+                    rviz_launch
+                ]
+            ),
+            LogInfo(msg='Delaying Auto Navigator launch by 10 seconds'),
+            TimerAction(
+                period=10.0,
+                actions=[
+                    LogInfo(msg='--------------------> Launching Auto Navigator node----------------------------------------'),
+                    auto_navigator_node
+                ]
+            )
+        ])
