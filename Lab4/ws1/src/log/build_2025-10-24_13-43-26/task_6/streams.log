@@ -1,0 +1,28 @@
+[1.083s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/src/task_6': PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/task_6 build --build-base /home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/build install --record /home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/install.log --single-version-externally-managed install_data
+[1.383s] running egg_info
+[1.401s] creating ../build/task_6/task_6.egg-info
+[1.401s] writing ../build/task_6/task_6.egg-info/PKG-INFO
+[1.403s] writing dependency_links to ../build/task_6/task_6.egg-info/dependency_links.txt
+[1.403s] writing requirements to ../build/task_6/task_6.egg-info/requires.txt
+[1.403s] writing top-level names to ../build/task_6/task_6.egg-info/top_level.txt
+[1.403s] writing manifest file '../build/task_6/task_6.egg-info/SOURCES.txt'
+[1.441s] reading manifest file '../build/task_6/task_6.egg-info/SOURCES.txt'
+[1.442s] writing manifest file '../build/task_6/task_6.egg-info/SOURCES.txt'
+[1.442s] running build
+[1.442s] running build_py
+[1.443s] creating /home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/build/lib/task_6
+[1.443s] copying task_6/__init__.py -> /home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/build/lib/task_6
+[1.444s] running install
+[1.448s] running install_lib
+[1.471s] creating /home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/lib/python3.10/site-packages/task_6
+[1.472s] copying /home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/build/lib/task_6/__init__.py -> /home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/lib/python3.10/site-packages/task_6
+[1.473s] byte-compiling /home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/lib/python3.10/site-packages/task_6/__init__.py to __init__.cpython-310.pyc
+[1.473s] running install_data
+[1.474s] creating /home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/share/ament_index/resource_index/packages
+[1.474s] copying resource/task_6 -> /home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/share/ament_index/resource_index/packages
+[1.475s] copying package.xml -> /home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/share/task_6
+[1.475s] running install_egg_info
+[1.496s] Copying ../build/task_6/task_6.egg-info to /home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/lib/python3.10/site-packages/task_6-0.0.0-py3.10.egg-info
+[1.497s] running install_scripts
+[1.659s] writing list of installed files to '/home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/install.log'
+[1.693s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/src/task_6' returned '0': PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/src/install/task_6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/task_6 build --build-base /home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/build install --record /home/Gery/ME597_Lab/Lab4/ws1/src/build/task_6/install.log --single-version-externally-managed install_data

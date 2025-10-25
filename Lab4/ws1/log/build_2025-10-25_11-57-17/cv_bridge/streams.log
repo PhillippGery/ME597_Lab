@@ -1,0 +1,125 @@
+[0.026s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge
+[0.332s] -- The C compiler identification is GNU 11.4.0
+[0.638s] -- The CXX compiler identification is GNU 11.4.0
+[0.660s] -- Detecting C compiler ABI info
+[0.807s] -- Detecting C compiler ABI info - done
+[0.820s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.821s] -- Detecting C compile features
+[0.824s] -- Detecting C compile features - done
+[0.828s] -- Detecting CXX compiler ABI info
+[0.997s] -- Detecting CXX compiler ABI info - done
+[1.013s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.013s] -- Detecting CXX compile features
+[1.014s] -- Detecting CXX compile features - done
+[1.017s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.776s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.869s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.753s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed 
+[2.780s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 
+[2.787s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.823s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.829s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.837s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.851s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.867s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.913s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.914s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.048s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.075s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.126s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.135s] -- Looking for pthread.h
+[3.291s] -- Looking for pthread.h - found
+[3.292s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.427s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.428s] -- Found Threads: TRUE  
+[3.495s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.675s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[3.935s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[3.940s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[4.251s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[4.252s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[4.475s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[4.489s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.765s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.239s] -- Configuring done
+[6.266s] -- Generating done
+[6.273s] -- Build files have been written to: /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge
+[6.294s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge
+[6.294s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge -- -j4 -l4
+[6.363s] [  5%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o[0m
+[6.364s] [ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[6.372s] [ 11%] Built target ament_cmake_python_symlink_cv_bridge
+[6.378s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[6.392s] [ 22%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_mat_sensor_msgs_image_type_adapter.cpp.o[0m
+[7.656s] [ 27%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[7.727s] [ 27%] Built target gtest_main
+[8.044s] running egg_info
+[8.072s] creating cv_bridge.egg-info
+[8.072s] writing cv_bridge.egg-info/PKG-INFO
+[8.072s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[8.072s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[8.072s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[8.162s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[8.162s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[8.237s] [ 27%] Built target ament_cmake_python_build_cv_bridge_egg
+[8.269s] [ 33%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o[0m
+[12.137s] [ 38%] [32m[1mLinking CXX static library libgtest.a[0m
+[12.235s] [ 38%] Built target gtest
+[13.272s] [ 44%] [32m[1mLinking CXX shared library libcv_bridge.so[0m
+[13.592s] [ 44%] Built target cv_bridge
+[13.624s] [ 55%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o[0m
+[13.624s] [ 55%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o[0m
+[13.624s] [ 61%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv4.cpp.o[0m
+[13.626s] [ 66%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o[0m
+[15.419s] [ 72%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o[0m
+[15.466s] [ 77%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o[0m
+[17.721s] [ 83%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o[0m
+[17.751s] [ 88%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_dynamic_scaling.cpp.o[0m
+[18.556s] [ 94%] [32m[1mLinking CXX shared module boost/cv_bridge_boost.so[0m
+[18.751s] [ 94%] Built target cv_bridge_boost
+[20.354s] [100%] [32m[1mLinking CXX executable cv_bridge-utest[0m
+[21.055s] [100%] Built target cv_bridge-utest
+[21.076s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge -- -j4 -l4
+[21.077s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge
+[21.086s] -- Install configuration: ""
+[21.087s] -- Execute custom install script
+[21.088s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[21.100s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[21.112s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/PKG-INFO
+[21.124s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/SOURCES.txt
+[21.137s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/dependency_links.txt
+[21.148s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/top_level.txt
+[21.160s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[21.173s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[21.186s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[21.198s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost//cv_bridge_boost.so
+[21.210s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.hpp
+[21.221s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_mat_sensor_msgs_image_type_adapter.hpp
+[21.234s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.hpp
+[21.247s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/visibility_control.h
+[21.259s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib/libcv_bridge.so
+[21.274s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[21.287s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[21.299s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[21.311s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[21.323s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/path.sh
+[21.338s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[21.350s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.bash
+[21.363s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.sh
+[21.375s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[21.389s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[21.400s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/package.dsv
+[21.412s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[21.423s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[21.436s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.448s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[21.460s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[21.472s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[21.484s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/package.xml
+[21.528s] Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[21.528s] Compiling '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...
+[21.528s] Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost'...
+[21.528s] Compiling '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...
+[21.535s] -- Installing: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[21.535s] -- Installing: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[21.537s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge

@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+resource/task_6
+task_6/__init__.py
+task_6.egg-info/PKG-INFO
+task_6.egg-info/SOURCES.txt
+task_6.egg-info/dependency_links.txt
+task_6.egg-info/requires.txt
+task_6.egg-info/top_level.txt
+task_6.egg-info/zip-safe

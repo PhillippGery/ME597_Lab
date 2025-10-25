@@ -1,0 +1,28 @@
+[0.021s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/image_geometry -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry
+[0.064s] -- Found ament_cmake_python: 1.3.12 (/opt/ros/humble/share/ament_cmake_python/cmake)
+[0.066s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.238s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.365s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.462s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.470s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.499s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.537s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.574s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.257s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.373s] -- Configuring done
+[1.416s] -- Generating done
+[1.425s] -- Build files have been written to: /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry
+[1.436s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/image_geometry -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry
+[1.438s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry -- -j4 -l4
+[1.498s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[1.499s] [35m[1mConsolidate compiler generated dependencies of target image_geometry[0m
+[1.504s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[1.514s] failed to create symbolic link '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry/ament_cmake_python/image_geometry/image_geometry' because existing path cannot be removed: Is a directory
+[1.515s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_image_geometry.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_image_geometry] Error 1
+[1.516s] gmake[1]: *** [CMakeFiles/Makefile2:177: CMakeFiles/ament_cmake_python_symlink_image_geometry.dir/all] Error 2
+[1.516s] gmake[1]: *** Waiting for unfinished jobs....
+[1.550s] [ 18%] Built target gtest_main
+[1.550s] [ 36%] Built target gtest
+[1.558s] [ 63%] Built target image_geometry
+[1.559s] gmake: *** [Makefile:146: all] Error 2
+[1.563s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry -- -j4 -l4

@@ -1,0 +1,9 @@
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/uninstall.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/vision_opencv_uninstall.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/test.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/edit_cache.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/rebuild_cache.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/list_install_components.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/install.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/install/local.dir
+/home/Gery/ME597_Lab/Lab4/ws1/src/build/vision_opencv/CMakeFiles/install/strip.dir

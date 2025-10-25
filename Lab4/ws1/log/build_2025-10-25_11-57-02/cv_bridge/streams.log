@@ -1,0 +1,20 @@
+[0.020s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge
+[0.074s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.162s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.249s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.733s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed 
+[0.751s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.789s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.793s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.798s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.807s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.820s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.882s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.888s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.027s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.110s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.227s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.342s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.446s] -- Configuring done
+[2.497s] -- Generating done
+[2.508s] -- Build files have been written to: /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge

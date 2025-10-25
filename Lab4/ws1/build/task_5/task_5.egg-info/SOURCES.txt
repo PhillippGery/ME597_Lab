@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+launch/object_detector_launch.py
+resource/lab3_video.avi
+resource/lab3_video.mp4
+resource/task_5
+task_5/__init__.py
+task_5/image_publisher.py
+task_5/object_detector.py
+task_5.egg-info/PKG-INFO
+task_5.egg-info/SOURCES.txt
+task_5.egg-info/dependency_links.txt
+task_5.egg-info/entry_points.txt
+task_5.egg-info/requires.txt
+task_5.egg-info/top_level.txt
+task_5.egg-info/zip-safe

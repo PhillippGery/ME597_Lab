@@ -347,7 +347,7 @@ class MapProcessor():
 if __name__ == '__main__':
     # === ROBUST PATH FIX START ===
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    map_file_path = os.path.join(os.path.dirname(script_dir), 'maps', 'sync_classroom_map.yaml')
+    map_file_path = os.path.join(os.path.dirname(script_dir), 'maps', 'classroom_map.yaml')
     # === ROBUST PATH FIX END ===
 
     processor = MapProcessor(map_file_path)
