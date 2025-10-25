@@ -1,0 +1,51 @@
+[0.069s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry -- -j4 -l4
+[0.310s] [  0%] Built target ament_cmake_python_symlink_image_geometry
+[0.437s] [ 18%] Built target gtest
+[1.234s] running egg_info
+[1.326s] writing image_geometry.egg-info/PKG-INFO
+[1.332s] writing dependency_links to image_geometry.egg-info/dependency_links.txt
+[1.335s] writing top-level names to image_geometry.egg-info/top_level.txt
+[1.563s] reading manifest file 'image_geometry.egg-info/SOURCES.txt'
+[1.564s] writing manifest file 'image_geometry.egg-info/SOURCES.txt'
+[1.678s] [ 18%] Built target ament_cmake_python_build_image_geometry_egg
+[1.772s] [ 36%] Built target gtest_main
+[1.876s] [ 63%] Built target image_geometry
+[1.955s] [ 81%] Built target image_geometry-utest
+[2.056s] [100%] Built target image_geometry-utest-equi
+[3.932s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry -- -j4 -l4
+[3.938s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry
+[3.985s] -- Install configuration: ""
+[3.985s] -- Execute custom install script
+[3.986s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/pythonpath.sh
+[3.987s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/pythonpath.dsv
+[3.987s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/PKG-INFO
+[3.991s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/SOURCES.txt
+[3.991s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/dependency_links.txt
+[3.991s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/top_level.txt
+[3.994s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py
+[3.994s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py
+[3.994s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.hpp
+[3.994s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.hpp
+[3.995s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp
+[3.995s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry
+[3.995s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry
+[4.001s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh
+[4.001s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv
+[4.002s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/path.sh
+[4.002s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/path.dsv
+[4.003s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.bash
+[4.003s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.sh
+[4.003s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.zsh
+[4.003s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.dsv
+[4.003s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/package.dsv
+[4.069s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/ament_index/resource_index/packages/image_geometry
+[4.069s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake
+[4.070s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.070s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake
+[4.070s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake
+[4.070s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/package.xml
+[4.226s] Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...
+[4.248s] -- Up-to-date: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib/libimage_geometry.so
+[4.248s] -- Up-to-date: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake
+[4.248s] -- Up-to-date: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake
+[4.267s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry

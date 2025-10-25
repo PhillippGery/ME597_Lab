@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'task_6'
 
@@ -10,6 +12,10 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
+        (os.path.join('share', package_name, 'resource'), glob('resource/*')),
+        (os.path.join('share', package_name, 'maps'), glob('maps/*')),
+        (os.path.join('share', package_name, 'rviz'), glob('rviz/*'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,6 +30,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'red_ball_tracker = task_6.red_ball_tracker:main',
         ],
     },
 )

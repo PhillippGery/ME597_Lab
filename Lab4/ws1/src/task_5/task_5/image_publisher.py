@@ -13,7 +13,7 @@ class ImagePublisher(Node):
         self.publisher_ = self.create_publisher(Image, '/video_data', 10)
         
         # (20 FPS) for start dont know the actual frames
-        timer_period = 1/30.0 
+        timer_period = 1/25.0 
         self.timer = self.create_timer(timer_period, self.timer_callback)
         
         pkg_path = get_package_share_directory('task_5')
@@ -21,6 +21,7 @@ class ImagePublisher(Node):
         
         # Open the video file
         self.cap = cv2.VideoCapture(video_path)
+        #DEBUG
         if not self.cap.isOpened():
             self.get_logger().error(f"Error opening video file: {video_path}")
             rclpy.shutdown()
@@ -48,7 +49,7 @@ def main(args=None):
     rclpy.init(args=args)
     image_publisher = ImagePublisher()
     rclpy.spin(image_publisher)
-    # Destroy the node explicitly
+    
     image_publisher.destroy_node()
     rclpy.shutdown()
 

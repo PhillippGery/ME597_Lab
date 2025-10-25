@@ -1,0 +1,34 @@
+[4.181s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests': CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/build --no-deps symlink_data
+[4.789s] /home/Gery/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[4.789s]   warnings.warn(msg)
+[4.941s] /home/Gery/.local/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[4.941s] !!
+[4.941s] 
+[4.941s]         ********************************************************************************
+[4.941s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[4.941s] 
+[4.941s]         License :: OSI Approved :: Apache Software License
+[4.941s] 
+[4.941s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[4.941s]         ********************************************************************************
+[4.941s] 
+[4.941s] !!
+[4.942s]   self._finalize_license_expression()
+[5.613s] running develop
+[6.571s] running egg_info
+[6.653s] writing opencv_tests.egg-info/PKG-INFO
+[6.656s] writing dependency_links to opencv_tests.egg-info/dependency_links.txt
+[6.657s] writing entry points to opencv_tests.egg-info/entry_points.txt
+[6.657s] writing requirements to opencv_tests.egg-info/requires.txt
+[6.662s] writing top-level names to opencv_tests.egg-info/top_level.txt
+[6.879s] reading manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[6.893s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[6.948s] running build_ext
+[6.948s] Creating /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/python3.10/site-packages/opencv-tests.egg-link (link to .)
+[6.948s] Installing broadcast script to /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/opencv_tests
+[6.949s] Installing rosfacedetect script to /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/opencv_tests
+[6.949s] Installing source script to /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/opencv_tests
+[6.949s] 
+[6.949s] Installed /home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests
+[6.949s] running symlink_data
+[7.020s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests' returned '0': CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/build --no-deps symlink_data

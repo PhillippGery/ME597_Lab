@@ -1,0 +1,19 @@
+[5.519s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5': CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/build/task_5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/build --no-deps symlink_data
+[6.807s] running develop
+[7.449s] running egg_info
+[7.472s] writing task_5.egg-info/PKG-INFO
+[7.472s] writing dependency_links to task_5.egg-info/dependency_links.txt
+[7.472s] writing entry points to task_5.egg-info/entry_points.txt
+[7.473s] writing requirements to task_5.egg-info/requires.txt
+[7.473s] writing top-level names to task_5.egg-info/top_level.txt
+[7.524s] reading manifest file 'task_5.egg-info/SOURCES.txt'
+[7.525s] writing manifest file 'task_5.egg-info/SOURCES.txt'
+[7.555s] running build_ext
+[7.555s] Creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages/task-5.egg-link (link to .)
+[7.556s] Installing image_publisher script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/task_5
+[7.557s] Installing object_detector script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/task_5
+[7.557s] Installing red_ball_tracker script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/task_5
+[7.557s] 
+[7.557s] Installed /home/Gery/ME597_Lab/Lab4/ws1/build/task_5
+[7.557s] running symlink_data
+[7.616s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5' returned '0': CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/build/task_5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/build --no-deps symlink_data

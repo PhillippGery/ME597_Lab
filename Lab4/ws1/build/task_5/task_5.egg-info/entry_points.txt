@@ -1,3 +1,4 @@
 [console_scripts]
 image_publisher = task_5.image_publisher:main
 object_detector = task_5.object_detector:main
+red_ball_tracker = task_6.red_ball_tracker:main

@@ -6,8 +6,10 @@ resource/lab3_video.avi
 resource/lab3_video.mp4
 resource/task_5
 task_5/__init__.py
+task_5/hsv_tuner.py
 task_5/image_publisher.py
 task_5/object_detector.py
+task_5/object_detector_YOLO.py
 task_5.egg-info/PKG-INFO
 task_5.egg-info/SOURCES.txt
 task_5.egg-info/dependency_links.txt
