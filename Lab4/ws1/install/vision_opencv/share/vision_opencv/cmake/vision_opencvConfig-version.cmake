@@ -1,1 +1,0 @@
-/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv/ament_cmake_core/vision_opencvConfig-version.cmake

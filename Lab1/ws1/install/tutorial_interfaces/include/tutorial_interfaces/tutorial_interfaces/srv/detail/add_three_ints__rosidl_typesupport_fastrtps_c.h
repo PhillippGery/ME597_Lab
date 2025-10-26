@@ -1,1 +1,0 @@
-/home/me597/me597/Lab1/ws1/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h

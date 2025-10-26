@@ -1,1 +1,0 @@
-/home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/image_geometry/include/image_geometry/stereo_camera_model.hpp

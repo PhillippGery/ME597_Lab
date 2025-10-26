@@ -1,1 +1,0 @@
-/home/me597/me597/Lab1/ws1/src/task_2_interfaces/msg/JointData.msg

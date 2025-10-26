@@ -1,1 +1,0 @@
-/home/me597/me597/Lab1/ws1/build/task_2_interfaces/rosidl_typesupport_introspection_c/task_2_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h

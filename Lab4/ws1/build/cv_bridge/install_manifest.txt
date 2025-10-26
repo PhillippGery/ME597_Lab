@@ -1,2 +1,0 @@
-/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
-/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake

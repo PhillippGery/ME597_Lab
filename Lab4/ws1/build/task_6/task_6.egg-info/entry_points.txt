@@ -1,2 +1,0 @@
-[console_scripts]
-red_ball_tracker = task_6.red_ball_tracker:main
