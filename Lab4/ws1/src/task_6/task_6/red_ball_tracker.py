@@ -34,7 +34,7 @@ class ObjectDetector(Node):
         #Init prms
         self.pid_p_angular = 0.4
         self.pid_i_angular = 0.1
-        self.pid_d_angular = 0.35
+        self.pid_d_angular = 0.4
         self.integral_angular = 0.0
         self.previous_error_angular = 0.0
         self.p_linear = 0.3
@@ -43,6 +43,7 @@ class ObjectDetector(Node):
         self.max_angular_speed = 1.0
 
         self.last_time = None
+        self.last_detection_time = self.get_clock().now()
         
 
         self.get_logger().info("Red Ball follower  started.")
@@ -106,6 +107,8 @@ class ObjectDetector(Node):
                     potential_balls.append(contour)
             
             if potential_balls:
+
+                self.last_detection_time = self.get_clock().now()
                 # Find the largest contour *among the circular ones*
                 largest_contour = max(potential_balls, key=cv2.contourArea)
                 
@@ -148,6 +151,9 @@ class ObjectDetector(Node):
                 i_term = (self.pid_i_angular * self.integral_angular)*dt
                 d_term = (self.pid_d_angular * derivative_angular)/dt
 
+                #windup for integral term
+                i_term = np.clip(i_term, -0.5, 0.5)
+
                 if abs(distance_to_object) > 0.1:
                     linear_velocity = self.p_linear * distance_to_object
                 else:
@@ -167,18 +173,40 @@ class ObjectDetector(Node):
                 
                 self.publisher_.publish(twist_msg)
 
-            else:
-                self.get_logger().info("No object detected.")
-                twist_msg.linear.x = 0.0
-                twist_msg.angular.z = 0.4
-                self.publisher_.publish(twist_msg)
-                self.previous_error_angular = 0.0
-                self.integral_angular = 0.0
+            else:                
+                time_since_last_detection = (self.get_clock().now() - self.last_detection_time).nanoseconds / 1e9
+                self.get_logger().info(f"Time since last detection: {time_since_last_detection} seconds")   
+                if time_since_last_detection > 3.0:
+                    self.get_logger().info("Searching for object...")
+                    twist_msg.linear.x = 0.0
+                    twist_msg.angular.z = 0.3
+                    self.publisher_.publish(twist_msg)
+                    self.previous_error_angular = 0.0
+                    self.integral_angular = 0.0
+
+                else:
+                    self.get_logger().info("No object detected.")
+                    twist_msg.linear.x = 0.0
+                    twist_msg.angular.z = 0.0
+                    self.publisher_.publish(twist_msg)
+                    self.previous_error_angular = 0.0
+                    self.integral_angular = 0.0
 
                 
         
         # Display vieo
-        cv2.imshow("Object Detector", cv_image)
+        scale = 0.7
+
+        # Calculate the new dimensions
+        width = int(cv_image.shape[1] * scale)
+        height = int(cv_image.shape[0] * scale)
+        dim = (width, height)
+
+        # Resize the image
+        resized_image = cv2.resize(cv_image, dim, interpolation=cv2.INTER_AREA)
+
+        # Display the RESIZED image
+        cv2.imshow("Object Detector", resized_image)
         cv2.waitKey(1)
 
 
