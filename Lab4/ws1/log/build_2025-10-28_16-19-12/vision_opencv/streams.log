@@ -1,0 +1,41 @@
+[1.324s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/vision_opencv -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv
+[1.503s] -- The C compiler identification is GNU 11.4.0
+[1.675s] -- The CXX compiler identification is GNU 11.4.0
+[1.709s] -- Detecting C compiler ABI info
+[2.021s] -- Detecting C compiler ABI info - done
+[2.045s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.046s] -- Detecting C compile features
+[2.051s] -- Detecting C compile features - done
+[2.067s] -- Detecting CXX compiler ABI info
+[2.509s] -- Detecting CXX compiler ABI info - done
+[2.560s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.562s] -- Detecting CXX compile features
+[2.562s] -- Detecting CXX compile features - done
+[2.570s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.902s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.239s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.834s] -- Configuring done
+[4.867s] -- Generating done
+[4.884s] -- Build files have been written to: /home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv
+[4.918s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv' returned '0': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/vision_opencv -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv
+[4.919s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv -- -j4 -l4
+[5.193s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv' returned '0': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv -- -j4 -l4
+[5.194s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv
+[5.233s] -- Install configuration: ""
+[5.233s] -- Execute custom install script
+[5.239s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/ament_index/resource_index/package_run_dependencies/vision_opencv
+[5.339s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/ament_index/resource_index/parent_prefix_path/vision_opencv
+[5.394s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/ament_prefix_path.sh
+[5.451s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/ament_prefix_path.dsv
+[5.520s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/path.sh
+[5.586s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/path.dsv
+[5.639s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.bash
+[5.725s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.sh
+[5.791s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.zsh
+[5.888s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.dsv
+[6.052s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/package.dsv
+[6.170s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/ament_index/resource_index/packages/vision_opencv
+[6.297s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/cmake/vision_opencvConfig.cmake
+[6.383s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/cmake/vision_opencvConfig-version.cmake
+[6.510s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/package.xml
+[6.597s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv' returned '0': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv

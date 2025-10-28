@@ -1,0 +1,796 @@
+[0.000000] (-) TimerEvent: {}
+[0.002297] (cv_bridge) JobQueued: {'identifier': 'cv_bridge', 'dependencies': OrderedDict()}
+[0.002446] (image_geometry) JobQueued: {'identifier': 'image_geometry', 'dependencies': OrderedDict()}
+[0.002500] (opencv_tests) JobQueued: {'identifier': 'opencv_tests', 'dependencies': OrderedDict([('cv_bridge', '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge')])}
+[0.002552] (task_5) JobQueued: {'identifier': 'task_5', 'dependencies': OrderedDict([('cv_bridge', '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge')])}
+[0.002580] (task_6) JobQueued: {'identifier': 'task_6', 'dependencies': OrderedDict([('cv_bridge', '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge')])}
+[0.002602] (vision_opencv) JobQueued: {'identifier': 'vision_opencv', 'dependencies': OrderedDict([('cv_bridge', '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge'), ('image_geometry', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry')])}
+[0.002651] (cv_bridge) JobStarted: {'identifier': 'cv_bridge'}
+[0.019799] (image_geometry) JobStarted: {'identifier': 'image_geometry'}
+[0.028693] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'cmake'}
+[0.031238] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/cv_bridge', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.041665] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'cmake'}
+[0.047447] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '/home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/image_geometry', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100266] (-) TimerEvent: {}
+[0.201148] (-) TimerEvent: {}
+[0.301924] (-) TimerEvent: {}
+[0.340356] (image_geometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.341192] (cv_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.402256] (-) TimerEvent: {}
+[0.503133] (-) TimerEvent: {}
+[0.597403] (image_geometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.603824] (-) TimerEvent: {}
+[0.618075] (cv_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.642317] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.650050] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.705151] (-) TimerEvent: {}
+[0.806425] (-) TimerEvent: {}
+[0.829448] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.831923] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.842270] (cv_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.845021] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.846734] (image_geometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.849298] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.849417] (cv_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.849559] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.853557] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.856880] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.906655] (-) TimerEvent: {}
+[1.012267] (-) TimerEvent: {}
+[1.032517] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.033953] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.060200] (cv_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.060477] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.063097] (image_geometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.063461] (cv_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.066207] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.070175] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.073772] (cv_bridge) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.079630] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_python: 1.3.12 (/opt/ros/humble/share/ament_cmake_python/cmake)\n'}
+[1.086536] (image_geometry) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.114818] (-) TimerEvent: {}
+[1.215382] (-) TimerEvent: {}
+[1.315787] (-) TimerEvent: {}
+[1.416551] (-) TimerEvent: {}
+[1.519261] (-) TimerEvent: {}
+[1.619742] (-) TimerEvent: {}
+[1.720247] (-) TimerEvent: {}
+[1.820334] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.820557] (-) TimerEvent: {}
+[1.881239] (image_geometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.920722] (-) TimerEvent: {}
+[2.002204] (cv_bridge) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.021204] (-) TimerEvent: {}
+[2.022877] (image_geometry) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.124186] (-) TimerEvent: {}
+[2.224582] (-) TimerEvent: {}
+[2.285135] (image_geometry) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: calib3d core highgui imgproc \n'}
+[2.292277] (image_geometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.324763] (-) TimerEvent: {}
+[2.379717] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.391096] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.411070] (image_geometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.424971] (-) TimerEvent: {}
+[2.446279] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.508474] (image_geometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.525120] (-) TimerEvent: {}
+[2.626009] (-) TimerEvent: {}
+[2.727820] (-) TimerEvent: {}
+[2.830307] (-) TimerEvent: {}
+[2.930724] (-) TimerEvent: {}
+[3.031282] (-) TimerEvent: {}
+[3.135098] (-) TimerEvent: {}
+[3.235505] (-) TimerEvent: {}
+[3.335898] (-) TimerEvent: {}
+[3.436522] (-) TimerEvent: {}
+[3.539233] (-) TimerEvent: {}
+[3.639749] (-) TimerEvent: {}
+[3.741584] (-) TimerEvent: {}
+[3.842264] (-) TimerEvent: {}
+[3.941828] (image_geometry) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.942397] (-) TimerEvent: {}
+[3.957468] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.042564] (-) TimerEvent: {}
+[4.059805] (cv_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed \n'}
+[4.120087] (cv_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310 \n'}
+[4.128962] (cv_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.142769] (-) TimerEvent: {}
+[4.156579] (image_geometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.157896] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.243180] (-) TimerEvent: {}
+[4.246159] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.254980] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.277270] (cv_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.308416] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.343568] (-) TimerEvent: {}
+[4.354130] (image_geometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.354416] (image_geometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.359662] (cv_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.443771] (-) TimerEvent: {}
+[4.469241] (cv_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.478634] (cv_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.480897] (image_geometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.512015] (image_geometry) StdoutLine: {'line': b'-- Generating done\n'}
+[4.521608] (image_geometry) StdoutLine: {'line': b'-- Build files have been written to: /home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry\n'}
+[4.532281] (image_geometry) CommandEnded: {'returncode': 0}
+[4.535174] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'build'}
+[4.535226] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry', '--', '-j4', '-l4'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.543996] (-) TimerEvent: {}
+[4.626250] (image_geometry) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o\x1b[0m\n'}
+[4.630448] (image_geometry) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[4.640457] (image_geometry) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[4.644079] (image_geometry) StdoutLine: {'line': b'[ 27%] Built target ament_cmake_python_symlink_image_geometry\n'}
+[4.644675] (-) TimerEvent: {}
+[4.679853] (cv_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.747501] (-) TimerEvent: {}
+[4.755079] (cv_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.848804] (-) TimerEvent: {}
+[4.880661] (cv_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.915631] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.948942] (-) TimerEvent: {}
+[5.051799] (-) TimerEvent: {}
+[5.080267] (cv_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.080440] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.151976] (-) TimerEvent: {}
+[5.182270] (image_geometry) StdoutLine: {'line': b'running egg_info\n'}
+[5.207491] (image_geometry) StdoutLine: {'line': b'creating image_geometry.egg-info\n'}
+[5.207806] (image_geometry) StdoutLine: {'line': b'writing image_geometry.egg-info/PKG-INFO\n'}
+[5.208060] (image_geometry) StdoutLine: {'line': b'writing dependency_links to image_geometry.egg-info/dependency_links.txt\n'}
+[5.209297] (image_geometry) StdoutLine: {'line': b'writing top-level names to image_geometry.egg-info/top_level.txt\n'}
+[5.209398] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[5.256057] (-) TimerEvent: {}
+[5.256510] (cv_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.256642] (cv_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.294098] (image_geometry) StdoutLine: {'line': b"reading manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[5.294283] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[5.347344] (image_geometry) StdoutLine: {'line': b'[ 27%] Built target ament_cmake_python_build_image_geometry_egg\n'}
+[5.356211] (-) TimerEvent: {}
+[5.364742] (image_geometry) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o\x1b[0m\n'}
+[5.443311] (cv_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.457821] (-) TimerEvent: {}
+[5.561252] (-) TimerEvent: {}
+[5.661766] (-) TimerEvent: {}
+[5.762239] (-) TimerEvent: {}
+[5.818303] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY\n'}
+[5.862424] (-) TimerEvent: {}
+[5.962905] (-) TimerEvent: {}
+[6.067263] (-) TimerEvent: {}
+[6.167787] (-) TimerEvent: {}
+[6.270207] (-) TimerEvent: {}
+[6.271322] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success\n'}
+[6.274492] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY\n'}
+[6.372721] (-) TimerEvent: {}
+[6.473240] (-) TimerEvent: {}
+[6.573687] (-) TimerEvent: {}
+[6.588400] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success\n'}
+[6.588590] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR\n'}
+[6.673936] (-) TimerEvent: {}
+[6.774462] (-) TimerEvent: {}
+[6.874980] (-) TimerEvent: {}
+[6.938340] (cv_bridge) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success\n'}
+[6.957175] (cv_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.977389] (-) TimerEvent: {}
+[7.077909] (-) TimerEvent: {}
+[7.178429] (-) TimerEvent: {}
+[7.278842] (-) TimerEvent: {}
+[7.327205] (cv_bridge) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[7.383672] (-) TimerEvent: {}
+[7.485215] (-) TimerEvent: {}
+[7.554333] (image_geometry) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[7.585396] (-) TimerEvent: {}
+[7.687659] (-) TimerEvent: {}
+[7.700591] (image_geometry) StdoutLine: {'line': b'[ 45%] Built target gtest_main\n'}
+[7.788130] (-) TimerEvent: {}
+[7.888577] (-) TimerEvent: {}
+[7.990135] (-) TimerEvent: {}
+[8.092509] (-) TimerEvent: {}
+[8.193173] (-) TimerEvent: {}
+[8.293639] (-) TimerEvent: {}
+[8.394136] (-) TimerEvent: {}
+[8.494576] (-) TimerEvent: {}
+[8.596704] (-) TimerEvent: {}
+[8.650470] (image_geometry) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libimage_geometry.so\x1b[0m\n'}
+[8.697035] (-) TimerEvent: {}
+[8.798490] (-) TimerEvent: {}
+[8.899175] (-) TimerEvent: {}
+[9.000241] (-) TimerEvent: {}
+[9.006831] (image_geometry) StdoutLine: {'line': b'[ 54%] Built target image_geometry\n'}
+[9.100429] (-) TimerEvent: {}
+[9.200927] (-) TimerEvent: {}
+[9.301575] (-) TimerEvent: {}
+[9.402335] (-) TimerEvent: {}
+[9.417569] (cv_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.448011] (cv_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[9.460179] (cv_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge\n'}
+[9.478294] (cv_bridge) CommandEnded: {'returncode': 0}
+[9.479251] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'build'}
+[9.479300] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge', '--', '-j4', '-l4'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.502521] (-) TimerEvent: {}
+[9.584610] (cv_bridge) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o\x1b[0m\n'}
+[9.593191] (cv_bridge) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[9.597227] (cv_bridge) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[9.601930] (cv_bridge) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_symlink_cv_bridge\n'}
+[9.602671] (-) TimerEvent: {}
+[9.703129] (-) TimerEvent: {}
+[9.805449] (-) TimerEvent: {}
+[9.907181] (-) TimerEvent: {}
+[10.010253] (-) TimerEvent: {}
+[10.113280] (-) TimerEvent: {}
+[10.214432] (-) TimerEvent: {}
+[10.314905] (-) TimerEvent: {}
+[10.370818] (cv_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[10.418157] (-) TimerEvent: {}
+[10.474176] (cv_bridge) StdoutLine: {'line': b'creating cv_bridge.egg-info\n'}
+[10.474388] (cv_bridge) StdoutLine: {'line': b'writing cv_bridge.egg-info/PKG-INFO\n'}
+[10.474475] (cv_bridge) StdoutLine: {'line': b'writing dependency_links to cv_bridge.egg-info/dependency_links.txt\n'}
+[10.476884] (cv_bridge) StdoutLine: {'line': b'writing top-level names to cv_bridge.egg-info/top_level.txt\n'}
+[10.477131] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[10.523223] (-) TimerEvent: {}
+[10.623626] (-) TimerEvent: {}
+[10.665964] (cv_bridge) StdoutLine: {'line': b"reading manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[10.668437] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[10.724301] (-) TimerEvent: {}
+[10.788905] (cv_bridge) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_build_cv_bridge_egg\n'}
+[10.824513] (cv_bridge) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_mat_sensor_msgs_image_type_adapter.cpp.o\x1b[0m\n'}
+[10.824727] (-) TimerEvent: {}
+[10.925183] (-) TimerEvent: {}
+[11.026475] (-) TimerEvent: {}
+[11.130204] (-) TimerEvent: {}
+[11.232165] (-) TimerEvent: {}
+[11.332799] (-) TimerEvent: {}
+[11.436322] (-) TimerEvent: {}
+[11.536858] (-) TimerEvent: {}
+[11.637415] (-) TimerEvent: {}
+[11.738141] (-) TimerEvent: {}
+[11.840168] (-) TimerEvent: {}
+[11.945055] (-) TimerEvent: {}
+[12.045779] (-) TimerEvent: {}
+[12.146459] (-) TimerEvent: {}
+[12.246964] (-) TimerEvent: {}
+[12.300638] (cv_bridge) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[12.350283] (-) TimerEvent: {}
+[12.441520] (cv_bridge) StdoutLine: {'line': b'[ 27%] Built target gtest_main\n'}
+[12.450497] (-) TimerEvent: {}
+[12.468094] (cv_bridge) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o\x1b[0m\n'}
+[12.485539] (image_geometry) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[12.550683] (-) TimerEvent: {}
+[12.651585] (-) TimerEvent: {}
+[12.683894] (image_geometry) StdoutLine: {'line': b'[ 63%] Built target gtest\n'}
+[12.740660] (image_geometry) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object test/CMakeFiles/image_geometry-utest-equi.dir/utest_equi.cpp.o\x1b[0m\n'}
+[12.755361] (-) TimerEvent: {}
+[12.777498] (image_geometry) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object test/CMakeFiles/image_geometry-utest.dir/utest.cpp.o\x1b[0m\n'}
+[12.855561] (-) TimerEvent: {}
+[12.957570] (-) TimerEvent: {}
+[13.058083] (-) TimerEvent: {}
+[13.162172] (-) TimerEvent: {}
+[13.262652] (-) TimerEvent: {}
+[13.363070] (-) TimerEvent: {}
+[13.463839] (-) TimerEvent: {}
+[13.566430] (-) TimerEvent: {}
+[13.667081] (-) TimerEvent: {}
+[13.767623] (-) TimerEvent: {}
+[13.869625] (-) TimerEvent: {}
+[13.970567] (-) TimerEvent: {}
+[14.071497] (-) TimerEvent: {}
+[14.175552] (-) TimerEvent: {}
+[14.279271] (-) TimerEvent: {}
+[14.380115] (-) TimerEvent: {}
+[14.480551] (-) TimerEvent: {}
+[14.581136] (-) TimerEvent: {}
+[14.684209] (-) TimerEvent: {}
+[14.784708] (-) TimerEvent: {}
+[14.885271] (-) TimerEvent: {}
+[14.986099] (-) TimerEvent: {}
+[15.089745] (-) TimerEvent: {}
+[15.190433] (-) TimerEvent: {}
+[15.291158] (-) TimerEvent: {}
+[15.391783] (-) TimerEvent: {}
+[15.496237] (-) TimerEvent: {}
+[15.596689] (-) TimerEvent: {}
+[15.697960] (-) TimerEvent: {}
+[15.799800] (-) TimerEvent: {}
+[15.904208] (-) TimerEvent: {}
+[16.004639] (-) TimerEvent: {}
+[16.106021] (-) TimerEvent: {}
+[16.206559] (-) TimerEvent: {}
+[16.309179] (-) TimerEvent: {}
+[16.412244] (-) TimerEvent: {}
+[16.512728] (-) TimerEvent: {}
+[16.613944] (-) TimerEvent: {}
+[16.717527] (-) TimerEvent: {}
+[16.819281] (-) TimerEvent: {}
+[16.921568] (-) TimerEvent: {}
+[17.024334] (-) TimerEvent: {}
+[17.126512] (-) TimerEvent: {}
+[17.227078] (-) TimerEvent: {}
+[17.327559] (-) TimerEvent: {}
+[17.428163] (-) TimerEvent: {}
+[17.529096] (-) TimerEvent: {}
+[17.632448] (-) TimerEvent: {}
+[17.733249] (-) TimerEvent: {}
+[17.835254] (-) TimerEvent: {}
+[17.935699] (-) TimerEvent: {}
+[18.036523] (-) TimerEvent: {}
+[18.140595] (-) TimerEvent: {}
+[18.241478] (-) TimerEvent: {}
+[18.345212] (-) TimerEvent: {}
+[18.445684] (-) TimerEvent: {}
+[18.523534] (cv_bridge) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[18.545922] (-) TimerEvent: {}
+[18.646573] (-) TimerEvent: {}
+[18.721303] (cv_bridge) StdoutLine: {'line': b'[ 38%] Built target gtest\n'}
+[18.748983] (-) TimerEvent: {}
+[18.846454] (image_geometry) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest-equi\x1b[0m\n'}
+[18.849202] (-) TimerEvent: {}
+[18.952199] (-) TimerEvent: {}
+[19.052722] (-) TimerEvent: {}
+[19.153234] (-) TimerEvent: {}
+[19.222283] (image_geometry) StdoutLine: {'line': b'[ 90%] Built target image_geometry-utest-equi\n'}
+[19.253666] (-) TimerEvent: {}
+[19.354236] (-) TimerEvent: {}
+[19.437591] (image_geometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest\x1b[0m\n'}
+[19.454389] (-) TimerEvent: {}
+[19.554827] (-) TimerEvent: {}
+[19.655844] (-) TimerEvent: {}
+[19.699476] (image_geometry) StdoutLine: {'line': b'[100%] Built target image_geometry-utest\n'}
+[19.719576] (image_geometry) CommandEnded: {'returncode': 0}
+[19.722391] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'install'}
+[19.734665] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/image_geometry'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[19.748301] (image_geometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.749403] (image_geometry) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[19.749513] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/pythonpath.sh\n'}
+[19.756184] (-) TimerEvent: {}
+[19.763921] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/pythonpath.dsv\n'}
+[19.780491] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/PKG-INFO\n'}
+[19.805471] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[19.820647] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[19.833437] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-4.1.0-py3.10.egg-info/top_level.txt\n'}
+[19.848425] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py\n'}
+[19.856336] (-) TimerEvent: {}
+[19.861913] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py\n'}
+[19.890539] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.hpp\n'}
+[19.911159] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.hpp\n'}
+[19.926625] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp\n'}
+[19.942711] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry\n'}
+[19.955783] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry\n'}
+[19.956543] (-) TimerEvent: {}
+[19.976607] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh\n'}
+[19.996965] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv\n'}
+[20.015214] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/path.sh\n'}
+[20.027989] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/environment/path.dsv\n'}
+[20.043564] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.bash\n'}
+[20.057626] (-) TimerEvent: {}
+[20.058088] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.sh\n'}
+[20.070522] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.zsh\n'}
+[20.092465] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/local_setup.dsv\n'}
+[20.118867] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/package.dsv\n'}
+[20.129995] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/ament_index/resource_index/packages/image_geometry\n'}
+[20.149293] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.157875] (-) TimerEvent: {}
+[20.163639] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.179729] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake\n'}
+[20.204393] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake\n'}
+[20.221184] (image_geometry) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/package.xml\n'}
+[20.258120] (-) TimerEvent: {}
+[20.290036] (image_geometry) StdoutLine: {'line': b"Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...\n"}
+[20.290310] (image_geometry) StdoutLine: {'line': b"Compiling '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py'...\n"}
+[20.290404] (image_geometry) StdoutLine: {'line': b"Compiling '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py'...\n"}
+[20.298562] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib/libimage_geometry.so\n'}
+[20.300138] (image_geometry) StdoutLine: {'line': b'-- Set runtime path of "/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib/libimage_geometry.so" to ""\n'}
+[20.300235] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake\n'}
+[20.300306] (image_geometry) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake\n'}
+[20.307861] (image_geometry) CommandEnded: {'returncode': 0}
+[20.353469] (image_geometry) JobEnded: {'identifier': 'image_geometry', 'rc': 0}
+[20.358195] (-) TimerEvent: {}
+[20.458594] (-) TimerEvent: {}
+[20.559156] (-) TimerEvent: {}
+[20.659599] (-) TimerEvent: {}
+[20.746586] (cv_bridge) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libcv_bridge.so\x1b[0m\n'}
+[20.759820] (-) TimerEvent: {}
+[20.860608] (-) TimerEvent: {}
+[20.962297] (-) TimerEvent: {}
+[21.064388] (-) TimerEvent: {}
+[21.164895] (-) TimerEvent: {}
+[21.183823] (cv_bridge) StdoutLine: {'line': b'[ 44%] Built target cv_bridge\n'}
+[21.227637] (cv_bridge) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o\x1b[0m\n'}
+[21.232493] (cv_bridge) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv4.cpp.o\x1b[0m\n'}
+[21.254005] (cv_bridge) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o\x1b[0m\n'}
+[21.261228] (cv_bridge) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o\x1b[0m\n'}
+[21.268345] (-) TimerEvent: {}
+[21.368869] (-) TimerEvent: {}
+[21.469425] (-) TimerEvent: {}
+[21.570241] (-) TimerEvent: {}
+[21.675210] (-) TimerEvent: {}
+[21.775873] (-) TimerEvent: {}
+[21.876450] (-) TimerEvent: {}
+[21.976996] (-) TimerEvent: {}
+[22.081230] (-) TimerEvent: {}
+[22.181730] (-) TimerEvent: {}
+[22.282214] (-) TimerEvent: {}
+[22.382732] (-) TimerEvent: {}
+[22.483267] (-) TimerEvent: {}
+[22.583716] (-) TimerEvent: {}
+[22.684499] (-) TimerEvent: {}
+[22.786230] (-) TimerEvent: {}
+[22.886724] (-) TimerEvent: {}
+[22.990149] (-) TimerEvent: {}
+[23.090560] (-) TimerEvent: {}
+[23.193207] (-) TimerEvent: {}
+[23.293637] (-) TimerEvent: {}
+[23.394088] (-) TimerEvent: {}
+[23.494540] (-) TimerEvent: {}
+[23.595075] (-) TimerEvent: {}
+[23.695574] (-) TimerEvent: {}
+[23.796188] (-) TimerEvent: {}
+[23.897137] (-) TimerEvent: {}
+[23.999233] (-) TimerEvent: {}
+[24.101384] (-) TimerEvent: {}
+[24.202952] (-) TimerEvent: {}
+[24.299327] (cv_bridge) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o\x1b[0m\n'}
+[24.303290] (-) TimerEvent: {}
+[24.403645] (-) TimerEvent: {}
+[24.405701] (cv_bridge) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o\x1b[0m\n'}
+[24.503868] (-) TimerEvent: {}
+[24.605553] (-) TimerEvent: {}
+[24.707501] (-) TimerEvent: {}
+[24.808237] (-) TimerEvent: {}
+[24.910513] (-) TimerEvent: {}
+[25.010999] (-) TimerEvent: {}
+[25.114263] (-) TimerEvent: {}
+[25.215394] (-) TimerEvent: {}
+[25.318543] (-) TimerEvent: {}
+[25.421254] (-) TimerEvent: {}
+[25.521730] (-) TimerEvent: {}
+[25.622283] (-) TimerEvent: {}
+[25.722750] (-) TimerEvent: {}
+[25.823297] (-) TimerEvent: {}
+[25.925562] (-) TimerEvent: {}
+[26.026130] (-) TimerEvent: {}
+[26.126653] (-) TimerEvent: {}
+[26.228261] (-) TimerEvent: {}
+[26.328813] (-) TimerEvent: {}
+[26.429324] (-) TimerEvent: {}
+[26.533177] (-) TimerEvent: {}
+[26.634985] (-) TimerEvent: {}
+[26.735591] (-) TimerEvent: {}
+[26.836244] (-) TimerEvent: {}
+[26.937402] (-) TimerEvent: {}
+[27.037889] (-) TimerEvent: {}
+[27.141470] (-) TimerEvent: {}
+[27.241928] (-) TimerEvent: {}
+[27.342364] (-) TimerEvent: {}
+[27.443150] (-) TimerEvent: {}
+[27.546614] (-) TimerEvent: {}
+[27.647257] (-) TimerEvent: {}
+[27.742678] (cv_bridge) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o\x1b[0m\n'}
+[27.747439] (-) TimerEvent: {}
+[27.847990] (-) TimerEvent: {}
+[27.949677] (-) TimerEvent: {}
+[27.971039] (cv_bridge) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_dynamic_scaling.cpp.o\x1b[0m\n'}
+[28.049833] (-) TimerEvent: {}
+[28.150253] (-) TimerEvent: {}
+[28.250801] (-) TimerEvent: {}
+[28.351502] (-) TimerEvent: {}
+[28.453678] (-) TimerEvent: {}
+[28.554202] (-) TimerEvent: {}
+[28.654812] (-) TimerEvent: {}
+[28.758443] (-) TimerEvent: {}
+[28.858928] (-) TimerEvent: {}
+[28.958767] (cv_bridge) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX shared module boost/cv_bridge_boost.so\x1b[0m\n'}
+[28.958986] (-) TimerEvent: {}
+[29.059432] (-) TimerEvent: {}
+[29.159950] (-) TimerEvent: {}
+[29.260543] (-) TimerEvent: {}
+[29.304744] (cv_bridge) StdoutLine: {'line': b'[ 94%] Built target cv_bridge_boost\n'}
+[29.361304] (-) TimerEvent: {}
+[29.462222] (-) TimerEvent: {}
+[29.562701] (-) TimerEvent: {}
+[29.663209] (-) TimerEvent: {}
+[29.763767] (-) TimerEvent: {}
+[29.867365] (-) TimerEvent: {}
+[29.967861] (-) TimerEvent: {}
+[30.068427] (-) TimerEvent: {}
+[30.170251] (-) TimerEvent: {}
+[30.270767] (-) TimerEvent: {}
+[30.371864] (-) TimerEvent: {}
+[30.472875] (-) TimerEvent: {}
+[30.573525] (-) TimerEvent: {}
+[30.674198] (-) TimerEvent: {}
+[30.774767] (-) TimerEvent: {}
+[30.875165] (-) TimerEvent: {}
+[30.975757] (-) TimerEvent: {}
+[31.076382] (-) TimerEvent: {}
+[31.177014] (-) TimerEvent: {}
+[31.280120] (-) TimerEvent: {}
+[31.301291] (cv_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cv_bridge-utest\x1b[0m\n'}
+[31.380276] (-) TimerEvent: {}
+[31.480822] (-) TimerEvent: {}
+[31.581440] (-) TimerEvent: {}
+[31.681889] (-) TimerEvent: {}
+[31.782571] (-) TimerEvent: {}
+[31.883214] (-) TimerEvent: {}
+[31.985468] (-) TimerEvent: {}
+[32.061580] (cv_bridge) StdoutLine: {'line': b'[100%] Built target cv_bridge-utest\n'}
+[32.080148] (cv_bridge) CommandEnded: {'returncode': 0}
+[32.081369] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'install'}
+[32.081747] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[32.085611] (-) TimerEvent: {}
+[32.094226] (cv_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[32.095931] (cv_bridge) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[32.097588] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh\n'}
+[32.111235] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv\n'}
+[32.125345] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/PKG-INFO\n'}
+[32.139057] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[32.152477] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[32.165228] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/top_level.txt\n'}
+[32.178118] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py\n'}
+[32.185856] (-) TimerEvent: {}
+[32.189967] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py\n'}
+[32.213568] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h\n'}
+[32.225304] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost//cv_bridge_boost.so\n'}
+[32.236774] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.hpp\n'}
+[32.248841] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_mat_sensor_msgs_image_type_adapter.hpp\n'}
+[32.261447] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.hpp\n'}
+[32.273534] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/visibility_control.h\n'}
+[32.285742] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib/libcv_bridge.so\n'}
+[32.285930] (-) TimerEvent: {}
+[32.299722] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge\n'}
+[32.312667] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge\n'}
+[32.325450] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh\n'}
+[32.335495] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv\n'}
+[32.348294] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/path.sh\n'}
+[32.361801] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/path.dsv\n'}
+[32.374603] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.bash\n'}
+[32.386235] (-) TimerEvent: {}
+[32.386498] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.sh\n'}
+[32.400326] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.zsh\n'}
+[32.413231] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.dsv\n'}
+[32.425185] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/package.dsv\n'}
+[32.438893] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge\n'}
+[32.451710] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake\n'}
+[32.466059] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[32.479284] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[32.486410] (-) TimerEvent: {}
+[32.491367] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake\n'}
+[32.504562] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake\n'}
+[32.521384] (cv_bridge) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/package.xml\n'}
+[32.586596] (-) TimerEvent: {}
+[32.593502] (cv_bridge) StdoutLine: {'line': b"Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...\n"}
+[32.594373] (cv_bridge) StdoutLine: {'line': b"Compiling '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py'...\n"}
+[32.594798] (cv_bridge) StdoutLine: {'line': b"Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost'...\n"}
+[32.595339] (cv_bridge) StdoutLine: {'line': b"Compiling '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py'...\n"}
+[32.606421] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake\n'}
+[32.608284] (cv_bridge) StdoutLine: {'line': b'-- Installing: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake\n'}
+[32.613416] (cv_bridge) CommandEnded: {'returncode': 0}
+[32.665581] (cv_bridge) JobEnded: {'identifier': 'cv_bridge', 'rc': 0}
+[32.666996] (opencv_tests) JobStarted: {'identifier': 'opencv_tests'}
+[32.678084] (task_5) JobStarted: {'identifier': 'task_5'}
+[32.686890] (-) TimerEvent: {}
+[32.692926] (task_6) JobStarted: {'identifier': 'task_6'}
+[32.711245] (vision_opencv) JobStarted: {'identifier': 'vision_opencv'}
+[32.787193] (-) TimerEvent: {}
+[32.888239] (-) TimerEvent: {}
+[32.990613] (-) TimerEvent: {}
+[33.091227] (-) TimerEvent: {}
+[33.196207] (-) TimerEvent: {}
+[33.296995] (-) TimerEvent: {}
+[33.397685] (-) TimerEvent: {}
+[33.499338] (-) TimerEvent: {}
+[33.600061] (-) TimerEvent: {}
+[33.703240] (-) TimerEvent: {}
+[33.803595] (-) TimerEvent: {}
+[33.904376] (-) TimerEvent: {}
+[34.005029] (-) TimerEvent: {}
+[34.026383] (vision_opencv) JobProgress: {'identifier': 'vision_opencv', 'progress': 'cmake'}
+[34.034254] (vision_opencv) Command: {'cmd': ['/usr/bin/cmake', '/home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/vision_opencv', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble')]), 'shell': False}
+[34.107382] (-) TimerEvent: {}
+[34.208246] (-) TimerEvent: {}
+[34.214558] (vision_opencv) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[34.310263] (-) TimerEvent: {}
+[34.386520] (vision_opencv) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[34.410553] (-) TimerEvent: {}
+[34.419795] (vision_opencv) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[34.510763] (-) TimerEvent: {}
+[34.613052] (-) TimerEvent: {}
+[34.715118] (-) TimerEvent: {}
+[34.731725] (vision_opencv) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[34.756131] (vision_opencv) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[34.756832] (vision_opencv) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[34.761662] (vision_opencv) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[34.778251] (vision_opencv) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[34.817236] (-) TimerEvent: {}
+[34.918330] (-) TimerEvent: {}
+[35.022343] (-) TimerEvent: {}
+[35.122806] (-) TimerEvent: {}
+[35.220376] (vision_opencv) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[35.223330] (-) TimerEvent: {}
+[35.271147] (vision_opencv) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[35.272813] (vision_opencv) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[35.273126] (vision_opencv) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[35.281340] (vision_opencv) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[35.325277] (-) TimerEvent: {}
+[35.425665] (-) TimerEvent: {}
+[35.526075] (-) TimerEvent: {}
+[35.626506] (-) TimerEvent: {}
+[35.726974] (-) TimerEvent: {}
+[35.827504] (-) TimerEvent: {}
+[35.929665] (-) TimerEvent: {}
+[36.031102] (-) TimerEvent: {}
+[36.131804] (-) TimerEvent: {}
+[36.238252] (-) TimerEvent: {}
+[36.333393] (opencv_tests) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/build', '--no-deps', 'symlink_data'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'Gery', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/Gery/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/Gery', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/Gery/ME597_Lab/Lab4/ws1', 'TERM_PROGRAM_VERSION': '1.105.1', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/Gery/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/211/usr/share/code/code', 'MANAGERPID': '2017', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2178', 'BUNDLED_DEBUGPY_PATH': '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3513', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'Gery', 'JOURNAL_STREAM': '8:26248', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'Gery', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146', 'GTK_EXE_PREFIX': '/snap/code/211/usr', 'INVOCATION_ID': '08fb30f0d86046059c306a4131a00453', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/211/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'PYTHONSTARTUP': '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/Gery/snap/code/211/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XPFMF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-837ab28127.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '14', 'AMENT_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'ROS_WS': '/home/Gery/ME597_Lab/Lab4/ws1', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge'}, 'shell': False}
+[36.344462] (-) TimerEvent: {}
+[36.381725] (task_6) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/Gery/ME597_Lab/Lab4/ws1/build/task_6/build', '--no-deps', 'symlink_data'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/task_6', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'Gery', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/Gery/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/Gery', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/Gery/ME597_Lab/Lab4/ws1', 'TERM_PROGRAM_VERSION': '1.105.1', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/Gery/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/211/usr/share/code/code', 'MANAGERPID': '2017', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2178', 'BUNDLED_DEBUGPY_PATH': '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3513', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'Gery', 'JOURNAL_STREAM': '8:26248', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'Gery', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146', 'GTK_EXE_PREFIX': '/snap/code/211/usr', 'INVOCATION_ID': '08fb30f0d86046059c306a4131a00453', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/211/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'PYTHONSTARTUP': '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/Gery/snap/code/211/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XPFMF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-837ab28127.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '14', 'AMENT_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'ROS_WS': '/home/Gery/ME597_Lab/Lab4/ws1', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/Gery/ME597_Lab/Lab4/ws1/build/task_6', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/Gery/ME597_Lab/Lab4/ws1/build/task_6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge'}, 'shell': False}
+[36.444719] (-) TimerEvent: {}
+[36.548513] (-) TimerEvent: {}
+[36.585511] (task_5) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5/build', '--no-deps', 'symlink_data'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'Gery', 'FONTCONFIG_PATH': '/etc/fonts', 'GIO_MODULE_DIR': '/home/Gery/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/Gery', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/Gery/ME597_Lab/Lab4/ws1', 'TERM_PROGRAM_VERSION': '1.105.1', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/Gery/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/211/usr/share/code/code', 'MANAGERPID': '2017', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2178', 'BUNDLED_DEBUGPY_PATH': '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3513', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'Gery', 'JOURNAL_STREAM': '8:26248', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'Gery', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146', 'GTK_EXE_PREFIX': '/snap/code/211/usr', 'INVOCATION_ID': '08fb30f0d86046059c306a4131a00453', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/211/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'PYTHONSTARTUP': '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/Gery/snap/code/211/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XPFMF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-837ab28127.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '14', 'AMENT_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'ROS_WS': '/home/Gery/ME597_Lab/Lab4/ws1', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge'}, 'shell': False}
+[36.613416] (vision_opencv) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[36.652129] (-) TimerEvent: {}
+[36.752555] (-) TimerEvent: {}
+[36.853167] (-) TimerEvent: {}
+[36.949510] (vision_opencv) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[36.955228] (-) TimerEvent: {}
+[37.057213] (-) TimerEvent: {}
+[37.083521] (opencv_tests) StderrLine: {'line': b"/home/Gery/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[37.083786] (opencv_tests) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[37.157373] (-) TimerEvent: {}
+[37.262187] (-) TimerEvent: {}
+[37.316247] (opencv_tests) StderrLine: {'line': b'/home/Gery/.local/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.\n'}
+[37.316471] (opencv_tests) StderrLine: {'line': b'!!\n'}
+[37.316553] (opencv_tests) StderrLine: {'line': b'\n'}
+[37.316833] (opencv_tests) StderrLine: {'line': b'        ********************************************************************************\n'}
+[37.317171] (opencv_tests) StderrLine: {'line': b'        Please consider removing the following classifiers in favor of a SPDX license expression:\n'}
+[37.317280] (opencv_tests) StderrLine: {'line': b'\n'}
+[37.317521] (opencv_tests) StderrLine: {'line': b'        License :: OSI Approved :: Apache Software License\n'}
+[37.317609] (opencv_tests) StderrLine: {'line': b'\n'}
+[37.317682] (opencv_tests) StderrLine: {'line': b'        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.\n'}
+[37.317751] (opencv_tests) StderrLine: {'line': b'        ********************************************************************************\n'}
+[37.317816] (opencv_tests) StderrLine: {'line': b'\n'}
+[37.317880] (opencv_tests) StderrLine: {'line': b'!!\n'}
+[37.317944] (opencv_tests) StderrLine: {'line': b'  self._finalize_license_expression()\n'}
+[37.367269] (-) TimerEvent: {}
+[37.468265] (-) TimerEvent: {}
+[37.545382] (vision_opencv) StdoutLine: {'line': b'-- Configuring done\n'}
+[37.569326] (-) TimerEvent: {}
+[37.577511] (vision_opencv) StdoutLine: {'line': b'-- Generating done\n'}
+[37.595461] (vision_opencv) StdoutLine: {'line': b'-- Build files have been written to: /home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv\n'}
+[37.628576] (vision_opencv) CommandEnded: {'returncode': 0}
+[37.629198] (vision_opencv) JobProgress: {'identifier': 'vision_opencv', 'progress': 'build'}
+[37.629373] (vision_opencv) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv', '--', '-j4', '-l4'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble')]), 'shell': False}
+[37.672980] (-) TimerEvent: {}
+[37.775748] (-) TimerEvent: {}
+[37.877681] (-) TimerEvent: {}
+[37.883570] (vision_opencv) CommandEnded: {'returncode': 0}
+[37.904581] (vision_opencv) JobProgress: {'identifier': 'vision_opencv', 'progress': 'install'}
+[37.904636] (vision_opencv) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv'], 'cwd': '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'Gery'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/Gery/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/lib:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/Gery'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/Gery/ME597_Lab/Lab4/ws1'), ('TERM_PROGRAM_VERSION', '1.105.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/211/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/Gery/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/211/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/211/usr/share/code/code'), ('MANAGERPID', '2017'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2178'), ('BUNDLED_DEBUGPY_PATH', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3513'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'Gery'), ('JOURNAL_STREAM', '8:26248'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'Gery'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/Gery/.local/bin:/opt/ros/humble/bin:/home/Gery/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/Gery/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'), ('SESSION_MANAGER', 'local/me597:@/tmp/.ICE-unix/2146,unix/me597:/tmp/.ICE-unix/2146'), ('GTK_EXE_PREFIX', '/snap/code/211/usr'), ('INVOCATION_ID', '08fb30f0d86046059c306a4131a00453'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/211/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/Gery/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c458c09b5d59d7c3.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/Gery/.config/Code/User/workspaceStorage/278d2580b436f48d0095426a6e3516c3/ms-python.python/pythonrc.py'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/Gery/snap/code/211/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XPFMF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-837ab28127.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/Gery/snap/code/211/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/Gery/ME597_Lab/Lab4/ws1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/Gery/ME597_Lab/Lab4/ws1/build/vision_opencv'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/Gery/snap/code/211/.local/share:/home/Gery/snap/code/211:/snap/code/211/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry/local/lib/python3.10/dist-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/Gery/ME597_Lab/Lab4/ws1/install/image_geometry:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:/opt/ros/humble')]), 'shell': False}
+[37.944065] (vision_opencv) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[37.944355] (vision_opencv) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[37.950143] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/ament_index/resource_index/package_run_dependencies/vision_opencv\n'}
+[37.977878] (-) TimerEvent: {}
+[38.049244] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/ament_index/resource_index/parent_prefix_path/vision_opencv\n'}
+[38.078196] (-) TimerEvent: {}
+[38.105109] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/ament_prefix_path.sh\n'}
+[38.162262] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/ament_prefix_path.dsv\n'}
+[38.178379] (-) TimerEvent: {}
+[38.230646] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/path.sh\n'}
+[38.286179] (-) TimerEvent: {}
+[38.296645] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/environment/path.dsv\n'}
+[38.308436] (opencv_tests) StdoutLine: {'line': b'running develop\n'}
+[38.350411] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.bash\n'}
+[38.389461] (-) TimerEvent: {}
+[38.435530] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.sh\n'}
+[38.494064] (-) TimerEvent: {}
+[38.502022] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.zsh\n'}
+[38.599300] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/local_setup.dsv\n'}
+[38.599704] (-) TimerEvent: {}
+[38.700332] (-) TimerEvent: {}
+[38.762850] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/package.dsv\n'}
+[38.800864] (-) TimerEvent: {}
+[38.840127] (task_6) StdoutLine: {'line': b'running develop\n'}
+[38.880505] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/ament_index/resource_index/packages/vision_opencv\n'}
+[38.909671] (-) TimerEvent: {}
+[39.007860] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/cmake/vision_opencvConfig.cmake\n'}
+[39.009881] (-) TimerEvent: {}
+[39.094220] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/cmake/vision_opencvConfig-version.cmake\n'}
+[39.114376] (-) TimerEvent: {}
+[39.220220] (vision_opencv) StdoutLine: {'line': b'-- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/vision_opencv/share/vision_opencv/package.xml\n'}
+[39.221396] (-) TimerEvent: {}
+[39.301236] (vision_opencv) CommandEnded: {'returncode': 0}
+[39.308769] (task_5) StdoutLine: {'line': b'running develop\n'}
+[39.328261] (-) TimerEvent: {}
+[39.407561] (vision_opencv) JobEnded: {'identifier': 'vision_opencv', 'rc': 0}
+[39.433547] (-) TimerEvent: {}
+[39.534165] (-) TimerEvent: {}
+[39.634727] (-) TimerEvent: {}
+[39.737345] (-) TimerEvent: {}
+[39.837855] (-) TimerEvent: {}
+[39.943431] (-) TimerEvent: {}
+[39.994352] (opencv_tests) StdoutLine: {'line': b'running egg_info\n'}
+[40.043663] (-) TimerEvent: {}
+[40.063352] (opencv_tests) StdoutLine: {'line': b'creating opencv_tests.egg-info\n'}
+[40.064980] (opencv_tests) StdoutLine: {'line': b'writing opencv_tests.egg-info/PKG-INFO\n'}
+[40.069735] (opencv_tests) StdoutLine: {'line': b'writing dependency_links to opencv_tests.egg-info/dependency_links.txt\n'}
+[40.072689] (opencv_tests) StdoutLine: {'line': b'writing entry points to opencv_tests.egg-info/entry_points.txt\n'}
+[40.073118] (opencv_tests) StdoutLine: {'line': b'writing requirements to opencv_tests.egg-info/requires.txt\n'}
+[40.075120] (opencv_tests) StdoutLine: {'line': b'writing top-level names to opencv_tests.egg-info/top_level.txt\n'}
+[40.075257] (opencv_tests) StdoutLine: {'line': b"writing manifest file 'opencv_tests.egg-info/SOURCES.txt'\n"}
+[40.132642] (task_6) StdoutLine: {'line': b'running egg_info\n'}
+[40.143920] (-) TimerEvent: {}
+[40.237061] (task_6) StdoutLine: {'line': b'creating task_6.egg-info\n'}
+[40.237773] (task_6) StdoutLine: {'line': b'writing task_6.egg-info/PKG-INFO\n'}
+[40.239746] (opencv_tests) StdoutLine: {'line': b"reading manifest file 'opencv_tests.egg-info/SOURCES.txt'\n"}
+[40.243225] (task_6) StdoutLine: {'line': b'writing dependency_links to task_6.egg-info/dependency_links.txt\n'}
+[40.243364] (task_6) StdoutLine: {'line': b'writing entry points to task_6.egg-info/entry_points.txt\n'}
+[40.243482] (task_6) StdoutLine: {'line': b'writing requirements to task_6.egg-info/requires.txt\n'}
+[40.243584] (task_6) StdoutLine: {'line': b'writing top-level names to task_6.egg-info/top_level.txt\n'}
+[40.243746] (task_6) StdoutLine: {'line': b"writing manifest file 'task_6.egg-info/SOURCES.txt'\n"}
+[40.247256] (-) TimerEvent: {}
+[40.250132] (opencv_tests) StdoutLine: {'line': b"writing manifest file 'opencv_tests.egg-info/SOURCES.txt'\n"}
+[40.347451] (-) TimerEvent: {}
+[40.369618] (opencv_tests) StdoutLine: {'line': b'running build_ext\n'}
+[40.370602] (opencv_tests) StdoutLine: {'line': b'Creating /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/python3.10/site-packages/opencv-tests.egg-link (link to .)\n'}
+[40.379210] (opencv_tests) StdoutLine: {'line': b'Installing broadcast script to /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/opencv_tests\n'}
+[40.379455] (opencv_tests) StdoutLine: {'line': b'Installing rosfacedetect script to /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/opencv_tests\n'}
+[40.379580] (opencv_tests) StdoutLine: {'line': b'Installing source script to /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/lib/opencv_tests\n'}
+[40.379700] (opencv_tests) StdoutLine: {'line': b'\n'}
+[40.379811] (opencv_tests) StdoutLine: {'line': b'Installed /home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests\n'}
+[40.379921] (opencv_tests) StdoutLine: {'line': b'running symlink_data\n'}
+[40.380030] (opencv_tests) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/share/ament_index/resource_index/packages\n'}
+[40.389178] (opencv_tests) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/resource/opencv_tests -> /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/share/ament_index/resource_index/packages\n'}
+[40.389509] (opencv_tests) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/opencv_tests/package.xml -> /home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests/share/opencv_tests\n'}
+[40.447786] (-) TimerEvent: {}
+[40.549059] (-) TimerEvent: {}
+[40.615177] (task_6) StdoutLine: {'line': b"reading manifest file 'task_6.egg-info/SOURCES.txt'\n"}
+[40.616567] (task_6) StdoutLine: {'line': b"writing manifest file 'task_6.egg-info/SOURCES.txt'\n"}
+[40.627591] (opencv_tests) CommandEnded: {'returncode': 0}
+[40.655083] (-) TimerEvent: {}
+[40.690859] (opencv_tests) JobEnded: {'identifier': 'opencv_tests', 'rc': 0}
+[40.707350] (task_6) StdoutLine: {'line': b'running build_ext\n'}
+[40.707822] (task_6) StdoutLine: {'line': b'Creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/lib/python3.10/site-packages/task-6.egg-link (link to .)\n'}
+[40.708803] (task_6) StdoutLine: {'line': b'Installing red_ball_tracker script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/lib/task_6\n'}
+[40.716827] (task_6) StdoutLine: {'line': b'\n'}
+[40.716969] (task_6) StdoutLine: {'line': b'Installed /home/Gery/ME597_Lab/Lab4/ws1/build/task_6\n'}
+[40.717088] (task_6) StdoutLine: {'line': b'running symlink_data\n'}
+[40.717284] (task_6) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/task_6/package.xml -> /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/share/task_6\n'}
+[40.717371] (task_6) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/share/task_6/launch\n'}
+[40.717465] (task_6) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/share/task_6/resource\n'}
+[40.717537] (task_6) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/task_6/resource/task_6 -> /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/share/task_6/resource\n'}
+[40.717609] (task_6) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/share/task_6/maps\n'}
+[40.717680] (task_6) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_6/share/task_6/rviz\n'}
+[40.735432] (task_5) StdoutLine: {'line': b'running egg_info\n'}
+[40.757480] (-) TimerEvent: {}
+[40.858230] (-) TimerEvent: {}
+[40.905494] (task_5) StdoutLine: {'line': b'creating task_5.egg-info\n'}
+[40.906545] (task_5) StdoutLine: {'line': b'writing task_5.egg-info/PKG-INFO\n'}
+[40.908549] (task_5) StdoutLine: {'line': b'writing dependency_links to task_5.egg-info/dependency_links.txt\n'}
+[40.909074] (task_5) StdoutLine: {'line': b'writing entry points to task_5.egg-info/entry_points.txt\n'}
+[40.919239] (task_5) StdoutLine: {'line': b'writing requirements to task_5.egg-info/requires.txt\n'}
+[40.919677] (task_5) StdoutLine: {'line': b'writing top-level names to task_5.egg-info/top_level.txt\n'}
+[40.919893] (task_5) StdoutLine: {'line': b"writing manifest file 'task_5.egg-info/SOURCES.txt'\n"}
+[40.959739] (-) TimerEvent: {}
+[41.004668] (task_6) CommandEnded: {'returncode': 0}
+[41.040252] (task_6) JobEnded: {'identifier': 'task_6', 'rc': 0}
+[41.059988] (-) TimerEvent: {}
+[41.080212] (task_5) StdoutLine: {'line': b"reading manifest file 'task_5.egg-info/SOURCES.txt'\n"}
+[41.083983] (task_5) StdoutLine: {'line': b"writing manifest file 'task_5.egg-info/SOURCES.txt'\n"}
+[41.164433] (-) TimerEvent: {}
+[41.184344] (task_5) StdoutLine: {'line': b'running build_ext\n'}
+[41.184562] (task_5) StdoutLine: {'line': b'Creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages/task-5.egg-link (link to .)\n'}
+[41.189456] (task_5) StdoutLine: {'line': b'Installing image_publisher script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/task_5\n'}
+[41.189639] (task_5) StdoutLine: {'line': b'Installing object_detector script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/task_5\n'}
+[41.189722] (task_5) StdoutLine: {'line': b'\n'}
+[41.189796] (task_5) StdoutLine: {'line': b'Installed /home/Gery/ME597_Lab/Lab4/ws1/build/task_5\n'}
+[41.189867] (task_5) StdoutLine: {'line': b'running symlink_data\n'}
+[41.189937] (task_5) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/package.xml -> /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5\n'}
+[41.190007] (task_5) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/launch\n'}
+[41.190078] (task_5) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/launch/object_detector_launch.py -> /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/launch\n'}
+[41.190530] (task_5) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/resource\n'}
+[41.190957] (task_5) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/resource/lab3_video.avi -> /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/resource\n'}
+[41.191486] (task_5) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/resource/task_5 -> /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/resource\n'}
+[41.191791] (task_5) StdoutLine: {'line': b'symbolically linking /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/resource/lab3_video.mp4 -> /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/resource\n'}
+[41.197412] (task_5) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/maps\n'}
+[41.197629] (task_5) StdoutLine: {'line': b'creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/share/task_5/rviz\n'}
+[41.264661] (-) TimerEvent: {}
+[41.322982] (task_5) CommandEnded: {'returncode': 0}
+[41.349608] (task_5) JobEnded: {'identifier': 'task_5', 'rc': 0}
+[41.350979] (-) EventReactorShutdown: {}
