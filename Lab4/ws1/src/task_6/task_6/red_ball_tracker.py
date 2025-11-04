@@ -2,13 +2,15 @@ import rclpy
 from rclpy.node import Node
 import cv2
 import numpy as np
-from sensor_msgs.msg import Image
+from sensor_msgs.msg import Image, LaserScan
 from cv_bridge import CvBridge
 from vision_msgs.msg import BoundingBox2D
 from geometry_msgs.msg import Pose2D
 from geometry_msgs.msg import Twist
 import message_filters
 from geometry_msgs.msg import PoseWithCovarianceStamped
+from .wall_follower import WallFollower
+from gazebo_msgs.msg import ContactsState
 
 
 class ObjectDetector(Node):
@@ -16,8 +18,9 @@ class ObjectDetector(Node):
         super().__init__('red_ball_tracker')
         
         # raw image topic
-
         self.subscription = self.create_subscription( Image, '/camera/image_raw', self.listener_callback, 10)
+        self.scan_subscription = self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
+        self.bumper_subscription = self.create_subscription(ContactsState, '/bumper_collisions', self.bumper_callback,10)
 
         # Does not work because depth image is not avalivle in lab config
         # self.subscription = message_filters.Subscriber(self, Image, '/camera/color/image_raw')
@@ -32,13 +35,28 @@ class ObjectDetector(Node):
             
         self.bridge = CvBridge()
 
-        #Init prms
+        # Wall Follower Controller Init
+        self.wall_follower = WallFollower(
+            self.get_logger(),  
+            desired_distance=0.5, 
+            kp=1.2, 
+            ki=0.0, 
+            kd=0.3,
+            max_angular_speed=1.9,
+            max_linear_speed=0.2
+        )
+        self.state = "DEFAULT"  # default state
+        self.bumper_hit = False
+
+        #Controller Ball follower Init prms
         self.pid_p_angular = 0.4
         self.pid_i_angular = 0.1
         self.pid_d_angular = 0.4
         self.integral_angular = 0.0
         self.previous_error_angular = 0.0
         self.p_linear = 0.3
+        # desired ball size in pixels
+        self.des_ball_size = 150
 
         self.max_linear_speed = 0.2
         self.max_angular_speed = 1.0
@@ -49,11 +67,16 @@ class ObjectDetector(Node):
         # define initial pose in origion
         self.initial_pose_pub = self.create_publisher(PoseWithCovarianceStamped, '/initialpose', 10)
         self.initial_pose_timer = self.create_timer(2.0, self.publish_initial_pose)
+
+
         
 
         self.get_logger().info("Red Ball follower  started.")
 
     def listener_callback(self, msg):
+
+        if self.bumper_hit:
+            return
 
         current_time = self.get_clock().now()
 
@@ -105,12 +128,14 @@ class ObjectDetector(Node):
                 circularity = (4 * np.pi * area) / (perimeter * perimeter)
                 
                 circularity_threshold = 0.8
-                min_area = 100 # pixels
+                min_area = 400 # pixels
                 
                 if circularity > circularity_threshold and area > min_area:
                     potential_balls.append(contour)
             
         if potential_balls:
+
+            self.state = "TRACKING"
 
             self.last_detection_time = self.get_clock().now()
             # Find the largest contour *among the circular ones*
@@ -140,7 +165,7 @@ class ObjectDetector(Node):
             # error detection 
             #distance_to_object = depth_image[int(y), int(x)]
             #self.get_logger().info(f"Distance to Object: {distance_to_object} meters")
-            distance_to_object = (100-w)/w
+            distance_to_object = (self.des_ball_size-w)/w
             self.get_logger().info(f"errro Distance: {distance_to_object}")
             error_x = centroid_x - image_center_x
             error_x = error_x / image_center_x  # Normalize error
@@ -183,14 +208,23 @@ class ObjectDetector(Node):
             # when object in room and not covered by obstacle robot wil find it          
             time_since_last_detection = (self.get_clock().now() - self.last_detection_time).nanoseconds / 1e9
             self.get_logger().info(f"Time since last detection: {time_since_last_detection} seconds")   
-            if time_since_last_detection > 3.0:
-                self.get_logger().info("Searching for object...")
+            if time_since_last_detection > 3.0 and time_since_last_detection <= 6.0:
+                self.get_logger().info("Turning while Searching for object...")
                 twist_msg.linear.x = 0.0
-                twist_msg.angular.z = 0.3
+                twist_msg.angular.z = 0.0
                 self.publisher_.publish(twist_msg)
                 self.previous_error_angular = 0.0
                 self.integral_angular = 0.0
+                self.wall_follower.reset_pid()
+                self.state = "TRACKING"
 
+            elif time_since_last_detection > 6.0:
+                self.get_logger().info("Exploring while Searching for object...")
+                self.previous_error_angular = 0.0
+                self.integral_angular = 0.0
+                # call Wallfollower
+                self.state = "SEARCHING"
+                
             else:
                 self.get_logger().info("No object detected.")
                 twist_msg.linear.x = 0.0
@@ -198,6 +232,8 @@ class ObjectDetector(Node):
                 self.publisher_.publish(twist_msg)
                 self.previous_error_angular = 0.0
                 self.integral_angular = 0.0
+                self.wall_follower.reset_pid()
+                self.state = "DEFAULT"
 
                 
         
@@ -217,6 +253,22 @@ class ObjectDetector(Node):
         cv2.waitKey(1)
 
 
+    #callback for scan topic 
+
+    def scan_callback(self, scan_msg):
+
+        #Wall follower when searching
+        """
+        This callback runs the wall follower if the state is "SEARCHING".
+        Because with turing no ball was found
+        """
+        if self.bumper_hit:
+            return
+        
+        if self.state == "SEARCHING":
+            current_time = self.get_clock().now()
+            twist_msg = self.wall_follower.compute_velocities(scan_msg, current_time)
+            self.publisher_.publish(twist_msg)
 
 
     def publish_initial_pose(self):
@@ -241,14 +293,80 @@ class ObjectDetector(Node):
 
         self.initial_pose_timer.cancel()
 
+    def stop_ttbot(self):
+        """! Function to move turtlebot passing directly a heading angle and the speed.
+        @param  speed     Desired speed.
+        @param  heading   Desired yaw angle.
+        @return path      object containing the sequence of waypoints of the created path.
+        """
+        twist_msg = Twist()
+        twist_msg.linear.x = 0.0
+        twist_msg.angular.z = 0.0
+        self.publisher_.publish(twist_msg)
+        self.get_logger().warning("Robot Stopped.")
+
+    def bumper_callback(self, msg):
+            """
+            High-priority bumper collisions.
+            Overrides all other logic if a collision is detected.
+            """
+            # The msg.states list will be NON-EMPTY if there is a collision
+            if msg.states:
+
+                if not self.bumper_hit:
+                    self.get_logger().warn("BUMPER HIT! Overriding all logic and reversing.")
+                    self.hit_time = self.get_clock().now()
+                
+                self.bumper_hit = True
+                
+                # --- SAFETY OVERRIDE: Publish reverse command directly ---
+                twist_msg = Twist()
+                twist_msg.linear.x = -0.15  # Set a constant reverse speed
+                twist_msg.angular.z = 0.3
+                self.publisher_.publish(twist_msg)
+                
+                # Reset the PID controllers so they don't wind up
+                self.reset_all_controllers()
+                
+            else:
+                # --- NO BUMPER IS PRESSED ---
+                if self.bumper_hit:
+                    # This block runs once when the bumper is released
+
+                    # Stop the robot (so it doesn't lurch) before resuming logic
+                    twist_msg = Twist()
+                    self.publisher_.publish(twist_msg)
+                    #wait a moment to drive after bumper released
+                    if self.get_clock().now().nanoseconds - self.hit_time.nanoseconds > 2e9:
+                        self.bumper_hit = False
+                        twist_msg.angular.z = 0.3
+                        if self.get_clock().now().nanoseconds - self.hit_time.nanoseconds > 4e9:
+                            self.bumper_hit = False
+                            self.get_logger().info("Bumper released.")
+
+
+    def reset_all_controllers(self):
+        # Reset ball PID
+        self.integral_angular = 0.0
+        self.previous_error_angular = 0.0
+        self.last_time_ball = None
+        self.wall_follower.reset_pid()
+
+
 
 def main(args=None):
     rclpy.init(args=args)
     object_detector = ObjectDetector()
-    rclpy.spin(object_detector)
-    
-    object_detector.destroy_node()
-    rclpy.shutdown()
+
+    try:
+        rclpy.spin(object_detector) 
+    except KeyboardInterrupt:
+        object_detector.get_logger().warning('Keyboard interrupt received. Stopping the robot...')
+        object_detector.stop_ttbot()
+    finally:
+        object_detector.destroy_node()
+        rclpy.shutdown()
+
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':

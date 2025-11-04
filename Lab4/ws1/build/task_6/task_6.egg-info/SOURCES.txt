@@ -7,6 +7,7 @@ maps/sync_classroom_map.yaml
 resource/task_6
 task_6/__init__.py
 task_6/red_ball_tracker.py
+task_6/wall_follower.py
 task_6.egg-info/PKG-INFO
 task_6.egg-info/SOURCES.txt
 task_6.egg-info/dependency_links.txt
