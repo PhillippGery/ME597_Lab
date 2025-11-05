@@ -20,7 +20,7 @@ class ObjectDetector(Node):
         # raw image topic
         self.subscription = self.create_subscription( Image, '/camera/image_raw', self.listener_callback, 10)
         self.scan_subscription = self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
-        self.bumper_subscription = self.create_subscription(ContactsState, '/bumper_collisions', self.bumper_callback,10)
+        #self.bumper_subscription = self.create_subscription(ContactsState, '/bumper_collisions', self.bumper_callback,10)
 
         # Does not work because depth image is not avalivle in lab config
         # self.subscription = message_filters.Subscriber(self, Image, '/camera/color/image_raw')
@@ -41,8 +41,8 @@ class ObjectDetector(Node):
             desired_distance=0.5, 
             kp=1.2, 
             ki=0.0, 
-            kd=0.3,
-            max_angular_speed=1.9,
+            kd=0.4,
+            max_angular_speed=1.3,
             max_linear_speed=0.2
         )
         self.state = "DEFAULT"  # default state
@@ -208,7 +208,7 @@ class ObjectDetector(Node):
             # when object in room and not covered by obstacle robot wil find it          
             time_since_last_detection = (self.get_clock().now() - self.last_detection_time).nanoseconds / 1e9
             self.get_logger().info(f"Time since last detection: {time_since_last_detection} seconds")   
-            if time_since_last_detection > 3.0 and time_since_last_detection <= 6.0:
+            if time_since_last_detection > 3.0 and time_since_last_detection <= 13.0:
                 self.get_logger().info("Turning while Searching for object...")
                 twist_msg.linear.x = 0.0
                 twist_msg.angular.z = 0.0
@@ -218,8 +218,8 @@ class ObjectDetector(Node):
                 self.wall_follower.reset_pid()
                 self.state = "TRACKING"
 
-            elif time_since_last_detection > 6.0:
-                self.get_logger().info("Exploring while Searching for object...")
+            elif time_since_last_detection > 13.0:
+                self.get_logger().info("Exploring with Wallfolower..." )
                 self.previous_error_angular = 0.0
                 self.integral_angular = 0.0
                 # call Wallfollower
@@ -335,14 +335,15 @@ class ObjectDetector(Node):
 
                     # Stop the robot (so it doesn't lurch) before resuming logic
                     twist_msg = Twist()
-                    self.publisher_.publish(twist_msg)
+                    
                     #wait a moment to drive after bumper released
                     if self.get_clock().now().nanoseconds - self.hit_time.nanoseconds > 2e9:
+                        #Debug all vel 0
+                        twist_msg.linear.x = 0.0
+                        twist_msg.angular.z = 0.0
                         self.bumper_hit = False
-                        twist_msg.angular.z = 0.3
-                        if self.get_clock().now().nanoseconds - self.hit_time.nanoseconds > 4e9:
-                            self.bumper_hit = False
-                            self.get_logger().info("Bumper released.")
+                        self.get_logger().info("Bumper released.")
+                    self.publisher_.publish(twist_msg)
 
 
     def reset_all_controllers(self):

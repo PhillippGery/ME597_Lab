@@ -35,8 +35,8 @@ class WallFollower:
         
         #Controller Setpoints
         self.desired_distance = desired_distance  # Target distance from wall (meters)
-        self.safety_distance = 0.5                # Stop and turn if obstacle is this close (meters)
-        self.safety_Side_distance = 0.35           # Min distance to wall on the side (meters)
+        self.safety_distance = 0.4                # Stop and turn if obstacle is this close (meters)
+        self.safety_Side_distance = 0.4           # Min distance to wall on the side (meters)
         self.forward_speed = max_linear_speed     # Constant speed to move forward (m/s)
         self.turning_speed = 1.2                  # Speed to turn at when avoiding obstacle (rad/s)
         self.max_angular_speed = max_angular_speed              # Max angular speed for PID (rad/s)
@@ -74,12 +74,12 @@ class WallFollower:
         # Angled (45 deg right)
         angled_slice = ranges[310:320]
 
-        collAvoid_slice = np.concatenate((ranges[0:90], ranges[270:360]))
+
         try:
             front_dist = np.nanmin(front_slice)
             right_dist = np.nanmin(right_slice)
             angled_dist = np.nanmin(angled_slice)
-            collAvoid_dist = np.nanmin(collAvoid_slice)
+
 
         except ValueError:
             # This happens if all readings in a slice are 'nan'
@@ -89,15 +89,17 @@ class WallFollower:
         # angled sensor -->primary distance if Not valid --> side sensor
         # if Side distance to small --> no use angled sensor
         if not np.isnan(angled_dist) and right_dist > self.safety_Side_distance:
-            # 45-degree distance --> 90-degree distance
+            # if 45-degree distance invalid --> 90-degree distance
             control_dist = angled_dist / sqrt(2)
         elif not np.isnan(right_dist):
             control_dist = right_dist
         else:
             # NO right-side sensors  drive straight
+            self.logger.info("No rrigth wall found", throttle_duration_sec=1)
             twist_msg.linear.x = self.forward_speed * 0.5
             twist_msg.angular.z = -self.turning_speed * 0.2 # Turn right
             return twist_msg
+            
         
 
 
