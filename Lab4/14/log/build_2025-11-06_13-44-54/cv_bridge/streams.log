@@ -1,0 +1,56 @@
+[0.029s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/sim_ws/install/sim_utils:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge -- -j4 -l4
+[0.225s] [ 22%] Built target cv_bridge
+[0.229s] [ 33%] Built target gtest
+[0.232s] [ 33%] Built target ament_cmake_python_symlink_cv_bridge
+[0.235s] [ 44%] Built target gtest_main
+[0.308s] [ 83%] Built target cv_bridge-utest
+[0.321s] [100%] Built target cv_bridge_boost
+[0.614s] running egg_info
+[0.645s] writing cv_bridge.egg-info/PKG-INFO
+[0.645s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[0.645s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[0.722s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[0.723s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[0.765s] [100%] Built target ament_cmake_python_build_cv_bridge_egg
+[0.804s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/sim_ws/install/sim_utils:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge -- -j4 -l4
+[0.808s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/sim_ws/install/sim_utils:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge
+[0.818s] -- Install configuration: ""
+[0.821s] -- Execute custom install script
+[0.822s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[0.822s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[0.824s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/PKG-INFO
+[0.826s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/SOURCES.txt
+[0.826s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/dependency_links.txt
+[0.827s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-4.1.0-py3.10.egg-info/top_level.txt
+[0.828s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[0.828s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[0.829s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[0.830s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost//cv_bridge_boost.so
+[0.831s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.hpp
+[0.831s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/cv_mat_sensor_msgs_image_type_adapter.hpp
+[0.832s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.hpp
+[0.832s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/include/cv_bridge/cv_bridge/visibility_control.h
+[0.833s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib/libcv_bridge.so
+[0.834s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[0.834s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[0.835s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[0.835s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[0.836s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/path.sh
+[0.836s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[0.837s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.bash
+[0.838s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.sh
+[0.839s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[0.839s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[0.840s] -- Symlinking: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/package.dsv
+[0.862s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[0.863s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[0.863s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.864s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[0.864s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[0.865s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[0.866s] -- Up-to-date symlink: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/package.xml
+[0.915s] Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[0.917s] Listing '/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost'...
+[0.921s] -- Up-to-date: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[0.922s] -- Up-to-date: /home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[0.951s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/Gery/ME597_Lab/sim_ws/install/sim_utils:/home/Gery/ME597_Lab/Lab4/ws1/install/task_6:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5:/home/Gery/ME597_Lab/Lab4/ws1/install/opencv_tests:/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge

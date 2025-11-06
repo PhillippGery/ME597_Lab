@@ -1,6 +1,0 @@
-Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge
-Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/Gery/ME597_Lab/Lab4/ws1/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge
-Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge -- -j4 -l4
-Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge -- -j4 -l4
-Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge
-Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/Gery/ME597_Lab/Lab4/ws1/build/cv_bridge
