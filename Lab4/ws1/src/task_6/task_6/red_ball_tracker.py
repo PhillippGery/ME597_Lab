@@ -34,6 +34,7 @@ class ObjectDetector(Node):
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
             
         self.bridge = CvBridge()
+        self.ranges = []
 
         # Wall Follower Controller Init
         self.wall_follower = WallFollower(
@@ -52,11 +53,21 @@ class ObjectDetector(Node):
         self.pid_p_angular = 0.4
         self.pid_i_angular = 0.1
         self.pid_d_angular = 0.4
+        self.p_linear = 0.3
+
+        # self.p_linear = 0.8608         # Proportional gain for linear speed
+        # self.pid_p_angular = 2.0747    # Proportional gain for angular velocity
+        # self.pid_i_angular = 0.1692    # Integral gain for angular velocity
+        # self.pid_d_angular = -0.02   # Derivative gain for angular velocity
+
         self.integral_angular = 0.0
         self.previous_error_angular = 0.0
-        self.p_linear = 0.3
+        
         # desired ball size in pixels
         self.des_ball_size = 150
+
+        # Camera parameters
+        self.camera_hfov_degrees = 60.0
 
         self.max_linear_speed = 0.2
         self.max_angular_speed = 1.0
@@ -149,7 +160,8 @@ class ObjectDetector(Node):
             centroid_x = x + w // 2
             centroid_y = y + h // 2
 
-            image_center_x = cv_image.shape[1] // 2
+            image_width = cv_image.shape[1]
+            image_center_x = image_width // 2
 
             #create bounding box as done in previous task_5
             self.get_logger().info(f"Object Centroid: (x={centroid_x}, y={centroid_y}), Size: (w={w}, h={h})")
@@ -165,14 +177,43 @@ class ObjectDetector(Node):
             # error detection 
             #distance_to_object = depth_image[int(y), int(x)]
             #self.get_logger().info(f"Distance to Object: {distance_to_object} meters")
-            distance_to_object = (self.des_ball_size-w)/w
-            self.get_logger().info(f"errro Distance: {distance_to_object}")
-            error_x = centroid_x - image_center_x
-            error_x = error_x / image_center_x  # Normalize error
-            self.get_logger().info(f"Error X: {error_x}")
 
+            distance_to_object = (self.des_ball_size)/w
+            error_distance = distance_to_object - 1.0  # desired distance is 1.0 meter
+            self.get_logger().info(f"Distance: {distance_to_object}")
+
+            error_x_unnorm = centroid_x - image_center_x
+            error_x = error_x_unnorm / image_center_x  # Normalize error
+            #self.get_logger().info(f"Error X: {error_x} pixels")
+            #Heading error in Pixels
+            heading_error_degrees = error_x_unnorm * (self.camera_hfov_degrees / image_width)
+            self.get_logger().info(f"Heading Error: {heading_error_degrees:.2f} degrees")
+
+
+            num_rays = len(self.ranges)
+
+            target_index = int(round(heading_error_degrees))              
+            # 3. Define the slice width (you asked for +- 5)
+            slice_half_width = 5 
+            # 4. Build a list of indices, handling the wrap-around
+            indices_to_check = []
+            for i in range(-slice_half_width, slice_half_width + 1):
+                # Use modulo (%) to wrap indices (e.g., -2 % 360 = 358)
+                idx = (target_index + i) % num_rays
+                indices_to_check.append(idx)
+                
+            # 5. Get the slice from the ranges array using the index list
+            ball_distance_slice = self.ranges[indices_to_check]
+            
+            try:
+                ball_distance = np.nanmin(ball_distance_slice)
+                self.get_logger().info(f"Ball Distance from scan: {ball_distance} meters")
+            except ValueError:
+                self.get_logger().warn("laser readings for ball distance are 'nan'. Skipping loop.", throttle_duration_sec=1)
+                
 
             #Controller
+            #error_x = heading_error_degrees
             self.integral_angular += error_x
             derivative_angular = error_x - self.previous_error_angular
 
@@ -183,8 +224,8 @@ class ObjectDetector(Node):
             #windup for integral term
             i_term = np.clip(i_term, -0.5, 0.5)
 
-            if abs(distance_to_object) > 0.1:
-                linear_velocity = self.p_linear * distance_to_object
+            if abs(error_distance) > 0.1:
+                linear_velocity = self.p_linear * error_distance
             else:
                 linear_velocity = 0.0
             
@@ -211,7 +252,7 @@ class ObjectDetector(Node):
             if time_since_last_detection > 3.0 and time_since_last_detection <= 13.0:
                 self.get_logger().info("Turning while Searching for object...")
                 twist_msg.linear.x = 0.0
-                twist_msg.angular.z = 0.0
+                twist_msg.angular.z = 0.3
                 self.publisher_.publish(twist_msg)
                 self.previous_error_angular = 0.0
                 self.integral_angular = 0.0
@@ -262,6 +303,11 @@ class ObjectDetector(Node):
         This callback runs the wall follower if the state is "SEARCHING".
         Because with turing no ball was found
         """
+        ranges = np.array(scan_msg.ranges)
+        ranges[np.isinf(ranges)] = np.nan
+        ranges[ranges == 0.0] = np.nan
+        self.ranges = ranges
+
         if self.bumper_hit:
             return
         

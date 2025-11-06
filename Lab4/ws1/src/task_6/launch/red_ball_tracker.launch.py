@@ -44,7 +44,7 @@ def generate_launch_description():
             'x_pose': '-5.4',
             'y_pose': '-6.18',
             'z_pose': '0.0',
-            'yaw': '3.0',
+            'yaw': '1.0',
         }.items()
     )
 

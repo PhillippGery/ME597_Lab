@@ -1,0 +1,123 @@
+
+A more sophisticated controller and an advanced exploration algorithm were implemented,
+ both of which are described below:
+
+ All the steps for the controller were already done for the Autonavigator
+  and is now being used again for the red ball follower.
+  All code is uploaded.
+
+
+----RedBall Tracker-----
+
+IF ball is visible:
+    follow ball
+IF no Ball visible for x1 second:
+     turn around to check if ball is in nearer Area/Room
+IF no Ball visible for x2 second:
+    Start Wallfollower
+
+
+Wallfollower Discription:
+
+Function: compute_velocities
+Purpose: Calculates robot speed to follow a wall on the right at a set distance.
+
+Core Steps:
+1. Calculates time difference (dt) between sensor readings for PID.
+2. Reads laser scan data.
+3. Cleans sensor data by removing invalid readings (inf, 0.0, nan).
+4. Gets the closest obstacle distance from three sensor zones: 'front', 'right', and 'angled-right'--> safety_distance to right side check allwasy.
+5. Selects the best distance from the right side (angled or direct) to use for control.
+
+Behavior Cases:
+
+Case 1: Obstacle in Front
+* Condition: Closest object in the 'front' zone is less than the 'safety_distance'.
+--> Driving in a corner egde Wall infornt and to the right
+* Action:
+    * Linear Speed: 0.0 (Stop).
+    * Angular Speed: Turn left at a fixed 'turning_speed' un till way is free.
+
+Case 2: Front is Clear (Normal Wall Following)
+* Condition: Front is not blocked.
+--> use angled Distance to wall 45° more stable less affctive to turing
+--> if 45° is unvalid use side distance for example entering a door or a outside edge
+* Action:
+    * Linear Speed: Move forward. Speed is reduced as the robot gets closer to a front wall.
+    * Angular Speed: Calculated by a PID controller.
+        * The controller's goal is to make the 'control_dist' (from the right) equal to the 'desired_distance'.
+        * It outputs a smooth turning speed to stay parallel to the wall.
+
+Case 3: No Wall on Right
+* Condition: No valid sensor readings from the 'right' or 'angled-right' zones.
+* Action:
+    * Linear Speed: Move forward slowly.
+    * Angular Speed: Turn right slowly to search for the wall.
+    --> find a Wall
+
+
+
+
+-------------------------------------------------
+
+Optimized Dynamic PID Path Follower
+
+Core Idea:
+I focused on an optimized PID controller because I believe an MPC controller would overshoot and created a Matlab skrip to fine optimzed paramters.
+This script automatically determines the optimal tuning parameters (PID gains and look-ahead distance) for a robot's path-following controller.
+It runs simulations with different parameter sets and selects the one that performs best.
+
+Logic Flow:
+
+1. Define Scenario:
+   - Sets a specific waypoint path for the robot.
+   - Defines robot limits (max speed) and simulation rules.
+
+2. Cost Function:
+   - Judges how "good" a simulation run is. Lower cost is better.
+   - Cost = (W_error * Path_Error) + (W_time * Time_Penalty).
+   - It penalizes both deviation from the path and taking too long.
+
+3. Realistic Simulation:
+   - Tests parameters in a simulation that includes:
+     - Robot Dynamics (motor delay).
+     - Sensor Noise (imperfect position/angle data).
+
+4. Multi-Start Optimization:
+   - Uses `fmincon` to find parameters that minimize the cost.
+   - Runs the optimizer 20 times from different random starting points to find the true best solution,
+    not just a "good enough" one.
+
+5. Final Result:
+   - Reports the best set of parameters found.
+   - Plots the robot's optimized path.
+
+
+---------------------------------------------------------
+
+Dynamic Lookahead Distance
+
+A Dynamic Lookahead Distance was implemented to adjust the lookahead. distance.
+ Base:  Don The actual  condition.* Idea: Instead of looking at a fixed distance ahead (e.g., 0.35 m),
+  the look-ahead distance now changes based on the robot's current speed. This Addpats the diatce and the Speed based on the error 
+  to the Path itself if there is a curve the speed reduce the Lookaheaddistance LAD reduces add teh conntroller is more precise in the courvy regions.
+Application:
+    When the robot is moving quickly, it looks further ahead. This results in smoother, more gradual turns.
+    When the robot is slow, it looks at a closer point. This allows for more precise, tight maneuvers, especially when approaching the final goal.
+    This is implemented using a minimum look-ahead distance multiplied by a ratio of the robot's speed.
+
+## 2. Line-of-Sight (LOS) Shortcut
+
+Idea: Before following the winding A* path, the robot checks if there is a clear, 
+straight path directly to the final goal.
+
+Application:
+    Case 1: Path is clear:
+        The is_path_clear function checks all map grid cells along the straight line between the robot and the final goal.
+        If no obstacles are found, the robot ignores all A* waypoints and sets the final goal as its only target.
+        A "shortcut_active" flag is set to "True" so that this check only runs once per path.
+        Result: A much faster and smoother route in open spaces.
+    Case 2: Path is blocked:
+        The check fails.
+        The robot then proceeds as normal, following the A* path's waypoints.
+

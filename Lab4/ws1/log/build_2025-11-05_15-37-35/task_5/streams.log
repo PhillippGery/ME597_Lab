@@ -1,0 +1,18 @@
+[2.529s] Invoking command in '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/build/task_5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/build --no-deps symlink_data
+[3.097s] running develop
+[3.659s] running egg_info
+[3.711s] writing task_5.egg-info/PKG-INFO
+[3.712s] writing dependency_links to task_5.egg-info/dependency_links.txt
+[3.713s] writing entry points to task_5.egg-info/entry_points.txt
+[3.713s] writing requirements to task_5.egg-info/requires.txt
+[3.713s] writing top-level names to task_5.egg-info/top_level.txt
+[3.778s] reading manifest file 'task_5.egg-info/SOURCES.txt'
+[3.783s] writing manifest file 'task_5.egg-info/SOURCES.txt'
+[3.815s] running build_ext
+[3.816s] Creating /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages/task-5.egg-link (link to .)
+[3.817s] Installing image_publisher script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/task_5
+[3.817s] Installing object_detector script to /home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/task_5
+[3.817s] 
+[3.818s] Installed /home/Gery/ME597_Lab/Lab4/ws1/build/task_5
+[3.818s] running symlink_data
+[3.880s] Invoked command in '/home/Gery/ME597_Lab/Lab4/ws1/build/task_5' returned '0': AMENT_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge LD_LIBRARY_PATH=/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/Gery/ME597_Lab/Lab4/ws1/build/task_5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/Gery/ME597_Lab/Lab4/ws1/install/task_5/lib/python3.10/site-packages:/home/Gery/ME597_Lab/Lab4/ws1/install/cv_bridge/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/Gery/ME597_Lab/Lab4/ws1/build/task_5/build --no-deps symlink_data
